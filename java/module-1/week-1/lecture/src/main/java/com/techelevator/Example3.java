@@ -9,7 +9,15 @@ public class Example3 {
      ageGroup(12) → "Child"
     */
     public String ageGroup(int age) {
-        return "Adult";
+        String result = "";
+        if (age >= 18){
+            result = "Adult";
+        } else if (age >= 13) {
+            result = "Teen";
+        }else {
+            result = "Child";
+        }
+        return result;
     }
 
     /*
@@ -22,6 +30,13 @@ public class Example3 {
     */
     public int greenTicket(int a, int b, int c) {
         int winnings = 0;
+
+        if(a == b && b == c){
+            winnings = 20;
+        }else if (a == b || b == c || a == c){
+            winnings = 10;
+        }
+
 
         return winnings;
     }
