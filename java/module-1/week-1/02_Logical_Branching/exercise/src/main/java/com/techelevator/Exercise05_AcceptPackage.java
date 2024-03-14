@@ -24,7 +24,11 @@ public class Exercise05_AcceptPackage {
     acceptPackage(50) ➔ false
      */
     public boolean acceptPackage(int weightPounds) {
-        return false;
+        if (weightPounds <= 40) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /*
@@ -41,7 +45,11 @@ public class Exercise05_AcceptPackage {
     acceptPackage(50, 36, 24, 12) ➔ false
      */
     public boolean acceptPackage(int weightPounds, int lengthInches, int widthInches, int heightInches) {
-        return false;
+        if (weightPounds <= 40 && (lengthInches * widthInches * heightInches) <= MAX_CUBIC_INCHES) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /*
@@ -61,6 +69,22 @@ public class Exercise05_AcceptPackage {
     acceptPackage(50, 36, 24, 12) ➔ false
      */
     public boolean acceptPackage(int weightPounds, int lengthInches, int widthInches, int heightInches, boolean isSurchargePaid) {
-        return false;
+        if (lengthInches > MAX_DIMENSION_INCHES || widthInches > MAX_DIMENSION_INCHES || heightInches > MAX_DIMENSION_INCHES) {
+            if (isSurchargePaid) {
+                if (weightPounds <= 40 && (lengthInches * widthInches * heightInches) <= MAX_CUBIC_INCHES) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        } else {
+            if (weightPounds <= 40 && (lengthInches * widthInches * heightInches) <= MAX_CUBIC_INCHES) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     }
 }

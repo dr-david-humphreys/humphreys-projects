@@ -32,7 +32,11 @@ public class Exercise07_StoreHours {
     isStoreOpen(22) ➔ false
      */
     public boolean isStoreOpen(int currentHour) {
-        return false;
+        if (currentHour >= 8 && currentHour < 17) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /*
@@ -57,7 +61,15 @@ public class Exercise07_StoreHours {
     isStoreOpen(12, 'S') ➔ false
      */
     public boolean isStoreOpen(int currentHour, char currentDay) {
-        return false;
+        if (currentDay == 'U' || currentDay == 'T' || currentDay == 'H' || currentDay == 'S') {
+            return false;
+        } else {
+            if (currentHour >= 8 && currentHour < 17) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     }
 
 
@@ -75,6 +87,40 @@ public class Exercise07_StoreHours {
     isStoreOpen(9, 'S', true) ➔ true
      */
     public boolean isStoreOpen(int currentHour, char currentDay, boolean isSummer) {
-        return false;
+        if (!isSummer) {
+            if (currentDay == 'U' || currentDay == 'T' || currentDay == 'H' || currentDay == 'S') {
+                return false;
+            } else {
+                if (currentHour >= 8 && currentHour < 17) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        } else {
+            if (currentDay == 'U' || currentDay == 'T' || currentDay == 'H') {
+                return false;
+            } else {
+                if (currentDay == 'M' || currentDay == 'F') {
+                    if (currentHour >= 8 && currentHour < 17) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                } else if (currentDay == 'W') {
+                    if (currentHour >= 8 && currentHour < 20) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                } else if (currentDay == 'S') {
+                    if (currentHour >= 9 && currentHour < 15) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+            }
+        }
     }
 }
