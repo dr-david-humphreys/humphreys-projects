@@ -122,5 +122,6 @@ public class Exercise07_StoreHours {
                 }
             }
         }
+        return isSummer;
     }
 }
