@@ -26,7 +26,13 @@ public class Exercise04_HotelReservation {
     calculateStayTotal(3) ➔ 269.97
      */
     public double calculateStayTotal(int numberOfNights) {
-        return 0.0;
+        double totalStay;
+        if (numberOfNights < 3) {
+            totalStay = numberOfNights * DAILY_RATE;
+        } else {
+            totalStay = numberOfNights * DISCOUNT_RATE;
+        }
+        return totalStay;
     }
 
     /*
@@ -41,7 +47,20 @@ public class Exercise04_HotelReservation {
     calculateStayTotal(3, true) ➔ 344.97
      */
     public double calculateStayTotal(int numOfTotalNights, boolean includesParking) {
-        return 0.0;
+        double totalStay;
+        if (includesParking) {
+            if (numOfTotalNights < 3) {
+                totalStay = numOfTotalNights * DAILY_RATE + numOfTotalNights * PARKING_RATE;
+            } else {
+                totalStay = numOfTotalNights * DISCOUNT_RATE + numOfTotalNights * PARKING_RATE;
+            }
+        } else {
+            if (numOfTotalNights < 3) {
+                totalStay = numOfTotalNights * DAILY_RATE;
+            } else {
+                totalStay = numOfTotalNights * DISCOUNT_RATE;
+            }
+        } return totalStay;
     }
 
     /*
@@ -61,6 +80,22 @@ public class Exercise04_HotelReservation {
     calculateStayTotal(3, true, true) ➔ 364.97
      */
     public double calculateStayTotal(int numOfTotalNights, boolean includesParking, boolean includesLateCheckout) {
-        return 0.0;
+        double totalStay;
+        if (includesParking) {
+            if (numOfTotalNights < 3) {
+                totalStay = numOfTotalNights * DAILY_RATE + numOfTotalNights * PARKING_RATE;
+            } else {
+                totalStay = numOfTotalNights * DISCOUNT_RATE + numOfTotalNights * PARKING_RATE;
+            }
+        } else {
+            if (numOfTotalNights < 3) {
+                totalStay = numOfTotalNights * DAILY_RATE;
+            } else {
+                totalStay = numOfTotalNights * DISCOUNT_RATE;
+            }
+            if (includesLateCheckout) {
+                totalStay = totalStay + LATE_CHECKOUT_FEE;
+            }
+        } return totalStay;
     }
 }
