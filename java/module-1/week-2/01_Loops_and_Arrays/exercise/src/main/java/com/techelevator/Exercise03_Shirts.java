@@ -17,7 +17,22 @@ public class Exercise03_Shirts {
     buildOrder() → ['S', 'S', 'S', 'M', 'M', 'L']
      */
     public char[] buildOrder() {
-        return new char[] {};    
+        int totalShirts = 6;
+        char[] order = new char[totalShirts];
+        int shirtSizes = 0;
+        // Add 3 small shirts
+        for (int i = 0; i < 3; i++) {
+            order[shirtSizes++] = SMALL_TSHIRT;
+        }
+        // Add 2 medium shirts
+        for (int i = 0; i < 2; i++) {
+            order[shirtSizes++] = MEDIUM_TSHIRT;
+        }
+        // Add 1 large shirt
+        for (int i = 0; i < 1; i++) {
+            order[shirtSizes++] = LARGE_TSHIRT;
+        }
+        return order;
     }
 
     /*
@@ -37,7 +52,21 @@ public class Exercise03_Shirts {
     buildBulkOrder(0) → []
      */
     public char[] buildBulkOrder(int numberOfShirts) { 
-        return new char[] {};    
+        char[] order = new char[numberOfShirts];
+        int index = 0;
+        int runningSizeCount = 0;
+
+        while (index < numberOfShirts) {
+            if (runningSizeCount % 3 == 0) {
+                order[index++] = SMALL_TSHIRT;
+            } else if (runningSizeCount % 3 == 1) {
+                order[index++] = MEDIUM_TSHIRT;
+            } else {
+                order[index++] = LARGE_TSHIRT;
+            }
+            runningSizeCount++;
+        }
+        return order;
     }
 
     /*
@@ -54,6 +83,11 @@ public class Exercise03_Shirts {
     placeRequest([]) → false
      */
     public boolean placeRequest(char[] order) {
-        return false; 
+        for (int i = 0; i < order.length; i++) {
+            if (order[i] == SMALL_TSHIRT) {
+                return true;
+            }
+        }
+        return false;
     }
 }
