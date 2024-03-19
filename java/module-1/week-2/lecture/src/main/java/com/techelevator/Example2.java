@@ -11,6 +11,8 @@ public class Example2 {
 	 roundOnBothEnds("ooooo!") → false
 	*/
     public boolean roundOnBothEnds(String input) {
+
+
         return false;
     }
 

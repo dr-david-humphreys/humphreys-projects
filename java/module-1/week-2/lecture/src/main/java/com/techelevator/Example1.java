@@ -11,7 +11,11 @@ public class Example1 {
      sumAllNumbers(100, 104) → 510
     */
     public int sumAllNumbers(int start, int end) {
-        return 0;
+        int sum = 0;
+        for(int i = start; i <= end; i++) {
+            sum += i;
+        }
+        return sum;
     }
 
     /*
@@ -23,7 +27,12 @@ public class Example1 {
 	 arrayFront9([1, 2, 3, 4, 5]) → false
 	 */
     public boolean arrayFront9(int[] nums) {
-        return false;
+        boolean result= false;
+        for(int i = 0; i < nums.length && i <4; i++) {
+            if(nums[i] == 9) {
+                return true;
+            }
+        return result;
     }
 
     /*
@@ -35,7 +44,13 @@ public class Example1 {
 	 halveAll([3, 300]) → [1.5, 150.0]
 	 */
     public double[] halveAll(int[] input) {
-        return null;
+        double[] output = new double[input.length];
+        for(int i = 0; i < input.length; i++) {
+
+            output[i] = input[i]/2.0;
+        }
+
+        return output;
     }
 
 }
