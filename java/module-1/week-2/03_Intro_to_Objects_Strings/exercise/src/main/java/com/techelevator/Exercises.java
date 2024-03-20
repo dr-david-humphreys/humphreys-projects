@@ -286,7 +286,11 @@ public class Exercises {
 	 stringTimes("Hi", 1) → "Hi"
 	 */
 	public String stringTimes(String str, int n) {
-		return null;
+		StringBuilder result = new StringBuilder();
+		for (int i = 0; i < n; i++) {
+			result.append(str);
+		}
+		return result.toString();
 	}
 
 	/*
