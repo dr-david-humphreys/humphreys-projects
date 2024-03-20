@@ -14,10 +14,10 @@ public class TempConvert {
 
 		if (scale.equalsIgnoreCase("F")) {
 			double temperatureCelsius = (temperature - 32) / 1.8;
-			System.out.println(temperature + "F is " + (int) temperatureCelsius + "C");
+			System.out.println(temperature + "F is " + (int) temperatureCelsius + "C.");
 		} else if (scale.equalsIgnoreCase("C")) {
 			double temperatureFahrenheit = temperature * 1.8 + 32;
-			System.out.println(temperature + "C is " + (int) temperatureFahrenheit + "F");
+			System.out.println(temperature + "C is " + (int) temperatureFahrenheit + "F.");
 		}
 		scanner.close();
 	}
