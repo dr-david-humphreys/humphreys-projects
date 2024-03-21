@@ -301,7 +301,18 @@ public class Exercises {
 	 frontTimes("Abc", 3) → "AbcAbcAbc"
 	 */
 	public String frontTimes(String str, int n) {
-		return null;
+		StringBuilder result = new StringBuilder();
+		if (str.length() <= 3) {
+			for (int i = 0; i < n; i++) {
+				result.append(str);
+			}
+		} else {
+			String frontThree = str.substring(0,3);
+			for (int i = 0; i < n; i++) {
+				result.append(frontThree);
+			};
+		}
+		return result.toString();
 	}
 
 	/*
@@ -311,7 +322,12 @@ public class Exercises {
 	 countXX("xxxx") → 3
 	 */
 	public int countXX(String str) {
-		return 0;
+		int count = 0;
+		for (int i = 0; i < str.length() - 1; i++)
+			if (str.charAt(i) == 'x' && str.charAt(i + 1) == 'x') {
+				count++;
+			}
+		return count;
 	}
 
 	/*
@@ -321,6 +337,10 @@ public class Exercises {
 	 doubleX("xxxxx") → true
 	 */
 	public boolean doubleX(String str) {
+		int instanceOfFirstX = str.indexOf('x');
+		if (instanceOfFirstX < str.length() - 1 && str.charAt(instanceOfFirstX + 1) == 'x') {
+			return true;
+		}
 		return false;
 	}
 
@@ -331,7 +351,11 @@ public class Exercises {
 	 stringBits("Heeololeo") → "Hello"
 	 */
 	public String stringBits(String str) {
-		return null;
+		StringBuilder result = new StringBuilder();
+		for (int i = 0; i < str.length(); i += 2) {
+			result.append(str.charAt(i));
+		}
+		return result.toString();
 	}
 
 	/*
@@ -341,7 +365,11 @@ public class Exercises {
 	 stringSplosion("ab") → "aab"
 	 */
 	public String stringSplosion(String str) {
-		return null;
+		StringBuilder result = new StringBuilder();
+		for (int i = 0; i < str.length(); i++) {
+			result.append(str.substring(0, i+1));
+		}
+		return result.toString();
 	}
 
 	/*
@@ -358,7 +386,17 @@ public class Exercises {
 	 last2("xxxx") -> 2
 	 */
 	public int last2(String str) {
-		return 0;
+		if (str.length() < 2) {
+			return 0;
+		}
+		String lastTwo = str.substring(str.length()-2);
+		int count = 0;
+		for (int i = 0; i < str.length() - 2; i++) {
+			if (str.substring(i, i+2).equals(lastTwo)) {
+				count++;
+			}
+		}
+		return count;
 	}
 
 	/*
@@ -369,7 +407,19 @@ public class Exercises {
 	 stringX("xabxxxcdx") → "xabcdx"
 	 */
 	public String stringX(String str) {
-		return null;
+		if (str.length() < 3) {
+			return str;
+		}
+		StringBuilder result = new StringBuilder();
+		result.append(str.charAt(0));
+
+		for (int i = 1; i < str.length() - 1; i++) {
+			if (str.charAt(i) != 'x') {
+				result.append(str.charAt(i));
+			}
+		}
+		result.append(str.charAt(str.length()-1));
+		return result.toString();
 	}
 
 	/*
@@ -379,7 +429,14 @@ public class Exercises {
 	 altPairs("CodingHorror") → "Congrr"
 	 */
 	public String altPairs(String str) {
-		return null;
+		StringBuilder result = new StringBuilder();
+		for (int i = 0; i <str.length(); i += 4) {
+			result.append(str.charAt(i));
+			if (i + 1 < str.length()) {
+				result.append(str.charAt(i+1));
+			}
+		}
+		return result.toString();
 	}
 
 	/*
@@ -390,7 +447,17 @@ public class Exercises {
 	 stringYak("yak123ya") → "123ya"
 	 */
 	public String stringYak(String str) {
-		return null;
+		StringBuilder result = new StringBuilder();
+		int i = 0;
+		while (i < str.length()) {
+			if (i + 2 < str.length() && str.charAt(i) == 'y' && str.charAt(i+1) == 'a' && str.charAt(i+2) =='k') {
+				i += 3;
+			} else {
+				result.append(str.charAt(i));
+				i++;
+			}
+		}
+		return result.toString();
 	}
 
 }
