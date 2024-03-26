@@ -1,6 +1,7 @@
 package com.techelevator;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class Exercises {
@@ -34,7 +35,25 @@ public class Exercises {
 	 *
 	 */
 	public String animalGroupName(String animalName) {
-		return null;
+		Map<String, String> animalGroups = new HashMap<>();
+		animalGroups.put("rhino", "Crash");
+		animalGroups.put("giraffe", "Tower");
+		animalGroups.put("elephant", "Herd");
+		animalGroups.put("lion", "Pride");
+		animalGroups.put("crow", "Murder");
+		animalGroups.put("pigeon", "Kit");
+		animalGroups.put("flamingo", "Pat");
+		animalGroups.put("deer", "Herd");
+		animalGroups.put("dog", "Pack");
+		animalGroups.put("crocodile", "Float");
+
+		if (animalName == null || animalName.isEmpty()) {
+			return "unknown";
+		}
+
+		animalName = animalName.toLowerCase();
+
+		return animalGroups.getOrDefault(animalName, "unknown");
 	}
 
 	/*
@@ -60,7 +79,21 @@ public class Exercises {
 	 *
 	 */
 	public double isItOnSale(String itemNumber) {
-		return -1.0;
+		Map<String, Double> isOnSale = new HashMap<>();
+		isOnSale.put("kitchen4001", 0.20);
+		isOnSale.put("garage1070", 0.15);
+		isOnSale.put("livingroom", 0.10);
+		isOnSale.put("kitchen6073", 0.40);
+		isOnSale.put("bedroom3434", 0.60);
+		isOnSale.put("bath0073", 0.15);
+
+		if (itemNumber == null || itemNumber.isEmpty()) {
+			return 0.00;
+		}
+
+		itemNumber=itemNumber.toLowerCase();
+
+		return isOnSale.getOrDefault(itemNumber, 0.00);
 	}
 
 	/*
@@ -76,7 +109,18 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> robPeterToPayPaul(Map<String, Integer> peterPaul) {
-		return null;
+		if (peterPaul.containsKey("Peter") && peterPaul.containsKey("Paul")) {
+			int peterMoney = peterPaul.get("Peter");
+			int paulMoney = peterPaul.get("Paul");
+
+			if (peterMoney > 0 && paulMoney < 1000) {
+				int transferAmount = (peterMoney / 2);
+				peterPaul.put("Peter", peterMoney - transferAmount);
+				peterPaul.put("Paul", paulMoney + transferAmount);
+			}
+		}
+
+		return peterPaul;
 	}
 
 	/*
@@ -89,7 +133,21 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> peterPaulPartnership(Map<String, Integer> peterPaul) {
-		return null;
+		if (peterPaul.containsKey("Peter") && peterPaul.containsKey("Paul")) {
+			int peterMoney = peterPaul.get("Peter");
+			int paulMoney = peterPaul.get("Paul");
+
+			if (peterMoney >= 5000 && paulMoney >= 10000) {
+				int peterContribution = peterMoney / 4;
+				int paulContribution = paulMoney / 4;
+
+				peterPaul.put("Peter", peterMoney - peterContribution);
+				peterPaul.put("Paul", paulMoney - paulContribution);
+				peterPaul.put("PeterPaulPartnership", peterContribution + paulContribution);
+			}
+		}
+
+		return peterPaul;
 	}
 
 	/*
