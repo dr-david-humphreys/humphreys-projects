@@ -162,7 +162,15 @@ public class Exercises {
 	 * beginningAndEnding(["muddy", "good", "moat", "good", "night"]) → {"g": "d", "m": "t", "n": "t"}
 	 */
 	public Map<String, String> beginningAndEnding(String[] words) {
-		return null;
+		Map<String, String> result = new HashMap<>();
+
+		for (String word : words) {
+			String firstChar = word.substring(0,1);
+			String lastChar = word.substring(word.length() - 1);
+
+			result.put(firstChar, lastChar);
+		}
+		return result;
 	}
 
 	/*
@@ -178,7 +186,13 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> wordCount(String[] words) {
-		return null;
+		Map<String, Integer> result = new HashMap<>();
+
+		for (String word : words) {
+			result.put(word, result.getOrDefault(word, 0) + 1);
+		}
+
+		return result;
 	}
 
 	/*
@@ -193,7 +207,12 @@ public class Exercises {
 	 *
 	 */
 	public Map<Integer, Integer> integerCount(int[] ints) {
-		return null;
+		Map<Integer, Integer> result = new HashMap<>();
+
+		for (int num : ints) {
+			result.put(num, result.getOrDefault(num, 0) +1);
+		}
+		return result;
 	}
 
 	/*
@@ -206,7 +225,18 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Boolean> wordMultiple(String[] words) {
-		return null;
+		Map<String, Boolean> result = new HashMap<>();
+		Map<String, Integer> count = new HashMap<>();
+
+		for (String word : words) {
+			count.put(word, count.getOrDefault(word, 0) + 1);
+		}
+
+		for (String word : words) {
+			result.put(word, count.get(word) >= 2);
+		}
+
+		return result;
 	}
 
 	/*
@@ -221,7 +251,26 @@ public class Exercises {
 	 */
 	public Map<String, Integer> consolidateInventory(Map<String, Integer> mainWarehouse,
 			Map<String, Integer> remoteWarehouse) {
-		return null;
+		// Create new map to consolidate inventory
+		Map<String, Integer> consolidatedInventory = new HashMap<>(mainWarehouse);
+
+		//Merge the remoteWarehouse with the mainWarehouse
+		for (Map.Entry<String, Integer> entry : remoteWarehouse.entrySet()) {
+			String sku = entry.getKey();
+			int quantity = entry.getValue();
+
+			// If the SKU exists in the consolidate inventory, add the quantities
+			if (consolidatedInventory.containsKey(sku)) {
+				int existingQuantity = consolidatedInventory.get(sku);
+				consolidatedInventory.put(sku, existingQuantity + quantity);
+			} else {
+				// If the SKU doesn't exist, add it to the consolidate inventory
+				consolidatedInventory.put(sku, quantity);
+			}
+
+		}
+
+		return consolidatedInventory;
 	}
 
 	/*
@@ -240,7 +289,26 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> last2Revisited(String[] words) {
-		return null;
+		Map<String, Integer> last2Count = new HashMap<>();
+
+		for (String word : words) {
+			if (word.length() < 2) {
+				last2Count.put(word, 0);
+				continue;
+			}
+
+			String last2Chars = word.substring(word.length() - 2);
+			int count = 0;
+
+			for (int i = 0; i < word.length() - 2; i++) {
+				if (word.substring(i, i+2).equals(last2Chars)) {
+					count++;
+				}
+			}
+
+			last2Count.put(word, count);
+		}
+		return last2Count;
 	}
 
 }
