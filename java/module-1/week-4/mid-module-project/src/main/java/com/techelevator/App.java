@@ -39,7 +39,16 @@ public class App {
          the individual fields to the appropriate list.
          See README for additional details.
          */
+        for (String data : dataset) {
+            String[] fields = data.split(FIELD_DELIMITER);
 
+            if (fields.length == 4) {
+                titles.add(fields[0].trim());
+                authors.add(fields[1].trim());
+                publishedYears.add(Integer.parseInt(fields[2].trim()));
+                prices.add(new BigDecimal(fields[3].trim()));
+            }
+        }
     }
 
     private void run() {
