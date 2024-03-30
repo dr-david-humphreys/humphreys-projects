@@ -89,7 +89,10 @@ public class App {
                          Replace `displayTitlesList(titles)` with calls to the
                          `filterByTitle()` and `displaySearchResults()` methods.
                          */
-                        displayTitlesList(titles);
+
+                        List<Integer> titleIndexes = filterByTitle(filterTitle);
+                        displaySearchResults(titleIndexes);
+
                     } else if (searchBooksMenuSelection == 2) {
                         // Search by author
                         String filterAuthor = promptForString("Enter author: ");
@@ -98,7 +101,9 @@ public class App {
                          Replace `displayAuthorsList(authors)` with calls to the
                          `filterByAuthor()` and `displaySearchResults()` methods.
                          */
-                        displayAuthorsList(authors);
+                        List<Integer> authorIndexes = filterByAuthor(filterAuthor);
+                        displaySearchResults(authorIndexes);
+
                     } else if (searchBooksMenuSelection == 3) {
                         // Search by published year
                         int filterYear = promptForPublishedYear("Enter date (YYYY): ");
@@ -170,13 +175,40 @@ public class App {
      See README for additional details.
      */
 
+    private void displaySearchResults(List<Integer> indexes) {
+        if (indexes == null || indexes.isEmpty()) {
+            System.out.println("No search results found.");
+            return;
+        }
+
+        for (Integer index : indexes) {
+            if (index >= 0 && index < titles.size()) {
+                String title = titles.get(index);
+                String author = authors.get(index);
+                int publishedYear = publishedYears.get(index);
+                BigDecimal price = prices.get(index);
+
+                System.out.println(title + ": " + author + ": " + publishedYear + ": " + price);
+            } else {
+                System.out.println("Invalid index: " + index);
+            }
+        }
+    }
+
     /*
      Requirement: 3a
      Complete the `filterByTitle()` method.
      See README for additional details.
      */
     private List<Integer> filterByTitle(String filterTitle) {
-        return null;
+        List<Integer> searchResults = new ArrayList<>();
+        for (int i = 0; i <titles.size(); i++) {
+            String title = titles.get(i);
+            if (title.toLowerCase().contains(filterTitle.toLowerCase(Locale.ROOT))) {
+                searchResults.add(i);
+            }
+        }
+        return searchResults;
     }
 
     /*
@@ -185,7 +217,14 @@ public class App {
      See README for additional details.
      */
     private List<Integer> filterByAuthor(String filterAuthor) {
-        return null;
+        List<Integer> searchResults = new ArrayList<>();
+        for (int i = 0; i < authors.size(); i++) {
+            String author = authors.get(i);
+            if (author.toLowerCase().contains(filterAuthor.toLowerCase(Locale.ROOT))) {
+                searchResults.add(i);
+            }
+        }
+        return searchResults;
     }
 
     /*
