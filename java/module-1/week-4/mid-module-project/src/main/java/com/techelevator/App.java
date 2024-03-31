@@ -112,7 +112,9 @@ public class App {
                          Replace `displayPublishedYearsList(publishedYears)` with calls
                          to the `filterByPublishedYear()` and `displaySearchResults()` methods.
                          */
-                        displayPublishedYearsList(publishedYears);
+                        List<Integer> publishedYearIndexes = filterByPublishedYear(filterYear);
+                        displaySearchResults(publishedYearIndexes);
+
                     } else if (searchBooksMenuSelection == 4) {
                         // Search by published year range
                         int filterFromYear = promptForPublishedYear("Enter \"from\" date (YYYY): ");
@@ -122,7 +124,9 @@ public class App {
                          Replace `displayPublishedYearsList(publishedYears)` with calls
                          to the `filterByPublishedYearRange()` and `displaySearchResults()` methods.
                          */
-                        displayPublishedYearsList(publishedYears);
+                        List<Integer> publishedYearRange = filterByPublishedYearRange(filterFromYear, filterToYear);
+                        displaySearchResults(publishedYearRange);
+
                     } else if (searchBooksMenuSelection == 5) {
                         // Find the most recent books
                         /*
@@ -233,7 +237,14 @@ public class App {
      See README for additional details.
      */
     private List<Integer> filterByPublishedYear(int filterYear) {
-        return null;
+        List<Integer> searchResults = new ArrayList<>();
+        for (int i = 0; i < publishedYears.size(); i++) {
+            int publishedYear = publishedYears.get(i);
+            if (publishedYear == filterYear) {
+                searchResults.add(i);
+            }
+        }
+        return searchResults;
     }
 
     /*
@@ -242,7 +253,14 @@ public class App {
      See README for additional details.
      */
     private List<Integer> filterByPublishedYearRange(int filterFromYear, int filterToYear) {
-        return null;
+        List<Integer> searchResults = new ArrayList<>();
+        for (int i = 0; i < publishedYears.size(); i++) {
+            int publishedYear = publishedYears.get(i);
+            if (publishedYear >= filterFromYear && publishedYear <= filterToYear) {
+                searchResults.add(i);
+            }
+        }
+        return searchResults;
     }
 
     /*
