@@ -91,7 +91,7 @@ public class App {
                          */
 
                         List<Integer> titleIndexes = filterByTitle(filterTitle);
-                        displaySearchResults(titleIndexes);
+                        displaySearchResults(titleIndexes, TITLE_FIELD);
 
                     } else if (searchBooksMenuSelection == 2) {
                         // Search by author
@@ -102,7 +102,7 @@ public class App {
                          `filterByAuthor()` and `displaySearchResults()` methods.
                          */
                         List<Integer> authorIndexes = filterByAuthor(filterAuthor);
-                        displaySearchResults(authorIndexes);
+                        displaySearchResults(authorIndexes, AUTHOR_FIELD);
 
                     } else if (searchBooksMenuSelection == 3) {
                         // Search by published year
@@ -113,7 +113,7 @@ public class App {
                          to the `filterByPublishedYear()` and `displaySearchResults()` methods.
                          */
                         List<Integer> publishedYearIndexes = filterByPublishedYear(filterYear);
-                        displaySearchResults(publishedYearIndexes);
+                        displaySearchResults(publishedYearIndexes, PUBLISHED_YEAR_FIELD);
 
                     } else if (searchBooksMenuSelection == 4) {
                         // Search by published year range
@@ -125,7 +125,7 @@ public class App {
                          to the `filterByPublishedYearRange()` and `displaySearchResults()` methods.
                          */
                         List<Integer> publishedYearRange = filterByPublishedYearRange(filterFromYear, filterToYear);
-                        displaySearchResults(publishedYearRange);
+                        displaySearchResults(publishedYearRange, PUBLISHED_YEAR_FIELD);
 
                     } else if (searchBooksMenuSelection == 5) {
                         // Find the most recent books
@@ -135,7 +135,7 @@ public class App {
                          to the `findMostRecentBooks()` and `displaySearchResults()` methods.
                          */
                         List<Integer> mostRecentBooksIndexes = findMostRecentBooks();
-                        displaySearchResults(mostRecentBooksIndexes);
+                        displaySearchResults(mostRecentBooksIndexes, TITLE_FIELD);
 
                     } else if (searchBooksMenuSelection == 6) {
                         // Search by price
@@ -146,7 +146,7 @@ public class App {
                          `filterByPrice()` and `displaySearchResults()` methods.
                          */
                         List<Integer> priceIndexes = filterByPrice(filterPrice);
-                        displaySearchResults(priceIndexes);
+                        displaySearchResults(priceIndexes, PRICE_FIELD);
 
                     } else if (searchBooksMenuSelection == 7) {
                         // Search by price range
@@ -157,7 +157,9 @@ public class App {
                          Replace `displayPricesList(prices)` with calls to the
                          `filterByPriceRange()` and `displaySearchResults()` methods.
                          */
-                        displayPricesList(prices);
+                        List<Integer> priceRangeIndexes = filterByPriceRange(filterFromPrice, filterToPrice);
+                        displaySearchResults(priceRangeIndexes, PRICE_FIELD);
+
                     } else if (searchBooksMenuSelection == 8) {
                         // Find the least expensive books
                         /*
@@ -165,7 +167,9 @@ public class App {
                          Replace `displayPricesList(prices)` with calls to the
                          `findLeastExpensiveBooks()` and `displaySearchResults()` methods.
                          */
-                        displayPricesList(prices);
+                        List<Integer> leastExpensiveIndexes = findLeastExpensiveBooks();
+                        displaySearchResults(leastExpensiveIndexes, TITLE_FIELD);
+
                     } else if (searchBooksMenuSelection == 0) {
                         break;
                     }
@@ -183,7 +187,7 @@ public class App {
      See README for additional details.
      */
 
-    private void displaySearchResults(List<Integer> indexes) {
+    private void displaySearchResults(List<Integer> indexes, int primaryField) {
         if (indexes == null || indexes.isEmpty()) {
             System.out.println("No search results found.");
             return;
@@ -191,12 +195,20 @@ public class App {
 
         for (Integer index : indexes) {
             if (index >= 0 && index < titles.size()) {
-                String title = titles.get(index);
-                String author = authors.get(index);
-                int publishedYear = publishedYears.get(index);
-                BigDecimal price = prices.get(index);
-
-                System.out.println(title + ": " + author + ": " + publishedYear + ": " + price);
+                String output = "";
+                if (primaryField == TITLE_FIELD) {
+                    output += "Title: " + titles.get(index) + ": " + authors.get(index) + ": " + publishedYears.get(index) + ": " + prices.get(index);
+                } else if (primaryField == AUTHOR_FIELD) {
+                    output += "Author: " + authors.get(index) + ": " + titles.get(index) + ": " + publishedYears.get(index) + ": " + prices.get(index);
+                } else if (primaryField == PUBLISHED_YEAR_FIELD) {
+                    output += "Publication Year: " + publishedYears.get(index) + ": " + titles.get(index) + ": " + authors.get(index) + ": " + prices.get(index);
+                } else if (primaryField == PRICE_FIELD) {
+                    output += "Price: " + prices.get(index) + ": " + titles.get(index) + ": " + authors.get(index) + ": " + publishedYears.get(index);
+                } else {
+                    System.out.println("Invalid primary field.");
+                    return;
+                }
+                System.out.println(output);
             } else {
                 System.out.println("Invalid index: " + index);
             }
@@ -312,7 +324,17 @@ public class App {
      See README for additional details.
      */
     private List<Integer> filterByPriceRange(double filterFromPrice, double filterToPrice) {
-        return null;
+        List<Integer> searchResults = new ArrayList<>();
+
+        for (int i = 0; i < prices.size(); i++) {
+            BigDecimal price = prices.get(i);
+            double priceValue = price.doubleValue();
+
+            if (priceValue >= filterFromPrice && priceValue <= filterToPrice) {
+                searchResults.add(i);
+            }
+        }
+        return searchResults;
     }
 
     /*
@@ -320,6 +342,28 @@ public class App {
      Add the `private List<Integer> findLeastExpensiveBooks()` method.
      See README for additional details.
      */
+
+    private List<Integer> findLeastExpensiveBooks() {
+        BigDecimal lowestPrice = prices.get(0);
+        List<Integer> leastExpensiveIndexes = new ArrayList<>();
+
+        // find lowest price
+        for (int i = 1; i < prices.size(); i++) {
+            BigDecimal price = prices.get(i);
+            if (price.compareTo(lowestPrice) < 0) {
+                lowestPrice = price;
+            }
+        }
+
+        // find index of book with lowest price
+        for (int i = 0; i < prices.size(); i++) {
+            if (prices.get(i).compareTo(lowestPrice) == 0) {
+                leastExpensiveIndexes.add(i);
+            }
+        }
+
+        return leastExpensiveIndexes;
+    }
 
 
     // UI methods
