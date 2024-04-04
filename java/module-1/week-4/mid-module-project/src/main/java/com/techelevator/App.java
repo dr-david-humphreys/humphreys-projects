@@ -193,6 +193,8 @@ public class App {
             return;
         }
 
+        sortSearchResults(indexes, primaryField);
+
         for (Integer index : indexes) {
             if (index >= 0 && index < titles.size()) {
                 String output = "";
@@ -212,6 +214,35 @@ public class App {
             } else {
                 System.out.println("Invalid index: " + index);
             }
+        }
+    }
+
+    private void sortSearchResults(List<Integer> indexes, int primaryField) {
+        boolean sorted = false;
+        while (!sorted) {
+            sorted = true;
+            for (int i = 0; i < indexes.size() - 1; i++) {
+                if (compare(indexes.get(i), indexes.get(i + 1), primaryField) > 0) {
+                    int temporary = indexes.get(i);
+                    indexes.set(i, indexes.get(i + 1));
+                    indexes.set(i + 1, temporary);
+                    sorted = false;
+                }
+            }
+        }
+    }
+
+    private int compare(int index1, int index2, int primaryField) {
+        if (primaryField == TITLE_FIELD) {
+            return titles.get(index1).compareToIgnoreCase(titles.get(index2));
+        } else if (primaryField == AUTHOR_FIELD) {
+            return authors.get(index1).compareToIgnoreCase(authors.get(index2));
+        } else if (primaryField == PUBLISHED_YEAR_FIELD) {
+            return Integer.compare(publishedYears.get(index1), publishedYears.get(index2));
+        } else if (primaryField == PRICE_FIELD) {
+            return prices.get(index1).compareTo(prices.get(index2));
+        } else {
+            return 0;
         }
     }
 
