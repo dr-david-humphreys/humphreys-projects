@@ -16,12 +16,18 @@ public class CheckingAccount  extends BankAccount {
 
     @Override
     public int withdraw(int amountToWithdraw) {
-        int newBalance = super.getBalance() - amountToWithdraw;
-        if (newBalance >= overdraftLimit) {
+        int currentBalance = super.getBalance();
+        int newBalance = currentBalance - amountToWithdraw;
+
+        if (newBalance < overdraftLimit) {
+            return currentBalance;
+        }
+
+        if (newBalance < 0) {
+            int totalWithdrawal = amountToWithdraw + overdraftFee;
+            super.withdraw(totalWithdrawal);
+        } else {
             super.withdraw(amountToWithdraw);
-            if (super.getBalance() < 0) {
-                super.withdraw(overdraftFee);
-            }
         }
         return super.getBalance();
     }
