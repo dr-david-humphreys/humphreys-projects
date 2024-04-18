@@ -1,8 +1,13 @@
 package com.techelevator;
 
 public class CheckingAccount  extends BankAccount {
-    private int overdraftFee = 10;
-    private int overdraftLimit = -100;
+    // private final int overdraftFee = 10;
+    // private final int overdraftLimit = -100;
+
+
+    public final static int MINIMUM_BALANCE = -100;
+    public final static int OVERDRAFT_FEE = 10;
+
 
     public CheckingAccount(String accountHolderName, String accountNumber) {
         super(accountHolderName, accountNumber);
@@ -38,11 +43,11 @@ public class CheckingAccount  extends BankAccount {
 
     @Override
     public int withdraw(int amountToWithdraw) {
-        if (amountToWithdraw > 0 && (getBalance() - amountToWithdraw > overdraftLimit)) {
+        if (amountToWithdraw > 0 && (getBalance() - amountToWithdraw > MINIMUM_BALANCE)) {
             super.withdraw(amountToWithdraw);
 
             if (getBalance() < 0) {
-                super.withdraw(overdraftFee);
+                super.withdraw(OVERDRAFT_FEE);
             }
         }
         return getBalance();

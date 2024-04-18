@@ -11,12 +11,13 @@ public class BankCustomer {
     private List<Accountable> accounts;
 
     //Constructor
-    public BankCustomer(String name, String address, String phoneNumber) {
+    /* public BankCustomer(String name, String address, String phoneNumber) {
         this.name = name;
         this.address = address;
         this.phoneNumber = phoneNumber;
         this.accounts = new ArrayList<>();
     }
+     */
 
     //Accounts getter and setter (methods)
     public Accountable[] getAccounts() {
@@ -56,12 +57,8 @@ public class BankCustomer {
     public boolean isVip() {
         int totalBalance = 0;
         for (Accountable account : accounts) {
-            if (account instanceof CreditCardAccount) {
-                totalBalance += account.getBalance();
-            } else {
                 totalBalance += account.getBalance();
             }
-        }
         return totalBalance >= 25000;
     }
 }
