@@ -14,6 +14,8 @@ public class CheckingAccount  extends BankAccount {
 
     //Override
 
+    /* **This is what I initially put and could not get the last test to run. I changed it after seeing how to do it in the Polymorphism exercises**
+
     @Override
     public int withdraw(int amountToWithdraw) {
         int currentBalance = super.getBalance();
@@ -30,5 +32,19 @@ public class CheckingAccount  extends BankAccount {
             super.withdraw(amountToWithdraw);
         }
         return super.getBalance();
+    }
+
+     */
+
+    @Override
+    public int withdraw(int amountToWithdraw) {
+        if (amountToWithdraw > 0 && (getBalance() - amountToWithdraw > overdraftLimit)) {
+            super.withdraw(amountToWithdraw);
+
+            if (getBalance() < 0) {
+                super.withdraw(overdraftFee);
+            }
+        }
+        return getBalance();
     }
 }
