@@ -45,7 +45,7 @@ public class BankAccount {
     }
 
     public int withdraw(int amountToWithdraw) {
-        if (amountToWithdraw > 0 && amountToWithdraw <= balance) {
+        if (amountToWithdraw > 0) {
             balance -= amountToWithdraw;
         }
         return balance;

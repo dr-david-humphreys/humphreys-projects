@@ -19,13 +19,13 @@ public class SavingsAccount extends BankAccount {
 
     @Override
     public int withdraw(int amountToWithdraw){
-        int currentBalance= super.getBalance();
+        int currentBalance = super.getBalance();
 
         int newBalance = currentBalance - amountToWithdraw;
 
         if (newBalance < minBalanceServiceCharge) {
             amountToWithdraw += serviceChargeAmount;
-            newBalance = currentBalance + amountToWithdraw;
+            newBalance = currentBalance - amountToWithdraw;
         }
 
         if (newBalance >= 0) {
