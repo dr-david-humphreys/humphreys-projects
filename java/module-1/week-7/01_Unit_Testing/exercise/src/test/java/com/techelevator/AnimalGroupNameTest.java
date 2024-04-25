@@ -3,9 +3,9 @@ package com.techelevator;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class AnimalGroupNameTests {
+public class AnimalGroupNameTest {
     @Test
-    public void testGetHerd() {
+    public void get_herd_returns_correct_name() {
         AnimalGroupName animalGroupName = new AnimalGroupName();
 
         assertEquals("Crash", animalGroupName.getHerd("Rhino"));

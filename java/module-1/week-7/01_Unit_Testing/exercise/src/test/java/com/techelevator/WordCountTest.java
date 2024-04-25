@@ -1,4 +1,4 @@
 package com.techelevator;
 
-public class Less20Tests {
+public class WordCountTest {
 }
