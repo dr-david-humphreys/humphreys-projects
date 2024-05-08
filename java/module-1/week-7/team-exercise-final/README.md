@@ -1,4 +1,4 @@
-# Module 1 Week 7 Team Exercise
+# Module 1 Week 7 - Team/Pair Exercise
 
 In this exercise, you'll continue to work with Pet Elevator on their Customer Relationship Manager and HR system. After you built the classes for the system, a team of top-notch designers created a user interface for the application.
 
