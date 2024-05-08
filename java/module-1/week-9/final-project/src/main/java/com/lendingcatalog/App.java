@@ -1,7 +1,10 @@
 package com.lendingcatalog;
 
 import com.lendingcatalog.model.*;
+import com.lendingcatalog.util.FileStorageService;
+import com.lendingcatalog.util.exception.FileStorageException;
 
+import java.time.LocalDate;
 import java.util.*;
 
 public class App {
@@ -23,7 +26,49 @@ public class App {
 
     private void initialize() {
         // Requirement: Data transformation
+        try {
+            List<String> memberLines = FileStorageService.readContentsOfFile(FILE_BASE_PATH + "members.dat");
+            for (String memberLine : memberLines) {
+                String[] memberData = memberLine.split(FIELD_DELIMITER);
+                if (memberData.length != 3) {
+                    continue;
+                }
+                String firstName = memberData[0];
+                String lastName = memberData[1];
+                String itemsFilename = memberData[2];
+                String memberKey = firstName + " " + lastName;
+                catalog.put(memberKey, new ArrayList<>());
 
+                List<String> itemLines = FileStorageService.readContentsOfFile(itemsFilename);
+                for (String itemLine : itemLines) {
+                    String[] itemData = itemLine.split(FIELD_DELIMITER);
+                    if (itemData.length != 4) {
+                        continue;
+                    }
+
+                    String itemType = itemData[0];
+                    String itemName = itemData[1];
+                    String itemCreator = itemData[2];
+                    LocalDate itemDate = LocalDate.parse(itemData[3]);
+
+                    CatalogItem item;
+                    if ("book".equals(itemType)) {
+                        item = new Book(itemName, itemCreator, itemDate);
+                    } else if ("movie".equals(itemType)) {
+                        item = new Movie(itemName, itemCreator, itemDate);
+                    } else if ("tool".equals(itemType)) {
+                        int toolCount = Integer.parseInt(itemData[3]);
+                        item = new Tool(itemName, itemCreator, toolCount);
+                    } else {
+                        continue;
+                    }
+                    item.registerItem();
+                    catalog.get(memberKey).add(item);
+                }
+            }
+        } catch (FileStorageException e) {
+            System.out.println("Error initializing data: " + e.getMessage());
+        }
     }
 
 
