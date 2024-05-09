@@ -39,7 +39,7 @@ public class App {
                 String memberKey = firstName + " " + lastName;
                 catalog.put(memberKey, new ArrayList<>());
 
-                List<String> itemLines = FileStorageService.readContentsOfFile(itemsFilename);
+                List<String> itemLines = FileStorageService.readContentsOfFile(FILE_BASE_PATH + itemsFilename);
                 for (String itemLine : itemLines) {
                     String[] itemData = itemLine.split(FIELD_DELIMITER);
                     if (itemData.length != 4) {
@@ -49,12 +49,13 @@ public class App {
                     String itemType = itemData[0];
                     String itemName = itemData[1];
                     String itemCreator = itemData[2];
-                    LocalDate itemDate = LocalDate.parse(itemData[3]);
 
                     CatalogItem item;
                     if ("book".equals(itemType)) {
+                        LocalDate itemDate = LocalDate.parse(itemData[3]);
                         item = new Book(itemName, itemCreator, itemDate);
                     } else if ("movie".equals(itemType)) {
+                        LocalDate itemDate = LocalDate.parse(itemData[3]);
                         item = new Movie(itemName, itemCreator, itemDate);
                     } else if ("tool".equals(itemType)) {
                         int toolCount = Integer.parseInt(itemData[3]);
@@ -62,6 +63,7 @@ public class App {
                     } else {
                         continue;
                     }
+
                     item.registerItem();
                     catalog.get(memberKey).add(item);
                 }
