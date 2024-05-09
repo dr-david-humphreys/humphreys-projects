@@ -1,1 +1,6 @@
-//TODO: remove this line and add characters
+type, name, health, attackPower
+
+Warrior, David, 100, 25
+Elf, Legolas, 95, 30
+Valkyrie, Brunhilda, 120, 25
+Wizard, Harry, 90, 30

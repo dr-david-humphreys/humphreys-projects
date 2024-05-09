@@ -10,11 +10,11 @@ import java.util.Scanner;
 
 public class BattleGame {
     private static final Random RANDOM = new Random();
-    private static final String LOG_FILE = ""; //TODO: assign value for LOG_FILE
+    private static final String LOG_FILE = "src/main/log-file.txt";
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        List<Character> characters = CharacterLoader.loadCharacters(""); //TODO: assign value for .csv file
+        List<Character> characters = CharacterLoader.loadCharacters("src/main/characters.csv");
 
         if (characters.isEmpty()) {
             System.out.println("No characters available for battle.");
