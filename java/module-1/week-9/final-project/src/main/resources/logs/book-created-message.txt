@@ -1,0 +1,744 @@
+Book created: * Exhalation
+ - Written by: Ted Chiang
+ - Published by: 2008-11-15
+ - Id: 3af0d51f-ae40-493f-9f40-ac8a1fcea828
+Book created: * Exhalation
+ - Written by: Ted Chiang
+ - Published by: 2008-11-15
+ - Id: 371d1013-6d60-4354-ac2f-622206d1b9ba
+Book created: * Exhalation
+ - Written by: Ted Chiang
+ - Published by: 2008-11-15
+ - Id: 9b35f6a4-3d68-47a7-9898-afa743fa374a
+Book created: * Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch
+ - Written by: Terry Pratchett & Neil Gaiman
+ - Published by: 1990-05-01
+ - Id: 5992d62f-5396-4ce8-a4d0-cabb5e20bfac
+Book created: * Foundation
+ - Written by: Isaac Asimov
+ - Published by: 1951-08-30
+ - Id: f5ee5161-11b5-4976-bff4-70b6bb94f065
+Book created: * Foundation's Edge
+ - Written by: Isaac Asimov
+ - Published by: 1982-10-28
+ - Id: a45e1f32-b5e4-43d2-a54a-cf0a49bb3bd3
+Book created: * The Hunger Games
+ - Written by: Suzanne Collins
+ - Published by: 2008-09-14
+ - Id: 955a2d48-15cf-4d0e-847a-dad1db32a4f1
+Book created: * Going Postal
+ - Written by: Terry Pratchett
+ - Published by: 2004-09-25
+ - Id: e32ab6ea-adf9-4505-a2ed-6b94a60752d1
+Book created: * Making Money
+ - Written by: Terry Pratchett
+ - Published by: 2007-09-18
+ - Id: 2f16e2b0-d487-441d-b402-0a9a8449210f
+Book created: * Stranger in a Strange Land
+ - Written by: Robert A. Heinlein
+ - Published by: 1961-06-01
+ - Id: 3f942bab-a1c5-444c-916e-f24d680cd5bd
+Book created: * Exhalation
+ - Written by: Ted Chiang
+ - Published by: 2008-11-15
+ - Id: 1e5d6564-56a3-4eb7-8d46-23f3e11e6a87
+Book created: * Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch
+ - Written by: Terry Pratchett & Neil Gaiman
+ - Published by: 1990-05-01
+ - Id: 6436b0ba-8e07-4819-b4ba-5e571473f6a8
+Book created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Douglas Adams
+ - Published by: 1979-10-12
+ - Id: 99e68de2-d545-48af-892e-94a425ddc552
+Book created: * Animal Farm
+ - Written by: George Orwell
+ - Published by: 1945-08-17
+ - Id: 06859ad3-c208-447e-88d9-bf4dfbb3ce3e
+Book created: * Jurassic Park
+ - Written by: Michael Crichton
+ - Published by: 1990-11-20
+ - Id: 91af99e7-3f92-4a3e-84f1-662d9d0c1280
+Book created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Douglas Adams
+ - Published by: 1979-10-12
+ - Id: 962f6b1c-d925-4496-b357-7878256ad908
+Book created: * Oh, the Places You'll Go!
+ - Written by: Dr. Seuss
+ - Published by: 1990-01-22
+ - Id: c8fc4d6c-4fe3-415e-890a-2ac71823f084
+Book created: * Stranger in a Strange Land
+ - Written by: Robert A. Heinlein
+ - Published by: 1961-06-01
+ - Id: a98efe08-7382-4dfe-8b70-fb90315d2660
+Book created: * The Moon is a Harsh Mistress
+ - Written by: Robert A. Heinlein
+ - Published by: 1966-06-02
+ - Id: b7bfd56d-2163-4c44-b86b-890de88a9529
+Book created: * Going Postal
+ - Written by: Terry Pratchett
+ - Published by: 2004-09-25
+ - Id: c07f1ebd-478e-46de-9506-5fa429be447e
+Book created: * Raising Steam
+ - Written by: Terry Pratchett
+ - Published by: 2013-11-07
+ - Id: 7fa990f3-c476-40fe-88d4-ff0043e33700
+Book created: * Making Money
+ - Written by: Terry Pratchett
+ - Published by: 2007-09-18
+ - Id: 4cc89a60-f0ce-4812-921e-9490ef9c84d2
+Book created: * The Fellowship of the Ring
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-07-29
+ - Id: 05f71e32-487d-46c9-9036-5d6f711954bb
+Book created: * The Two Towers
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-11-11
+ - Id: c3086d40-2b8a-41fe-901b-df9d9cc412a2
+Book created: * The Return of the King
+ - Written by: J. R. R. Tolkien
+ - Published by: 1955-10-20
+ - Id: 44e791d2-9a91-4540-98dd-a95407a8c3dd
+Book created: * Oh, the Places You'll Go!
+ - Written by: Dr. Seuss
+ - Published by: 1990-01-22
+ - Id: 7064b544-e23a-49a6-a921-684bedb37e29
+Book created: * The Fellowship of the Ring
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-07-29
+ - Id: 0912353b-29a6-4e54-adb4-a6cddf0bfd19
+Book created: * The Two Towers
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-11-11
+ - Id: f3129c67-cdcf-4db4-9bb6-2fadc9de8561
+Book created: * The Return of the King
+ - Written by: J. R. R. Tolkien
+ - Published by: 1955-10-20
+ - Id: f43ef54b-e587-4729-9ba1-b87197d6b53d
+Book created: * The Hunger Games
+ - Written by: Suzanne Collins
+ - Published by: 2008-09-14
+ - Id: 1d03f427-a57f-45b2-b79c-34511b3b5ecb
+Book created: * Piranesi
+ - Written by: Susanna Clarke
+ - Published by: 2020-09-15
+ - Id: 283290be-1701-4944-9fcf-e844bed3d15b
+Book created: * Once Upon an Algorithm
+ - Written by: Martin Erwig
+ - Published by: 2017-08-11
+ - Id: 87e89ba5-c20c-496f-8cba-b413b58acacb
+Book created: * Raising Steam
+ - Written by: Terry Pratchett
+ - Published by: 2013-11-07
+ - Id: 78b6713e-1295-4a33-b5d3-d02e3ed39615
+Book created: * Making Money
+ - Written by: Terry Pratchett
+ - Published by: 2007-09-18
+ - Id: 2752c6bd-6e5a-4e9e-840d-ab18179fe412
+Book created: * Going Postal
+ - Written by: Terry Pratchett
+ - Published by: 2004-09-25
+ - Id: a205cb84-f46e-4382-ab50-f7baca0d4ffb
+Book created: * Exhalation
+ - Written by: Ted Chiang
+ - Published by: 2008-11-15
+ - Id: a2e8a4bc-b995-467a-9adc-3a75d8d9157b
+Book created: * Jurassic Park
+ - Written by: Michael Crichton
+ - Published by: 1990-11-20
+ - Id: 8ff30adc-7509-4b55-81b2-329dc5eb68ce
+Book created: * Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch
+ - Written by: Terry Pratchett & Neil Gaiman
+ - Published by: 1990-05-01
+ - Id: 7ac5cc61-2462-4bc1-92d9-9e87b5f17bb6
+Book created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Douglas Adams
+ - Published by: 1979-10-12
+ - Id: dbebe026-4bf2-412f-a2e8-def1f96020fe
+Book created: * The Two Towers
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-11-11
+ - Id: 121fc579-4047-4602-a21d-e5cf1ad0af60
+Book created: * The Fellowship of the Ring
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-07-29
+ - Id: b9f1706a-a1c8-4878-b462-6c53722c70a7
+Book created: * The Return of the King
+ - Written by: J. R. R. Tolkien
+ - Published by: 1955-10-20
+ - Id: 11adff7d-d02d-474e-aa99-383adef0996f
+Book created: * Animal Farm
+ - Written by: George Orwell
+ - Published by: 1945-08-17
+ - Id: aa11c5ef-1cde-44b0-80b3-3bc941473150
+Book created: * Racing the Beam
+ - Written by: Nick Montfort and Ian Bogost
+ - Published by: 2009-03-01
+ - Id: 14330d0a-9b70-46bd-939f-0b285fb28ced
+Book created: * Programming for the Puzzled
+ - Written by: Srini Devadas
+ - Published by: 2017-11-09
+ - Id: 2233886b-d4b1-4b03-864c-08756a2f52d2
+Book created: * Once Upon an Algorithm
+ - Written by: Martin Erwig
+ - Published by: 2017-08-11
+ - Id: ec575fd8-b983-4bd5-a8ba-b509606300fe
+Book created: * The Moon is a Harsh Mistress
+ - Written by: Robert A. Heinlein
+ - Published by: 1966-06-02
+ - Id: ff3fe2d2-8970-45cf-aa0d-a7e71f37ebe7
+Book created: * Stranger in a Strange Land
+ - Written by: Robert A. Heinlein
+ - Published by: 1961-06-01
+ - Id: cb5d9f76-9b66-42b6-b851-c6175d188144
+Book created: * Exhalation
+ - Written by: Ted Chiang
+ - Published by: 2008-11-15
+ - Id: 1042be31-90ca-49dd-b03e-d982e896adae
+Book created: * Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch
+ - Written by: Terry Pratchett & Neil Gaiman
+ - Published by: 1990-05-01
+ - Id: 5c2dc845-e6bc-40f9-a9d7-6d4ae790dada
+Book created: * Foundation
+ - Written by: Isaac Asimov
+ - Published by: 1951-08-30
+ - Id: 577da55e-71cb-4811-b4f6-08eb6745a296
+Book created: * Foundation's Edge
+ - Written by: Isaac Asimov
+ - Published by: 1982-10-28
+ - Id: 3a148b92-d37d-4b07-b4c1-78c3c7fb1d54
+Book created: * The Hunger Games
+ - Written by: Suzanne Collins
+ - Published by: 2008-09-14
+ - Id: d2abe801-318f-4f27-a63d-9dbddc3ea297
+Book created: * Going Postal
+ - Written by: Terry Pratchett
+ - Published by: 2004-09-25
+ - Id: 07f2df53-dcb0-476f-b94d-3043ad91253c
+Book created: * Making Money
+ - Written by: Terry Pratchett
+ - Published by: 2007-09-18
+ - Id: a6e18209-35c3-4993-a82d-1f3caa0308c0
+Book created: * Stranger in a Strange Land
+ - Written by: Robert A. Heinlein
+ - Published by: 1961-06-01
+ - Id: 9f9a0dcd-94e4-45e5-b53a-747cf8a974f5
+Book created: * Exhalation
+ - Written by: Ted Chiang
+ - Published by: 2008-11-15
+ - Id: de8cf8c1-e52d-4608-abb7-044fa4bf25e7
+Book created: * Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch
+ - Written by: Terry Pratchett & Neil Gaiman
+ - Published by: 1990-05-01
+ - Id: 8ea4e787-7dab-4e1b-a6ba-078c4e071120
+Book created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Douglas Adams
+ - Published by: 1979-10-12
+ - Id: 39f7e3e7-a620-4ab3-bde5-fc50a20bdfef
+Book created: * Animal Farm
+ - Written by: George Orwell
+ - Published by: 1945-08-17
+ - Id: 5d0a90d8-e864-4976-afa5-293a24927bda
+Book created: * Jurassic Park
+ - Written by: Michael Crichton
+ - Published by: 1990-11-20
+ - Id: 3277ff24-ea9e-448b-ae8e-82ea4d606bd7
+Book created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Douglas Adams
+ - Published by: 1979-10-12
+ - Id: 1345f012-bcd8-48f1-b0b6-58f5dc05c318
+Book created: * Oh, the Places You'll Go!
+ - Written by: Dr. Seuss
+ - Published by: 1990-01-22
+ - Id: 29503697-5c91-4bd1-8851-d34773ac882e
+Book created: * Stranger in a Strange Land
+ - Written by: Robert A. Heinlein
+ - Published by: 1961-06-01
+ - Id: 7c4b7760-1cd0-4531-9dd8-9578fd7837f8
+Book created: * The Moon is a Harsh Mistress
+ - Written by: Robert A. Heinlein
+ - Published by: 1966-06-02
+ - Id: 970992e9-2e6c-4eed-9961-9fe21428fe5f
+Book created: * Going Postal
+ - Written by: Terry Pratchett
+ - Published by: 2004-09-25
+ - Id: 798a0eb1-4994-4d8f-875a-1029365a4cae
+Book created: * Raising Steam
+ - Written by: Terry Pratchett
+ - Published by: 2013-11-07
+ - Id: 4f9e60fe-d1e6-4aae-8350-6ed9171fd3f5
+Book created: * Making Money
+ - Written by: Terry Pratchett
+ - Published by: 2007-09-18
+ - Id: ddc35430-3498-4401-bdd5-99d7cff3bd0d
+Book created: * The Fellowship of the Ring
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-07-29
+ - Id: 78edb47d-0322-45ce-a189-fab066d539d3
+Book created: * The Two Towers
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-11-11
+ - Id: 89a24398-8c81-4220-9ee0-4ff8d5638f60
+Book created: * The Return of the King
+ - Written by: J. R. R. Tolkien
+ - Published by: 1955-10-20
+ - Id: a28a273e-627d-442e-bf7d-397a630aa5f3
+Book created: * Oh, the Places You'll Go!
+ - Written by: Dr. Seuss
+ - Published by: 1990-01-22
+ - Id: a4caee26-d881-47c1-b88a-dc176ec78e3d
+Book created: * The Fellowship of the Ring
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-07-29
+ - Id: d1831e6e-bba1-47d8-a9cd-4ef47e65e84c
+Book created: * The Two Towers
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-11-11
+ - Id: be8f132d-42c1-4f21-9b8f-805638a019f3
+Book created: * The Return of the King
+ - Written by: J. R. R. Tolkien
+ - Published by: 1955-10-20
+ - Id: b2f4ba6d-3933-458a-9c6a-f1a2dd907b0f
+Book created: * The Hunger Games
+ - Written by: Suzanne Collins
+ - Published by: 2008-09-14
+ - Id: 3841260d-6315-42d6-9092-3149b32ca131
+Book created: * Piranesi
+ - Written by: Susanna Clarke
+ - Published by: 2020-09-15
+ - Id: b7b2480c-fff9-4cd1-abd2-56450b139869
+Book created: * Once Upon an Algorithm
+ - Written by: Martin Erwig
+ - Published by: 2017-08-11
+ - Id: 874dcd6c-81a5-4df8-a01f-590a8f8acd32
+Book created: * Raising Steam
+ - Written by: Terry Pratchett
+ - Published by: 2013-11-07
+ - Id: 544e8d0d-9b16-47f1-b06b-61c773e03f63
+Book created: * Making Money
+ - Written by: Terry Pratchett
+ - Published by: 2007-09-18
+ - Id: 8c5f890d-5cae-4c7b-bf85-63917a914da7
+Book created: * Going Postal
+ - Written by: Terry Pratchett
+ - Published by: 2004-09-25
+ - Id: 7d071d37-b91f-4bf6-b202-32cb7e35347a
+Book created: * Exhalation
+ - Written by: Ted Chiang
+ - Published by: 2008-11-15
+ - Id: 40ada7b3-5785-4300-b398-7ed65cc129f4
+Book created: * Jurassic Park
+ - Written by: Michael Crichton
+ - Published by: 1990-11-20
+ - Id: 6736453c-4bb2-42c3-9458-4e0c5b70a6af
+Book created: * Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch
+ - Written by: Terry Pratchett & Neil Gaiman
+ - Published by: 1990-05-01
+ - Id: ea558d1a-8967-4460-a5ee-5ee6b9047b72
+Book created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Douglas Adams
+ - Published by: 1979-10-12
+ - Id: ecd11854-b122-400b-acb2-9b500bb424b9
+Book created: * The Two Towers
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-11-11
+ - Id: beca1fae-f504-4634-9cdb-c1810f2d8afb
+Book created: * The Fellowship of the Ring
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-07-29
+ - Id: a09036f5-6ada-4d43-896f-642d2274a052
+Book created: * The Return of the King
+ - Written by: J. R. R. Tolkien
+ - Published by: 1955-10-20
+ - Id: 37a8f613-5cc0-4525-bfe3-e680a92b99dd
+Book created: * Animal Farm
+ - Written by: George Orwell
+ - Published by: 1945-08-17
+ - Id: 692b3baf-d7a8-4efe-a87b-da8c2cde2b19
+Book created: * Racing the Beam
+ - Written by: Nick Montfort and Ian Bogost
+ - Published by: 2009-03-01
+ - Id: 474992ef-a98d-4adb-92e4-f0fd5177ff27
+Book created: * Programming for the Puzzled
+ - Written by: Srini Devadas
+ - Published by: 2017-11-09
+ - Id: 140d5ae8-4896-4c51-a59d-23cb705ff7cf
+Book created: * Once Upon an Algorithm
+ - Written by: Martin Erwig
+ - Published by: 2017-08-11
+ - Id: a4ccd5e3-83de-4441-88bb-ebecc8e8c332
+Book created: * The Moon is a Harsh Mistress
+ - Written by: Robert A. Heinlein
+ - Published by: 1966-06-02
+ - Id: 175e2c2a-d339-44ec-a337-ed6a0efac17a
+Book created: * Stranger in a Strange Land
+ - Written by: Robert A. Heinlein
+ - Published by: 1961-06-01
+ - Id: 6cb05334-d6c3-4424-b1ba-a056d2975c68
+Book created: * Exhalation
+ - Written by: Ted Chiang
+ - Published by: 2008-11-15
+ - Id: 985d53f3-8d22-43af-9cf4-28e888233815
+Book created: * Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch
+ - Written by: Terry Pratchett & Neil Gaiman
+ - Published by: 1990-05-01
+ - Id: d4835153-12b2-472f-8219-983cd82ee456
+Book created: * Foundation
+ - Written by: Isaac Asimov
+ - Published by: 1951-08-30
+ - Id: 452cf82a-3b84-46d3-9f3f-7934f7a9e50b
+Book created: * Foundation's Edge
+ - Written by: Isaac Asimov
+ - Published by: 1982-10-28
+ - Id: 9a850d45-77ad-4afe-8ae2-070bdf4153e2
+Book created: * The Hunger Games
+ - Written by: Suzanne Collins
+ - Published by: 2008-09-14
+ - Id: 634e868b-b1b4-45cd-8713-e7e35719b61d
+Book created: * Going Postal
+ - Written by: Terry Pratchett
+ - Published by: 2004-09-25
+ - Id: 43e4481b-3108-4d8a-bed0-6a58c0cec5fc
+Book created: * Making Money
+ - Written by: Terry Pratchett
+ - Published by: 2007-09-18
+ - Id: 4412de29-9993-4412-8590-bfe9d4224985
+Book created: * Stranger in a Strange Land
+ - Written by: Robert A. Heinlein
+ - Published by: 1961-06-01
+ - Id: a2973a12-1925-4f54-9aa3-a7d1f30d204f
+Book created: * Exhalation
+ - Written by: Ted Chiang
+ - Published by: 2008-11-15
+ - Id: 4691741f-af3b-4d4c-ba35-6d507dadd027
+Book created: * Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch
+ - Written by: Terry Pratchett & Neil Gaiman
+ - Published by: 1990-05-01
+ - Id: 757f75a4-0a73-45e4-b146-5c99b7e81da8
+Book created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Douglas Adams
+ - Published by: 1979-10-12
+ - Id: 2f032368-90be-4454-a252-5798c8a1ce03
+Book created: * Animal Farm
+ - Written by: George Orwell
+ - Published by: 1945-08-17
+ - Id: bbffd0fb-a421-4cf3-a436-ccfbb590c223
+Book created: * Jurassic Park
+ - Written by: Michael Crichton
+ - Published by: 1990-11-20
+ - Id: 26b0a4cd-4293-4e62-8783-ff2762ec994d
+Book created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Douglas Adams
+ - Published by: 1979-10-12
+ - Id: 926d31ac-aea8-4d94-9e98-0a6d30777c93
+Book created: * Oh, the Places You'll Go!
+ - Written by: Dr. Seuss
+ - Published by: 1990-01-22
+ - Id: ef43d5dd-1ec1-48ca-85e3-bc7390f40973
+Book created: * Stranger in a Strange Land
+ - Written by: Robert A. Heinlein
+ - Published by: 1961-06-01
+ - Id: cdc3bfa4-d060-497a-ac0e-e02283daa06b
+Book created: * The Moon is a Harsh Mistress
+ - Written by: Robert A. Heinlein
+ - Published by: 1966-06-02
+ - Id: bf1b909a-db78-4189-aca1-ca67f6c0fad4
+Book created: * Going Postal
+ - Written by: Terry Pratchett
+ - Published by: 2004-09-25
+ - Id: 6bb49b86-5f63-403d-bfe2-0e7563c84f14
+Book created: * Raising Steam
+ - Written by: Terry Pratchett
+ - Published by: 2013-11-07
+ - Id: 173a1c24-aca1-4296-8ba2-ea8ea2d9bdf0
+Book created: * Making Money
+ - Written by: Terry Pratchett
+ - Published by: 2007-09-18
+ - Id: d21fa71d-21bf-4c95-a5d6-190e928b6786
+Book created: * The Fellowship of the Ring
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-07-29
+ - Id: 596584a8-9b15-430d-b712-0fb0d9b2f4ac
+Book created: * The Two Towers
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-11-11
+ - Id: 8269a9a6-50b5-4b0a-9409-9b9bdd35c388
+Book created: * The Return of the King
+ - Written by: J. R. R. Tolkien
+ - Published by: 1955-10-20
+ - Id: a26f06af-409f-44d0-aa87-5340d72a55bc
+Book created: * Oh, the Places You'll Go!
+ - Written by: Dr. Seuss
+ - Published by: 1990-01-22
+ - Id: 08ca0456-4ff1-46cd-bd56-35f4db2c9dae
+Book created: * The Fellowship of the Ring
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-07-29
+ - Id: 5353d01a-0f9a-4cb0-ba71-b16b2863b39e
+Book created: * The Two Towers
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-11-11
+ - Id: d1d79a05-0b9c-49b4-9da8-84d807b78366
+Book created: * The Return of the King
+ - Written by: J. R. R. Tolkien
+ - Published by: 1955-10-20
+ - Id: ca2bb61a-2b8d-47dd-838f-28aa433a4dfb
+Book created: * The Hunger Games
+ - Written by: Suzanne Collins
+ - Published by: 2008-09-14
+ - Id: 59eb16f3-4873-4836-99cc-31687626257e
+Book created: * Piranesi
+ - Written by: Susanna Clarke
+ - Published by: 2020-09-15
+ - Id: a4f897b6-5842-4552-889d-32b00def8a4c
+Book created: * Once Upon an Algorithm
+ - Written by: Martin Erwig
+ - Published by: 2017-08-11
+ - Id: dd170b9f-a9f1-45a0-ae3b-a2cc758cb171
+Book created: * Raising Steam
+ - Written by: Terry Pratchett
+ - Published by: 2013-11-07
+ - Id: b15259e4-632b-4ca6-a32e-a27e8584525b
+Book created: * Making Money
+ - Written by: Terry Pratchett
+ - Published by: 2007-09-18
+ - Id: 706e02fc-7a6c-44fc-8252-2145156ba354
+Book created: * Going Postal
+ - Written by: Terry Pratchett
+ - Published by: 2004-09-25
+ - Id: adb9cf7b-0a93-4f95-9113-7648f7623fb1
+Book created: * Exhalation
+ - Written by: Ted Chiang
+ - Published by: 2008-11-15
+ - Id: 1a4c5668-6d85-419a-9bbb-3436d83993a3
+Book created: * Jurassic Park
+ - Written by: Michael Crichton
+ - Published by: 1990-11-20
+ - Id: fade3cb0-6d36-4cea-b8b6-6abeb45892ea
+Book created: * Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch
+ - Written by: Terry Pratchett & Neil Gaiman
+ - Published by: 1990-05-01
+ - Id: c13ef8cd-0a03-4a1b-95e4-d84fa4ee22bb
+Book created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Douglas Adams
+ - Published by: 1979-10-12
+ - Id: f9ae2615-21ac-4565-a935-55ca5ee0d60b
+Book created: * The Two Towers
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-11-11
+ - Id: 4369e48d-ded5-4f82-8934-fc08ed3efb13
+Book created: * The Fellowship of the Ring
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-07-29
+ - Id: 35789eb5-e266-4edc-8108-891b7feea466
+Book created: * The Return of the King
+ - Written by: J. R. R. Tolkien
+ - Published by: 1955-10-20
+ - Id: 9fbd17a8-9b16-4417-b03e-bb3fb9ea9734
+Book created: * Animal Farm
+ - Written by: George Orwell
+ - Published by: 1945-08-17
+ - Id: 7df50d16-f505-423a-b264-0bf9b767d55d
+Book created: * Racing the Beam
+ - Written by: Nick Montfort and Ian Bogost
+ - Published by: 2009-03-01
+ - Id: 24d7e62f-fe93-4ef2-a134-eb7e503fcaf4
+Book created: * Programming for the Puzzled
+ - Written by: Srini Devadas
+ - Published by: 2017-11-09
+ - Id: b7fa0eab-bdb2-407c-b902-30bbd469ef7b
+Book created: * Once Upon an Algorithm
+ - Written by: Martin Erwig
+ - Published by: 2017-08-11
+ - Id: 9ce90271-0244-4ab1-ae15-b78e4b5eae03
+Book created: * The Moon is a Harsh Mistress
+ - Written by: Robert A. Heinlein
+ - Published by: 1966-06-02
+ - Id: bda1767b-9b2b-4b7d-994c-c8307ac7e84f
+Book created: * Stranger in a Strange Land
+ - Written by: Robert A. Heinlein
+ - Published by: 1961-06-01
+ - Id: bdda990d-4699-4f96-88ce-257835c17e25
+Book created: * Exhalation
+ - Written by: Ted Chiang
+ - Published by: 2008-11-15
+ - Id: 1f50c6eb-4ba8-43f2-92c7-fb718aebbad5
+Book created: * Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch
+ - Written by: Terry Pratchett & Neil Gaiman
+ - Published by: 1990-05-01
+ - Id: 0ed14e39-f433-4318-8e4e-4a6466a25485
+Book created: * Foundation
+ - Written by: Isaac Asimov
+ - Published by: 1951-08-30
+ - Id: b13043f0-ad1b-4a73-ab23-47e42bc94be5
+Book created: * Foundation's Edge
+ - Written by: Isaac Asimov
+ - Published by: 1982-10-28
+ - Id: 4e851ba3-477f-49c2-91e1-efeddd3a0a41
+Book created: * The Hunger Games
+ - Written by: Suzanne Collins
+ - Published by: 2008-09-14
+ - Id: 27acdb0e-9ae5-4d7f-ae55-ade0505b1268
+Book created: * Going Postal
+ - Written by: Terry Pratchett
+ - Published by: 2004-09-25
+ - Id: 6ffb62fe-47b2-47f3-bd46-31932fd23cb1
+Book created: * Making Money
+ - Written by: Terry Pratchett
+ - Published by: 2007-09-18
+ - Id: fa5378db-7d71-471f-8c29-0ff625c60578
+Book created: * Stranger in a Strange Land
+ - Written by: Robert A. Heinlein
+ - Published by: 1961-06-01
+ - Id: b27a40a3-c59d-4275-ab27-0d31dfc435ce
+Book created: * Exhalation
+ - Written by: Ted Chiang
+ - Published by: 2008-11-15
+ - Id: 3fe93d2b-04bf-4bdd-881e-865b289f1525
+Book created: * Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch
+ - Written by: Terry Pratchett & Neil Gaiman
+ - Published by: 1990-05-01
+ - Id: dccf4182-8666-4fa1-9531-bc5df8788117
+Book created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Douglas Adams
+ - Published by: 1979-10-12
+ - Id: 17377df0-d044-4c50-a174-f5eb4ba5392a
+Book created: * Animal Farm
+ - Written by: George Orwell
+ - Published by: 1945-08-17
+ - Id: 3d99a1f3-24b5-4ecc-be7e-a8dfd58c9ebb
+Book created: * Jurassic Park
+ - Written by: Michael Crichton
+ - Published by: 1990-11-20
+ - Id: e403d0a4-5296-49cb-bd56-68c429e58b78
+Book created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Douglas Adams
+ - Published by: 1979-10-12
+ - Id: 4cbfeb70-134d-43d0-8666-976486ce95ff
+Book created: * Oh, the Places You'll Go!
+ - Written by: Dr. Seuss
+ - Published by: 1990-01-22
+ - Id: 98aae9d6-3dbc-42e2-9fa9-cb185e4894c3
+Book created: * Stranger in a Strange Land
+ - Written by: Robert A. Heinlein
+ - Published by: 1961-06-01
+ - Id: 4479348e-6696-4dd2-b99e-e58ae1aedc03
+Book created: * The Moon is a Harsh Mistress
+ - Written by: Robert A. Heinlein
+ - Published by: 1966-06-02
+ - Id: ba275dd1-c562-4290-a2de-e302cd08a25c
+Book created: * Going Postal
+ - Written by: Terry Pratchett
+ - Published by: 2004-09-25
+ - Id: 292063e9-d409-4c86-b8b6-8e8db3e73c4a
+Book created: * Raising Steam
+ - Written by: Terry Pratchett
+ - Published by: 2013-11-07
+ - Id: 695fc7f5-b96a-4791-a8e0-e43e9f2223f0
+Book created: * Making Money
+ - Written by: Terry Pratchett
+ - Published by: 2007-09-18
+ - Id: 5a0bdeaa-27cd-4ba4-aadd-576c91ed646d
+Book created: * The Fellowship of the Ring
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-07-29
+ - Id: 9f8c7127-1d12-40a9-8148-4a19ba22b08e
+Book created: * The Two Towers
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-11-11
+ - Id: 51dd9405-a108-40a0-916e-0112505e84df
+Book created: * The Return of the King
+ - Written by: J. R. R. Tolkien
+ - Published by: 1955-10-20
+ - Id: 11932f33-d696-4dcd-bfaa-89a4cd2bd125
+Book created: * Oh, the Places You'll Go!
+ - Written by: Dr. Seuss
+ - Published by: 1990-01-22
+ - Id: 08e74751-cfa9-4c39-84b7-583f51f4f0a6
+Book created: * The Fellowship of the Ring
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-07-29
+ - Id: 75a20fb0-27aa-42e4-8e24-922b568586ef
+Book created: * The Two Towers
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-11-11
+ - Id: 66209fa6-33fe-4435-8a10-7a8f32738721
+Book created: * The Return of the King
+ - Written by: J. R. R. Tolkien
+ - Published by: 1955-10-20
+ - Id: 77170d8b-e440-4416-b4c7-2fd514dae45f
+Book created: * The Hunger Games
+ - Written by: Suzanne Collins
+ - Published by: 2008-09-14
+ - Id: f9c46911-3ebe-45e9-824f-d3689df792e8
+Book created: * Piranesi
+ - Written by: Susanna Clarke
+ - Published by: 2020-09-15
+ - Id: c92c12eb-e15a-4c0a-b445-ad56f3b24958
+Book created: * Once Upon an Algorithm
+ - Written by: Martin Erwig
+ - Published by: 2017-08-11
+ - Id: 66bb1e13-478c-4faa-ab58-46ef882d2e94
+Book created: * Raising Steam
+ - Written by: Terry Pratchett
+ - Published by: 2013-11-07
+ - Id: 5deb9c13-c388-454b-b6bf-c8c53f934336
+Book created: * Making Money
+ - Written by: Terry Pratchett
+ - Published by: 2007-09-18
+ - Id: 2f54a156-2768-4f4e-821b-bc85ed9583de
+Book created: * Going Postal
+ - Written by: Terry Pratchett
+ - Published by: 2004-09-25
+ - Id: bf1a6377-bb39-4da7-90da-9ee351ae12d7
+Book created: * Exhalation
+ - Written by: Ted Chiang
+ - Published by: 2008-11-15
+ - Id: da504334-92dc-4dd2-838e-c416757bfb79
+Book created: * Jurassic Park
+ - Written by: Michael Crichton
+ - Published by: 1990-11-20
+ - Id: d0289fb4-ce1c-429b-bc62-409e7c1fa856
+Book created: * Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch
+ - Written by: Terry Pratchett & Neil Gaiman
+ - Published by: 1990-05-01
+ - Id: 710915a9-61a2-4deb-bf8f-370bed6e6f0d
+Book created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Douglas Adams
+ - Published by: 1979-10-12
+ - Id: 62611f84-c454-44a9-b6c0-3863c311f695
+Book created: * The Two Towers
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-11-11
+ - Id: 805b8ba7-c71f-452a-8290-5ff729c95a59
+Book created: * The Fellowship of the Ring
+ - Written by: J. R. R. Tolkien
+ - Published by: 1954-07-29
+ - Id: 90bbf9c2-92c1-4e85-a40a-0e030b409969
+Book created: * The Return of the King
+ - Written by: J. R. R. Tolkien
+ - Published by: 1955-10-20
+ - Id: 66ad4b26-75a4-4869-8247-69c7abc98558
+Book created: * Animal Farm
+ - Written by: George Orwell
+ - Published by: 1945-08-17
+ - Id: ff63fa30-62c3-49ba-8ef1-d1c47a1401df
+Book created: * Racing the Beam
+ - Written by: Nick Montfort and Ian Bogost
+ - Published by: 2009-03-01
+ - Id: 4c9e8518-0c8f-499b-972c-2ed91355e889
+Book created: * Programming for the Puzzled
+ - Written by: Srini Devadas
+ - Published by: 2017-11-09
+ - Id: ecf13e55-3622-440e-b285-f550285230fc
+Book created: * Once Upon an Algorithm
+ - Written by: Martin Erwig
+ - Published by: 2017-08-11
+ - Id: 91258f28-0d70-4308-932a-f17af3c849e5
+Book created: * The Moon is a Harsh Mistress
+ - Written by: Robert A. Heinlein
+ - Published by: 1966-06-02
+ - Id: 54922160-0be1-4941-8d7d-c8c7b3800214
+Book created: * Stranger in a Strange Land
+ - Written by: Robert A. Heinlein
+ - Published by: 1961-06-01
+ - Id: a9886dc3-6d58-4de5-89eb-182c523b051d

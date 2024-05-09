@@ -1,0 +1,912 @@
+Movie created: * Home Alone
+ - Written by: Chris Columbus
+ - Published by: 1990-11-16
+ - Id: dec55554-0ac4-4853-9cd8-d6f96cd21650
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: bf460b85-3d44-4429-a9e6-b8c93dd3220b
+Movie created: * Memento
+ - Written by: Christopher Nolan
+ - Published by: 2000-10-11
+ - Id: 1e605a80-9c97-464e-bc58-348d256878f8
+Movie created: * Inception
+ - Written by: Christopher Nolan
+ - Published by: 2010-07-15
+ - Id: f5fdd4a7-0bfe-4963-9b02-a0513d973a19
+Movie created: * Interstellar
+ - Written by: Christopher Nolan
+ - Published by: 2014-11-05
+ - Id: ca09181e-1694-4cb6-bf59-6b03c09b1d6d
+Movie created: * Rogue One
+ - Written by: Gareth Edwards
+ - Published by: 2016-12-16
+ - Id: 558db0e7-c600-4e6d-8dc0-67062f0c1669
+Movie created: * Contact
+ - Written by: Robert Zemeckis
+ - Published by: 1997-07-11
+ - Id: 478f358f-7e70-4bca-863e-528c9fa85f43
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: 4c67d1ab-dfc9-4493-b9cb-b003f6f49f24
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: 7f636bf2-b291-476f-a84b-8c5740bc55c7
+Movie created: * Star Wars
+ - Written by: George Lucas
+ - Published by: 1977-05-25
+ - Id: 14c06bb0-812f-488f-807e-0960e81b97a2
+Movie created: * Star Trek
+ - Written by: J.J. Abrams
+ - Published by: 2009-05-06
+ - Id: fd4f8b97-8df3-4f18-bab4-f6cfd3ea5ca2
+Movie created: * Star Trek Into Darkness
+ - Written by: J.J. Abrams
+ - Published by: 2013-05-05
+ - Id: e89b5455-ef26-4868-9726-700313154f47
+Movie created: * Forrest Gump
+ - Written by: Robert Zemeckis
+ - Published by: 1994-07-06
+ - Id: b76b7586-47ba-4fd2-9ef5-f090198d3c24
+Movie created: * Cast Away
+ - Written by: Robert Zemeckis
+ - Published by: 2000-12-22
+ - Id: 56255da7-3027-46cd-9a57-01a48a23648f
+Movie created: * The Fifth Element
+ - Written by: Luc Besson
+ - Published by: 1997-05-02
+ - Id: 0e8b04bc-fc66-495b-beb1-b6612300a793
+Movie created: * Close Encounters of the Third Kind
+ - Written by: Steven Spielberg
+ - Published by: 1977-11-18
+ - Id: 0493bf94-6c2e-44e1-9ed1-91ed40758e10
+Movie created: * Star Wars
+ - Written by: George Lucas
+ - Published by: 1977-05-25
+ - Id: 9061ee48-1589-4a97-9fe1-e867515aa3d1
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: 8f50277c-2078-4527-9d62-08c074410eed
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: 6b1ab360-7f2a-4de5-b112-f61cedb6c1d6
+Movie created: * Finding Nemo
+ - Written by: Andrew Stanton
+ - Published by: 2003-05-30
+ - Id: ceed1c53-ce5d-49ec-aaff-1921b14d9590
+Movie created: * WALL·E
+ - Written by: Andrew Stanton
+ - Published by: 2008-06-22
+ - Id: 02c2a29e-9f4b-4cf2-84f1-fcd0cc67d079
+Movie created: * Coco
+ - Written by: Lee Unkrich
+ - Published by: 2017-10-27
+ - Id: 588ad511-bdd3-4f8b-85c2-7a2d3b76843d
+Movie created: * Toy Story 3
+ - Written by: Lee Unkrich
+ - Published by: 2010-06-16
+ - Id: d67b07da-de5d-48f1-b478-a8a550c2faee
+Movie created: * The Polar Express
+ - Written by: Robert Zemeckis
+ - Published by: 2004-11-10
+ - Id: 0e0b74e4-71a5-4fdd-ab31-ed3b5d8bc841
+Movie created: * Shrek
+ - Written by: Andrew Adamson
+ - Published by: 2001-05-18
+ - Id: 37d10d1d-4c11-4456-963b-c22392f38094
+Movie created: * Home Alone
+ - Written by: Chris Columbus
+ - Published by: 1990-11-16
+ - Id: 3cbb21c7-3954-4d3b-a115-0d7b821d922f
+Movie created: * Back to the Future Part III
+ - Written by: Robert Zemeckis
+ - Published by: 1990-05-25
+ - Id: 05c1198c-b0d8-476f-b50f-50a78c391b64
+Movie created: * Back to the Future
+ - Written by: Robert Zemeckis
+ - Published by: 1985-07-03
+ - Id: 653daab1-2ae4-4077-a9cb-630d354b4c61
+Movie created: * Back to the Future Part II
+ - Written by: Robert Zemeckis
+ - Published by: 1989-11-22
+ - Id: a8f81174-2755-46ba-9ba1-d3ca35614595
+Movie created: * Who Framed Roger Rabbit
+ - Written by: Robert Zemeckis
+ - Published by: 1988-06-21
+ - Id: 8bac4de1-5bf0-4069-b851-0795a043926d
+Movie created: * The Lord of the Rings: The Fellowship of the Ring
+ - Written by: Peter Jackson
+ - Published by: 2001-12-18
+ - Id: 2d4b1f5d-e78e-4ed4-8f32-ba29b51d56d4
+Movie created: * The Lord of the Rings: The Two Towers
+ - Written by: Peter Jackson
+ - Published by: 2002-12-18
+ - Id: 7d6cda07-403e-442a-ab92-329a916c4805
+Movie created: * The Lord of the Rings: The Return of the King
+ - Written by: Peter Jackson
+ - Published by: 2003-12-01
+ - Id: f2799142-84fe-48a6-85b8-50b427fa19d5
+Movie created: * Rogue One
+ - Written by: Gareth Edwards
+ - Published by: 2016-12-16
+ - Id: 07686375-6f7d-4764-b5b3-9fee859761f6
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: f3b8b825-1a54-45ec-bc97-75be9681f100
+Movie created: * Star Trek
+ - Written by: J.J. Abrams
+ - Published by: 2009-05-06
+ - Id: d8ddb3e2-627d-435d-b472-90f78f43d38d
+Movie created: * Star Trek II: The Wrath of Khan
+ - Written by: Nicholas Meyer
+ - Published by: 1982-06-04
+ - Id: 77d2f316-9e77-4fee-ba27-4d1cf5b94155
+Movie created: * Star Trek Into Darkness
+ - Written by: J.J. Abrams
+ - Published by: 2013-05-05
+ - Id: db497dd7-4683-4c32-98a1-933649d1dc0f
+Movie created: * The Lord of the Rings: The Return of the King
+ - Written by: Peter Jackson
+ - Published by: 2003-12-01
+ - Id: e979d4c1-409b-4a96-8809-6ace1305599e
+Movie created: * The Lord of the Rings: The Two Towers
+ - Written by: Peter Jackson
+ - Published by: 2002-12-18
+ - Id: a0bf525c-0694-4d27-998a-a68eac59be0a
+Movie created: * The Lord of the Rings: The Fellowship of the Ring
+ - Written by: Peter Jackson
+ - Published by: 2001-12-18
+ - Id: 1fa10271-a74c-4e8d-8302-b9ef0eaa128c
+Movie created: * Memento
+ - Written by: Christopher Nolan
+ - Published by: 2000-10-11
+ - Id: d9e8af08-3d66-405c-beaa-0c09c30f8fba
+Movie created: * Inception
+ - Written by: Christopher Nolan
+ - Published by: 2010-07-15
+ - Id: bb5977fa-d879-40d7-bb8e-46e7d3d99f5d
+Movie created: * Rogue One
+ - Written by: Gareth Edwards
+ - Published by: 2016-12-16
+ - Id: b25c1e7d-fdd9-4cec-a51d-7db26087b274
+Movie created: * Star Wars
+ - Written by: George Lucas
+ - Published by: 1977-05-25
+ - Id: 1a2d84f2-7e6b-4ffc-97c4-6c239328e9a0
+Movie created: * Back to the Future
+ - Written by: Robert Zemeckis
+ - Published by: 1985-07-03
+ - Id: 7356dcba-66d1-4075-8f26-066b2342cb0f
+Movie created: * Back to the Future Part II
+ - Written by: Robert Zemeckis
+ - Published by: 1989-11-22
+ - Id: 2dbe22e9-8d6a-4a89-8ebf-b81074fbaca6
+Movie created: * Back to the Future Part III
+ - Written by: Robert Zemeckis
+ - Published by: 1990-05-25
+ - Id: 113f3c2d-fda2-4ecd-84fe-97c92b5e6749
+Movie created: * The Fifth Element
+ - Written by: Luc Besson
+ - Published by: 1997-05-02
+ - Id: f7c00ca1-958f-4580-80ad-7508bc8f54fb
+Movie created: * The Lord of the Rings: The Fellowship of the Ring
+ - Written by: Peter Jackson
+ - Published by: 2001-12-18
+ - Id: bbedcca5-e40c-4448-8c58-6ac7a534b1b0
+Movie created: * The Lord of the Rings: The Two Towers
+ - Written by: Peter Jackson
+ - Published by: 2002-12-18
+ - Id: 551a6592-8029-488d-8b1f-d2206cbd5f54
+Movie created: * The Lord of the Rings: The Return of the King
+ - Written by: Peter Jackson
+ - Published by: 2003-12-01
+ - Id: bf218465-ebb4-41c8-af2d-adcc7c794975
+Movie created: * Close Encounters of the Third Kind
+ - Written by: Steven Spielberg
+ - Published by: 1977-11-18
+ - Id: 1ecce19b-e471-476b-9802-79dbac925eeb
+Movie created: * Star Trek Into Darkness
+ - Written by: J.J. Abrams
+ - Published by: 2013-05-05
+ - Id: dfa8706a-4e72-4f3b-9182-f7de9481b597
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: 854ac65e-3c30-438c-9e4e-76a72cc01457
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: cbda6d3e-b029-49fa-bf62-534cc4fc3d4c
+Movie created: * Home Alone
+ - Written by: Chris Columbus
+ - Published by: 1990-11-16
+ - Id: 4a58eb6c-fc24-4b07-a43e-dd4d78f376c3
+Movie created: * Home Alone
+ - Written by: Chris Columbus
+ - Published by: 1990-11-16
+ - Id: 93534250-5ca0-4348-a5ca-43499245bd33
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: c03a7537-ffbd-4161-91f2-21fd51300212
+Movie created: * Memento
+ - Written by: Christopher Nolan
+ - Published by: 2000-10-11
+ - Id: 57e776f0-ba84-4e26-b2f4-7f3bbe76a8e2
+Movie created: * Inception
+ - Written by: Christopher Nolan
+ - Published by: 2010-07-15
+ - Id: 217ee07b-948d-4ff0-a0bb-7410f36d82cd
+Movie created: * Interstellar
+ - Written by: Christopher Nolan
+ - Published by: 2014-11-05
+ - Id: d816c88d-9575-4540-9503-5472bf606840
+Movie created: * Rogue One
+ - Written by: Gareth Edwards
+ - Published by: 2016-12-16
+ - Id: 0aaf1a6d-f04b-4bab-9bda-064742cfcb64
+Movie created: * Contact
+ - Written by: Robert Zemeckis
+ - Published by: 1997-07-11
+ - Id: de91133e-74fb-45af-8d1b-cf4fc058a73b
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: 3cb1a459-c672-4273-b833-954a03c5f6c4
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: f6a393cc-66ca-46da-a87e-b09b52560012
+Movie created: * Star Wars
+ - Written by: George Lucas
+ - Published by: 1977-05-25
+ - Id: 02c03607-734b-4534-ac6a-681445d88e1b
+Movie created: * Star Trek
+ - Written by: J.J. Abrams
+ - Published by: 2009-05-06
+ - Id: 3c301f36-18b0-4025-9927-58acc28d1661
+Movie created: * Star Trek Into Darkness
+ - Written by: J.J. Abrams
+ - Published by: 2013-05-05
+ - Id: c5b9446a-9b58-49b1-a1f7-676cca756fcb
+Movie created: * Forrest Gump
+ - Written by: Robert Zemeckis
+ - Published by: 1994-07-06
+ - Id: 21dc7416-53c8-4fef-b893-dbe6350e7916
+Movie created: * Cast Away
+ - Written by: Robert Zemeckis
+ - Published by: 2000-12-22
+ - Id: 882086ba-40b1-4dd2-9732-291cd1e16d23
+Movie created: * The Fifth Element
+ - Written by: Luc Besson
+ - Published by: 1997-05-02
+ - Id: 8c56045f-e6fc-4b1d-ae18-bd5752ee6ba6
+Movie created: * Close Encounters of the Third Kind
+ - Written by: Steven Spielberg
+ - Published by: 1977-11-18
+ - Id: 2603146b-28f2-4605-b7f7-385af2a3cc21
+Movie created: * Star Wars
+ - Written by: George Lucas
+ - Published by: 1977-05-25
+ - Id: 57aa309a-8013-4fec-9ed8-9cdc857f7906
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: e59a3e38-f5dd-48e4-95c1-32b0c6dfb054
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: 7da4d3dd-e139-425e-9671-a3de8124b491
+Movie created: * Finding Nemo
+ - Written by: Andrew Stanton
+ - Published by: 2003-05-30
+ - Id: 5703b493-752f-474a-9484-8dfcde93030b
+Movie created: * WALL·E
+ - Written by: Andrew Stanton
+ - Published by: 2008-06-22
+ - Id: a0e8183c-04a7-4454-95db-9fc9ef373e69
+Movie created: * Coco
+ - Written by: Lee Unkrich
+ - Published by: 2017-10-27
+ - Id: f1fb5cb5-8e79-4697-8e6e-9753a36c85ed
+Movie created: * Toy Story 3
+ - Written by: Lee Unkrich
+ - Published by: 2010-06-16
+ - Id: 4badceb7-6c9c-4b5d-bf3f-3019fea707d1
+Movie created: * The Polar Express
+ - Written by: Robert Zemeckis
+ - Published by: 2004-11-10
+ - Id: 5f5d212d-831b-4c74-bf8b-befe9e84efd4
+Movie created: * Shrek
+ - Written by: Andrew Adamson
+ - Published by: 2001-05-18
+ - Id: 3778ceb7-51a3-4d1f-8ba9-29fc14161272
+Movie created: * Home Alone
+ - Written by: Chris Columbus
+ - Published by: 1990-11-16
+ - Id: 5398516e-7f10-479b-8300-7c41e704e526
+Movie created: * Back to the Future Part III
+ - Written by: Robert Zemeckis
+ - Published by: 1990-05-25
+ - Id: 9364c8d4-1995-4e08-bb9a-54f9f8543bbd
+Movie created: * Back to the Future
+ - Written by: Robert Zemeckis
+ - Published by: 1985-07-03
+ - Id: bd6f483e-0d51-4102-900e-a94682607830
+Movie created: * Back to the Future Part II
+ - Written by: Robert Zemeckis
+ - Published by: 1989-11-22
+ - Id: adf4468a-7205-43bc-8ab5-ddcda7bc6ca7
+Movie created: * Who Framed Roger Rabbit
+ - Written by: Robert Zemeckis
+ - Published by: 1988-06-21
+ - Id: 409d5cb8-f184-40f9-9d75-a3de0e850f5a
+Movie created: * The Lord of the Rings: The Fellowship of the Ring
+ - Written by: Peter Jackson
+ - Published by: 2001-12-18
+ - Id: 376fb54f-da33-41e1-b88a-266c6f743ae0
+Movie created: * The Lord of the Rings: The Two Towers
+ - Written by: Peter Jackson
+ - Published by: 2002-12-18
+ - Id: e5d2be62-b784-4ee1-945b-c9ed514174db
+Movie created: * The Lord of the Rings: The Return of the King
+ - Written by: Peter Jackson
+ - Published by: 2003-12-01
+ - Id: 6b64cdfe-5ad4-4c5f-a2e4-594b611ea28a
+Movie created: * Rogue One
+ - Written by: Gareth Edwards
+ - Published by: 2016-12-16
+ - Id: d4f10a31-4d16-4a6b-934d-802f7afb45ff
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: 3cdf1298-cbd1-48a3-92cc-3dc3b791776f
+Movie created: * Star Trek
+ - Written by: J.J. Abrams
+ - Published by: 2009-05-06
+ - Id: 31862e89-e12d-4b48-aa3f-667d4fd82897
+Movie created: * Star Trek II: The Wrath of Khan
+ - Written by: Nicholas Meyer
+ - Published by: 1982-06-04
+ - Id: 86586a8c-f1e0-4ed6-bde2-68087cbbd10e
+Movie created: * Star Trek Into Darkness
+ - Written by: J.J. Abrams
+ - Published by: 2013-05-05
+ - Id: e3fd534d-b138-4757-9fd0-c32fcc0b2a9d
+Movie created: * The Lord of the Rings: The Return of the King
+ - Written by: Peter Jackson
+ - Published by: 2003-12-01
+ - Id: 8c1d1371-5ad7-48e2-947b-345d083617e0
+Movie created: * The Lord of the Rings: The Two Towers
+ - Written by: Peter Jackson
+ - Published by: 2002-12-18
+ - Id: 0602da23-115b-426d-bd2d-2e90837e7eba
+Movie created: * The Lord of the Rings: The Fellowship of the Ring
+ - Written by: Peter Jackson
+ - Published by: 2001-12-18
+ - Id: e608fc3e-b51e-4bf7-8b3d-1a95b4706f4b
+Movie created: * Memento
+ - Written by: Christopher Nolan
+ - Published by: 2000-10-11
+ - Id: 6626f448-cdb0-4bd1-8404-c25b679f1789
+Movie created: * Inception
+ - Written by: Christopher Nolan
+ - Published by: 2010-07-15
+ - Id: 88fc178f-dd5f-4ba4-885b-6e6307ad43a6
+Movie created: * Rogue One
+ - Written by: Gareth Edwards
+ - Published by: 2016-12-16
+ - Id: bd9a07bd-d029-4c64-be51-92a96cf0dec6
+Movie created: * Star Wars
+ - Written by: George Lucas
+ - Published by: 1977-05-25
+ - Id: 802a63bd-0a7a-4f6d-9934-b86eed3e27e7
+Movie created: * Back to the Future
+ - Written by: Robert Zemeckis
+ - Published by: 1985-07-03
+ - Id: 2851118b-eb73-48fd-bb48-44588ba49c95
+Movie created: * Back to the Future Part II
+ - Written by: Robert Zemeckis
+ - Published by: 1989-11-22
+ - Id: dff3c312-6048-4c28-b118-11b6e69f90ef
+Movie created: * Back to the Future Part III
+ - Written by: Robert Zemeckis
+ - Published by: 1990-05-25
+ - Id: 57e6bff8-b875-4583-a34e-d6288b63171e
+Movie created: * The Fifth Element
+ - Written by: Luc Besson
+ - Published by: 1997-05-02
+ - Id: 9f22f1ba-1a52-4591-b36b-9da6a1d9846f
+Movie created: * The Lord of the Rings: The Fellowship of the Ring
+ - Written by: Peter Jackson
+ - Published by: 2001-12-18
+ - Id: 3dac091f-bcba-4aa1-bbf4-603484d99508
+Movie created: * The Lord of the Rings: The Two Towers
+ - Written by: Peter Jackson
+ - Published by: 2002-12-18
+ - Id: eb293b94-8930-4b14-853c-b3c9ddeb9a80
+Movie created: * The Lord of the Rings: The Return of the King
+ - Written by: Peter Jackson
+ - Published by: 2003-12-01
+ - Id: 893b3303-9ccb-4807-9628-23255431627d
+Movie created: * Close Encounters of the Third Kind
+ - Written by: Steven Spielberg
+ - Published by: 1977-11-18
+ - Id: ebff73a4-2178-458a-8c5e-337e066484cf
+Movie created: * Star Trek Into Darkness
+ - Written by: J.J. Abrams
+ - Published by: 2013-05-05
+ - Id: 54cf7459-e156-4768-95ce-8a9c32a53734
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: 670f105a-cf31-4dae-b42c-61a756764b6e
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: c07033f9-2dd1-42a6-99d5-98086c412e4d
+Movie created: * Home Alone
+ - Written by: Chris Columbus
+ - Published by: 1990-11-16
+ - Id: f7bda955-5133-4cfc-bcac-16188ec42be4
+Movie created: * Home Alone
+ - Written by: Chris Columbus
+ - Published by: 1990-11-16
+ - Id: 8dfefea3-0d6d-43aa-89e2-7bdba9151279
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: 8340cb9c-b147-413e-8fab-9ef20adaa157
+Movie created: * Memento
+ - Written by: Christopher Nolan
+ - Published by: 2000-10-11
+ - Id: de306f6c-310b-450f-8c35-9caf8a8d9c68
+Movie created: * Inception
+ - Written by: Christopher Nolan
+ - Published by: 2010-07-15
+ - Id: e7b863e5-c4cb-4a27-8e47-4312f3d7127e
+Movie created: * Interstellar
+ - Written by: Christopher Nolan
+ - Published by: 2014-11-05
+ - Id: 1161d8f8-97a0-46e3-a64b-6a82afbc5710
+Movie created: * Rogue One
+ - Written by: Gareth Edwards
+ - Published by: 2016-12-16
+ - Id: a18c0a1b-e394-4178-8b6a-56c3f31993d9
+Movie created: * Contact
+ - Written by: Robert Zemeckis
+ - Published by: 1997-07-11
+ - Id: 08099e3b-e95c-4855-a2c6-966c3074fd83
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: 799b686b-b519-47cb-ae6d-0146124c38ad
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: e37dc0f6-43ea-4ef0-943a-d3f6430f44e7
+Movie created: * Star Wars
+ - Written by: George Lucas
+ - Published by: 1977-05-25
+ - Id: f837f3f4-a9ed-4f5d-b5d1-150c86d0f41d
+Movie created: * Star Trek
+ - Written by: J.J. Abrams
+ - Published by: 2009-05-06
+ - Id: 23bb3126-63a9-4149-9708-88557760aba8
+Movie created: * Star Trek Into Darkness
+ - Written by: J.J. Abrams
+ - Published by: 2013-05-05
+ - Id: a19af6eb-ae48-48ee-b0fe-b810f189d082
+Movie created: * Forrest Gump
+ - Written by: Robert Zemeckis
+ - Published by: 1994-07-06
+ - Id: e3e4d7a9-5755-4e4c-b6a4-ad1dad618afd
+Movie created: * Cast Away
+ - Written by: Robert Zemeckis
+ - Published by: 2000-12-22
+ - Id: 37f07c3c-0d1f-4c30-b688-e5f5306d896b
+Movie created: * The Fifth Element
+ - Written by: Luc Besson
+ - Published by: 1997-05-02
+ - Id: 94a9cfe7-6054-41ec-89a7-84d660dbde69
+Movie created: * Close Encounters of the Third Kind
+ - Written by: Steven Spielberg
+ - Published by: 1977-11-18
+ - Id: b7e8929e-13ba-4e94-8a0a-4bc1627cd848
+Movie created: * Star Wars
+ - Written by: George Lucas
+ - Published by: 1977-05-25
+ - Id: e4cee08b-3423-458e-979b-d1d45d64987d
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: d1583c4e-123a-4442-8f06-a94fb1b4c48b
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: 4fa8b645-a7a2-4194-ba09-8f02d579a786
+Movie created: * Finding Nemo
+ - Written by: Andrew Stanton
+ - Published by: 2003-05-30
+ - Id: 10be52cc-52e4-495f-8cbe-c4aef159fb27
+Movie created: * WALL·E
+ - Written by: Andrew Stanton
+ - Published by: 2008-06-22
+ - Id: 56a79793-bf55-4c2d-a874-b91b4f4d2313
+Movie created: * Coco
+ - Written by: Lee Unkrich
+ - Published by: 2017-10-27
+ - Id: bdb11f1b-bc51-49bf-9a8c-7f03d0a00381
+Movie created: * Toy Story 3
+ - Written by: Lee Unkrich
+ - Published by: 2010-06-16
+ - Id: d5a305db-c905-433e-978d-fd27efcefcb0
+Movie created: * The Polar Express
+ - Written by: Robert Zemeckis
+ - Published by: 2004-11-10
+ - Id: 51ecfe71-ebe2-42ca-8314-3ba6c066ff3e
+Movie created: * Shrek
+ - Written by: Andrew Adamson
+ - Published by: 2001-05-18
+ - Id: 1ac21e00-dc44-4d03-a201-c55eca9f9029
+Movie created: * Home Alone
+ - Written by: Chris Columbus
+ - Published by: 1990-11-16
+ - Id: 3d0f1c39-ab72-4a17-92c8-b06a4c1975f6
+Movie created: * Back to the Future Part III
+ - Written by: Robert Zemeckis
+ - Published by: 1990-05-25
+ - Id: 99dd9f6c-3767-4491-beb7-5be342afbdc2
+Movie created: * Back to the Future
+ - Written by: Robert Zemeckis
+ - Published by: 1985-07-03
+ - Id: 644f8446-7a2b-4389-93be-6b8083bc4fb2
+Movie created: * Back to the Future Part II
+ - Written by: Robert Zemeckis
+ - Published by: 1989-11-22
+ - Id: 0d8b56fa-af11-4096-a512-b56c2f768443
+Movie created: * Who Framed Roger Rabbit
+ - Written by: Robert Zemeckis
+ - Published by: 1988-06-21
+ - Id: 96ec0dfb-59d7-427a-a0c0-3e7ce7959be3
+Movie created: * The Lord of the Rings: The Fellowship of the Ring
+ - Written by: Peter Jackson
+ - Published by: 2001-12-18
+ - Id: 94b76fae-5270-429f-b799-89d95af5c406
+Movie created: * The Lord of the Rings: The Two Towers
+ - Written by: Peter Jackson
+ - Published by: 2002-12-18
+ - Id: fd89691e-b10c-4c31-a138-7ace69001aaf
+Movie created: * The Lord of the Rings: The Return of the King
+ - Written by: Peter Jackson
+ - Published by: 2003-12-01
+ - Id: 02778421-8e22-48e2-9543-4c95e4d8c64c
+Movie created: * Rogue One
+ - Written by: Gareth Edwards
+ - Published by: 2016-12-16
+ - Id: 4e375f9b-c9eb-4856-9283-f26dc77285ee
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: 6b09fe2b-5ac1-4e4d-b3e2-6980c0d3f99c
+Movie created: * Star Trek
+ - Written by: J.J. Abrams
+ - Published by: 2009-05-06
+ - Id: c6883199-aa34-47b7-95b3-48fa3200deab
+Movie created: * Star Trek II: The Wrath of Khan
+ - Written by: Nicholas Meyer
+ - Published by: 1982-06-04
+ - Id: ae635686-35b1-4e1d-98ba-4fbbc6d46075
+Movie created: * Star Trek Into Darkness
+ - Written by: J.J. Abrams
+ - Published by: 2013-05-05
+ - Id: fcc87c68-7d17-4c85-9d16-08cf6ed1bd59
+Movie created: * The Lord of the Rings: The Return of the King
+ - Written by: Peter Jackson
+ - Published by: 2003-12-01
+ - Id: 0b173dc6-8272-47e1-b14d-bb4b560e05b3
+Movie created: * The Lord of the Rings: The Two Towers
+ - Written by: Peter Jackson
+ - Published by: 2002-12-18
+ - Id: 643542c3-eaac-40d2-995f-432f21f30d76
+Movie created: * The Lord of the Rings: The Fellowship of the Ring
+ - Written by: Peter Jackson
+ - Published by: 2001-12-18
+ - Id: 0476e32f-0855-4b16-a646-7ebc83d77bc3
+Movie created: * Memento
+ - Written by: Christopher Nolan
+ - Published by: 2000-10-11
+ - Id: 87c541c3-1ea3-4850-9297-5d77f306c1cc
+Movie created: * Inception
+ - Written by: Christopher Nolan
+ - Published by: 2010-07-15
+ - Id: 5d753259-d9b5-4762-b3cc-f1ecba60cc11
+Movie created: * Rogue One
+ - Written by: Gareth Edwards
+ - Published by: 2016-12-16
+ - Id: 033a07fc-c94b-48c2-abb7-2673c6031241
+Movie created: * Star Wars
+ - Written by: George Lucas
+ - Published by: 1977-05-25
+ - Id: 2133a370-e088-45e1-99e7-23c3e192d7b9
+Movie created: * Back to the Future
+ - Written by: Robert Zemeckis
+ - Published by: 1985-07-03
+ - Id: f233f907-08c4-4ed4-a6c5-85d8459fbf66
+Movie created: * Back to the Future Part II
+ - Written by: Robert Zemeckis
+ - Published by: 1989-11-22
+ - Id: 20943829-95bf-4229-b2b4-980b6958502e
+Movie created: * Back to the Future Part III
+ - Written by: Robert Zemeckis
+ - Published by: 1990-05-25
+ - Id: c3b4c182-ae79-4e9c-a784-3ae293d372cd
+Movie created: * The Fifth Element
+ - Written by: Luc Besson
+ - Published by: 1997-05-02
+ - Id: 0238d355-413f-4b0a-b90d-272f2279e545
+Movie created: * The Lord of the Rings: The Fellowship of the Ring
+ - Written by: Peter Jackson
+ - Published by: 2001-12-18
+ - Id: 467a70b4-6d2b-4cbd-b18b-94d3c14a7be0
+Movie created: * The Lord of the Rings: The Two Towers
+ - Written by: Peter Jackson
+ - Published by: 2002-12-18
+ - Id: ebc75c23-313a-42f0-917d-7b91c4e5a247
+Movie created: * The Lord of the Rings: The Return of the King
+ - Written by: Peter Jackson
+ - Published by: 2003-12-01
+ - Id: e978fd8b-3e4b-4539-b5f9-b32cdd2b195c
+Movie created: * Close Encounters of the Third Kind
+ - Written by: Steven Spielberg
+ - Published by: 1977-11-18
+ - Id: e9bc35f2-7377-4727-bca4-dff5a3726e97
+Movie created: * Star Trek Into Darkness
+ - Written by: J.J. Abrams
+ - Published by: 2013-05-05
+ - Id: cdeab08b-ad6c-479c-8e79-6031cc294af5
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: 3dad5aa6-6ff1-4076-bf09-6c77f41e65ff
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: 1f34ff2d-d3ea-4767-9e13-08cb2d90402c
+Movie created: * Home Alone
+ - Written by: Chris Columbus
+ - Published by: 1990-11-16
+ - Id: eb9a7024-7ae0-4489-9b65-643e49d4c10e
+Movie created: * Home Alone
+ - Written by: Chris Columbus
+ - Published by: 1990-11-16
+ - Id: 2d3458b3-e794-449e-adc3-dd7d2fef8271
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: 9520adf6-bac6-411c-be4e-4dcef1a27595
+Movie created: * Memento
+ - Written by: Christopher Nolan
+ - Published by: 2000-10-11
+ - Id: e88366b2-888a-4a2b-bfa4-48af01a28950
+Movie created: * Inception
+ - Written by: Christopher Nolan
+ - Published by: 2010-07-15
+ - Id: dc1dc662-2d96-4936-a49d-037ce60d4506
+Movie created: * Interstellar
+ - Written by: Christopher Nolan
+ - Published by: 2014-11-05
+ - Id: 1a29ddd8-4ca2-417e-9910-06f6fb097e81
+Movie created: * Rogue One
+ - Written by: Gareth Edwards
+ - Published by: 2016-12-16
+ - Id: 680509de-86f8-4452-885a-f7f0316d748b
+Movie created: * Contact
+ - Written by: Robert Zemeckis
+ - Published by: 1997-07-11
+ - Id: d5a9bb64-aee1-40b7-adec-ff0066d0d06d
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: 46bf2030-2166-4df3-8af7-391a0324c830
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: e0ea1a06-a5df-49d5-b88f-e28f77edcc11
+Movie created: * Star Wars
+ - Written by: George Lucas
+ - Published by: 1977-05-25
+ - Id: 26cb0695-fd6a-4108-bd56-fbf51f2ada86
+Movie created: * Star Trek
+ - Written by: J.J. Abrams
+ - Published by: 2009-05-06
+ - Id: f24e553d-4e98-4f39-804f-db3110b90688
+Movie created: * Star Trek Into Darkness
+ - Written by: J.J. Abrams
+ - Published by: 2013-05-05
+ - Id: 2c9e9b41-e30b-428b-b341-ffd6fb18ee17
+Movie created: * Forrest Gump
+ - Written by: Robert Zemeckis
+ - Published by: 1994-07-06
+ - Id: 4e82449a-67a8-41e1-8bde-c631eb26dfb4
+Movie created: * Cast Away
+ - Written by: Robert Zemeckis
+ - Published by: 2000-12-22
+ - Id: 5e381f33-7aea-4ba3-8816-63bd559a015d
+Movie created: * The Fifth Element
+ - Written by: Luc Besson
+ - Published by: 1997-05-02
+ - Id: 5d66ae96-b8b2-4abe-9248-d8aab60f1992
+Movie created: * Close Encounters of the Third Kind
+ - Written by: Steven Spielberg
+ - Published by: 1977-11-18
+ - Id: 7f9d11bd-a3f3-4356-8a6f-2ede347a51b7
+Movie created: * Star Wars
+ - Written by: George Lucas
+ - Published by: 1977-05-25
+ - Id: 6f880989-8b81-4424-831b-843b8f15a2c7
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: 678facf6-aaf0-4f84-b322-be2188fbed62
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: b5722e48-72fc-4504-8232-d43d0bc72407
+Movie created: * Finding Nemo
+ - Written by: Andrew Stanton
+ - Published by: 2003-05-30
+ - Id: 2b1a1bd7-af99-49ef-afc7-7672974d7450
+Movie created: * WALL·E
+ - Written by: Andrew Stanton
+ - Published by: 2008-06-22
+ - Id: 0802be1c-7ee6-4e4a-a51e-75612d19354d
+Movie created: * Coco
+ - Written by: Lee Unkrich
+ - Published by: 2017-10-27
+ - Id: d419d704-3fdb-45a7-9b44-847af7ac0188
+Movie created: * Toy Story 3
+ - Written by: Lee Unkrich
+ - Published by: 2010-06-16
+ - Id: d19113c1-98d3-411a-8fc3-9fbea70a7ea2
+Movie created: * The Polar Express
+ - Written by: Robert Zemeckis
+ - Published by: 2004-11-10
+ - Id: 1d6158fa-05e8-472e-b902-3d34d7d352bf
+Movie created: * Shrek
+ - Written by: Andrew Adamson
+ - Published by: 2001-05-18
+ - Id: c22d5d86-dd7f-4350-a697-9c3d6d088585
+Movie created: * Home Alone
+ - Written by: Chris Columbus
+ - Published by: 1990-11-16
+ - Id: 6885051d-9e9d-49d3-8110-1c6d5013577c
+Movie created: * Back to the Future Part III
+ - Written by: Robert Zemeckis
+ - Published by: 1990-05-25
+ - Id: ffec1da1-b185-4f4e-b312-3eb76107270b
+Movie created: * Back to the Future
+ - Written by: Robert Zemeckis
+ - Published by: 1985-07-03
+ - Id: a7e8a0d5-5d01-4f39-90c5-77ee10416669
+Movie created: * Back to the Future Part II
+ - Written by: Robert Zemeckis
+ - Published by: 1989-11-22
+ - Id: e898e859-1b01-41d3-bbe2-d5a23bb381b1
+Movie created: * Who Framed Roger Rabbit
+ - Written by: Robert Zemeckis
+ - Published by: 1988-06-21
+ - Id: 82f72af8-57ba-4439-842f-16a42c31b6be
+Movie created: * The Lord of the Rings: The Fellowship of the Ring
+ - Written by: Peter Jackson
+ - Published by: 2001-12-18
+ - Id: d8f9458c-430d-4703-b1ee-804e88521f32
+Movie created: * The Lord of the Rings: The Two Towers
+ - Written by: Peter Jackson
+ - Published by: 2002-12-18
+ - Id: f581ad90-f7fc-4e74-9c31-21ebd3ca6c74
+Movie created: * The Lord of the Rings: The Return of the King
+ - Written by: Peter Jackson
+ - Published by: 2003-12-01
+ - Id: 57aa92ec-763e-4fa5-999a-644ab7b3c4c3
+Movie created: * Rogue One
+ - Written by: Gareth Edwards
+ - Published by: 2016-12-16
+ - Id: 0aec63fe-31dc-47bc-b03a-ebdd6946cdc3
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: 8e8cfb5a-38c9-4d84-a00e-15fc7f60e7ec
+Movie created: * Star Trek
+ - Written by: J.J. Abrams
+ - Published by: 2009-05-06
+ - Id: 7f63f3f2-fe6f-40a1-be71-e681876cd638
+Movie created: * Star Trek II: The Wrath of Khan
+ - Written by: Nicholas Meyer
+ - Published by: 1982-06-04
+ - Id: f91a651a-d24d-471a-9328-510de7486d74
+Movie created: * Star Trek Into Darkness
+ - Written by: J.J. Abrams
+ - Published by: 2013-05-05
+ - Id: f8abbb0d-2bed-4156-989d-84c639e3384a
+Movie created: * The Lord of the Rings: The Return of the King
+ - Written by: Peter Jackson
+ - Published by: 2003-12-01
+ - Id: 1ab773b5-60b8-4b34-9dc6-540876df5779
+Movie created: * The Lord of the Rings: The Two Towers
+ - Written by: Peter Jackson
+ - Published by: 2002-12-18
+ - Id: 0ce8e6cb-eb4b-4c77-916d-7de67de81e27
+Movie created: * The Lord of the Rings: The Fellowship of the Ring
+ - Written by: Peter Jackson
+ - Published by: 2001-12-18
+ - Id: 524299c2-51b8-4267-9619-04256d888d06
+Movie created: * Memento
+ - Written by: Christopher Nolan
+ - Published by: 2000-10-11
+ - Id: 5154befc-39be-4805-9f4d-322e5284d154
+Movie created: * Inception
+ - Written by: Christopher Nolan
+ - Published by: 2010-07-15
+ - Id: 7cd34ad5-7007-450b-be44-10a6b9594097
+Movie created: * Rogue One
+ - Written by: Gareth Edwards
+ - Published by: 2016-12-16
+ - Id: 76162d43-1108-4eaa-9f45-9dff7bb9230c
+Movie created: * Star Wars
+ - Written by: George Lucas
+ - Published by: 1977-05-25
+ - Id: d7a4a3f3-5f33-49a8-a421-437ff0535f05
+Movie created: * Back to the Future
+ - Written by: Robert Zemeckis
+ - Published by: 1985-07-03
+ - Id: a4e05f82-8881-4af3-bf94-3fc34e269672
+Movie created: * Back to the Future Part II
+ - Written by: Robert Zemeckis
+ - Published by: 1989-11-22
+ - Id: 9a9b6d97-2290-4c11-9ee1-16e0402268ae
+Movie created: * Back to the Future Part III
+ - Written by: Robert Zemeckis
+ - Published by: 1990-05-25
+ - Id: 2472ab3f-04c5-4a3c-838a-bec03a9126ab
+Movie created: * The Fifth Element
+ - Written by: Luc Besson
+ - Published by: 1997-05-02
+ - Id: 56584e5b-dc37-4cc8-b73d-2992e251b093
+Movie created: * The Lord of the Rings: The Fellowship of the Ring
+ - Written by: Peter Jackson
+ - Published by: 2001-12-18
+ - Id: 4b113784-d8ce-47d0-964e-7aed958a22fd
+Movie created: * The Lord of the Rings: The Two Towers
+ - Written by: Peter Jackson
+ - Published by: 2002-12-18
+ - Id: ce02162c-e0bf-4e1a-8db2-2eabdc581968
+Movie created: * The Lord of the Rings: The Return of the King
+ - Written by: Peter Jackson
+ - Published by: 2003-12-01
+ - Id: 40578fb3-0d32-42ad-a4ca-212aeed6a35d
+Movie created: * Close Encounters of the Third Kind
+ - Written by: Steven Spielberg
+ - Published by: 1977-11-18
+ - Id: a0e938dd-ebc9-4f7e-ad51-cec4a4abc25c
+Movie created: * Star Trek Into Darkness
+ - Written by: J.J. Abrams
+ - Published by: 2013-05-05
+ - Id: fe68dd45-f287-4fd4-8f6e-2c64c28a3828
+Movie created: * Jurassic Park
+ - Written by: Steven Spielberg
+ - Published by: 1993-06-11
+ - Id: aca152db-0454-4cde-b902-9f5ec70c54bc
+Movie created: * The Hitchhiker's Guide to the Galaxy
+ - Written by: Garth Jennings
+ - Published by: 2005-04-28
+ - Id: 66f7008d-3eee-4a1e-ae5b-265b162c113d
+Movie created: * Home Alone
+ - Written by: Chris Columbus
+ - Published by: 1990-11-16
+ - Id: 9812df5c-7780-4c6f-85f8-839a1c7a61d9
