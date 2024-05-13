@@ -17,7 +17,9 @@ public class PracticePart1 {
 		Q01_removeFraction(8.0, 2.5) -> 3.0
 	*/
 	public double Q01_removeFraction(double numerator, double denominator) {
-		return 0;
+		double dividedFraction = (numerator/denominator);
+		int removeFraction = (int) dividedFraction;
+		return removeFraction;
 	}
 
 	/*
@@ -34,7 +36,11 @@ public class PracticePart1 {
 		Q02_isWaterTemperatureExtreme(212) -> true
 	*/
 	public boolean Q02_isWaterTemperatureExtreme(int temperature) {
-		return false;
+		if (temperature <= 32 || temperature >= 212) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	/*
@@ -58,7 +64,17 @@ public class PracticePart1 {
 		Q03_isLeapYear(2019) -> false
 	*/
 	public boolean Q03_isLeapYear(int year) {
-		return false;
+		if (year % 400 == 0) {
+			return true;
+		} else if (year % 100 == 0 && year % 400 != 0) {
+			return false;
+		} else if (year % 4 == 0 && year % 100 != 0) {
+			return true;
+		} else if (year % 4 != 0) {
+			return false;
+		} else {
+			return true;
+		}
 	}
 
 	/*
@@ -79,7 +95,31 @@ public class PracticePart1 {
 		Q04_carWashPrice('P', true, true) -> 11
 	*/
 	public int Q04_carWashPrice(char typeOfWash, boolean isMorning, boolean isWeekend) {
-		return 0;
+		int basicCarWash = 8;
+		int premiumCarWash = 10;
+		int superCarWash = 12;
+
+		if (isMorning) {
+			basicCarWash -= 1;
+			premiumCarWash -= 1;
+			superCarWash -= 1;
+		}
+
+		if (isWeekend) {
+			basicCarWash += 2;
+			premiumCarWash += 2;
+			superCarWash += 2;
+		}
+
+		if (typeOfWash == 'B') {
+			return basicCarWash;
+		} else if (typeOfWash == 'P') {
+			return premiumCarWash;
+		} else if (typeOfWash == 'S') {
+			return superCarWash;
+		} else {
+			return 0;
+		}
 	}
 
 	/*
@@ -96,7 +136,18 @@ public class PracticePart1 {
 		 Q05_sumOfNumbersDivisibleBy7Between(56, 49) -> 0
 	*/
 	public int Q05_sumOfNumbersDivisibleBy7Between(int lowestNumber, int highestNumber) {
-		return 0;
+		if (highestNumber < lowestNumber) {
+			return 0;
+		}
+
+		int sum = 0;
+
+		for (int i = lowestNumber; i <= highestNumber; i++) {
+			if (i % 7 == 0) {
+				sum += i;
+			}
+		}
+		return sum;
 	}
 
 	/*
