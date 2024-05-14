@@ -168,7 +168,15 @@ public class PracticePart1 {
 		Q06_wordBetweenTags("<P>This is between.", "<P>") -> "" // End tag <P> not found.
 	*/
 	public String Q06_stringBetweenTags(String stringToSearch, String tag) {
-		return null;
+		int startTag = stringToSearch.indexOf(tag);
+		if (startTag == -1) {
+			return "";
+		}
+		int endTag = stringToSearch.indexOf(tag, startTag + tag.length());
+		if (endTag == -1) {
+			return "";
+		}
+		return stringToSearch.substring(startTag + tag.length(), endTag);
 	}
 
 	/*
@@ -192,7 +200,7 @@ public class PracticePart1 {
 	*/
 	public boolean Q07_isPalindrome(String word) {
 		String reverseWord = "";
-		for (int i = 0; i < word.length(); i++) {
+		for (int i = word.length() - 1; i >= 0; i--) {
 			reverseWord += word.charAt(i);
 		}
 		return word.equalsIgnoreCase(reverseWord);
@@ -217,7 +225,7 @@ public class PracticePart1 {
 	Q08_allowanceCalculator(7, 0, 40) -> 10
 	*/
 	public int Q08_allowanceCalculator(int weekly, int gift, int bonus) {
-		int allowance = weekly + gift + bonus * 4 / 52;
+		int allowance = weekly + (gift + (bonus * 4))/52;
 		return allowance;
 	}
 
