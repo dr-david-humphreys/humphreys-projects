@@ -13,7 +13,8 @@ public class AssessmentPart1 {
 		 Q01_calculateFraction(5, 2) -> 2.5
 	*/
 	public double Q01_calculateFraction(int numerator, int denominator) {
-		return 0.0;
+		double calculatedFraction = ((double) numerator / (double) denominator);
+		return calculatedFraction;
 	}
 
 	/*
@@ -24,7 +25,12 @@ public class AssessmentPart1 {
 		 Q02_isSumEven(13, 16) -> false
 	*/
 	public boolean Q02_isSumEven(int a, int b) {
-		return false;
+		int sum = a + b;
+		if (sum % 2 == 0) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	/*
@@ -37,7 +43,11 @@ public class AssessmentPart1 {
 		 Q03_moviePrice(21) -> 12
 	*/
 	public int Q03_moviePrice(int age) {
-		return 0;
+		if (age <= 12) {
+			return 7;
+		} else {
+			return 12;
+		}
 	}
 
 	/*
@@ -56,7 +66,15 @@ public class AssessmentPart1 {
 		 Q04_moviePriceMatinee(21, true, false) -> 8
 	*/
 	public int Q04_moviePriceMatinee(int age, boolean isBefore5pm, boolean isWeekend) {
-		return 0;
+		if (age <= 12 && !isWeekend && isBefore5pm) {
+			return 5;
+		} else if (age <= 12) {
+			return 7;
+		} else if (age > 12 && !isWeekend && isBefore5pm) {
+			return 8;
+		} else {
+			return 12;
+		}
 	}
 
 	/*
@@ -69,7 +87,17 @@ public class AssessmentPart1 {
 		 Q05_sumOfOddNumbersBetween(-12, -1) -> -36
 	*/
 	public int Q05_sumOfOddNumbersBetween(int lowestNumber, int highestNumber) {
-		return 0;
+		if (highestNumber < lowestNumber) {
+			return 0;
+		}
+
+		int sum = 0;
+		for (int i = lowestNumber; i <= highestNumber; i++) {
+			if (i % 2 != 0) {
+				sum += i;
+			}
+		}
+		return sum;
 	}
 
 	/*
@@ -84,7 +112,13 @@ public class AssessmentPart1 {
 		 Q06_firstNCharacters("Submarine", 0) -> ""
 	*/
 	public String Q06_firstNCharacters(String originalString, int numCharacters) {
-		return null;
+		if (numCharacters == 0) {
+			return "";
+		} else if (originalString.length() < numCharacters) {
+			return originalString;
+		} else {
+			return originalString.substring(0, numCharacters);
+		}
 	}
 
 	/*
