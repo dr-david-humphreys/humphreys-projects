@@ -250,7 +250,7 @@ public class PracticePart1 {
 	public boolean Q09_isIncreasing(int[] numbers) {
 		boolean result = true;
 		for (int i = 0; i < numbers.length - 1; i++) {
-			if (numbers[i] > numbers[i++]) {
+			if (numbers[i] > numbers[i+1]) {
 				result = false;
 				break;
 			}
@@ -272,7 +272,12 @@ public class PracticePart1 {
 		Q10_reverseList(new ArrayList<>(List.of())) -> []
 	*/
 	public List<Integer> Q10_reverseList(List<Integer> numbers) {
-		return new ArrayList<>();
+		List<Integer> reverseList = new ArrayList<>();
+
+		for (int i = numbers.size() - 1; i >= 0; i--) {
+			reverseList.add(numbers.get(i));
+		}
+		return reverseList;
 	}
 
 	/*
@@ -296,6 +301,11 @@ public class PracticePart1 {
 		 	-> {"Dog": 3, "Chicken": 1, "Fish": 1, "Cat": 2, "Dinosaur": 1, "Llama": 1}
 	*/
 	public Map<String, Integer> Q11_idealPets(String[] suggestedPets) {
-		return new HashMap<>();
+		Map<String, Integer> petCount = new HashMap<>();
+
+		for (String pet : suggestedPets) {
+			petCount.put(pet, petCount.getOrDefault(pet, 0) +1);
+		}
+		return petCount;
 	}
 }
