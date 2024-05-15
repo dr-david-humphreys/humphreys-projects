@@ -134,7 +134,7 @@ public class AssessmentPart1 {
 		 Q07_spaceReplacer("Stop Wait Listen ", "! ") -> "Stop! Wait! Listen! "
 	*/
 	public String Q07_spaceReplacer(String stringValue, String replaceSpaceWith) {
-		stringValue.replace(" ", replaceSpaceWith);
+		stringValue = stringValue.replace(" ", replaceSpaceWith);
 		return stringValue;
 	}
 
@@ -152,7 +152,7 @@ public class AssessmentPart1 {
 		 Q08_convertToFahrenheit(100.0) -> 212.0
 	*/
 	public double Q08_convertToFahrenheit(double degreesCelsius) {
-		double degreesFahrenheit = (9 / 5) * degreesCelsius + 32.0;
+		double degreesFahrenheit = (9.0 / 5.0) * degreesCelsius + 32.0;
 		return degreesFahrenheit;
 	}
 
@@ -169,7 +169,7 @@ public class AssessmentPart1 {
 		 Q09_convertToCelsius(212.0) -> 100.0
 	*/
 	public double Q09_convertToCelsius(double degreesFahrenheit) {
-		double degreesCelsius = degreesFahrenheit - 32.0 * 5.0 / 9.0;
+		double degreesCelsius = (degreesFahrenheit - 32.0) * 5.0 / 9.0;
 		return degreesCelsius;
 	}
 
@@ -185,6 +185,12 @@ public class AssessmentPart1 {
 		 Q10_swapFirstAndLastElements([1,2]) -> [2,1]
 	*/
 	public int[] Q10_swapFirstAndLastElements(int[] arrayOfInts) {
+		int firstElement = arrayOfInts[0];
+		int lastElement = arrayOfInts[arrayOfInts.length - 1];
+
+		arrayOfInts[0] = lastElement;
+		arrayOfInts[arrayOfInts.length - 1] = firstElement;
+
 		return arrayOfInts;
 	}
 
@@ -200,7 +206,13 @@ public class AssessmentPart1 {
 		 Q11_mealCount(["Beef", "Chicken", "Fish", "Tofu", "Tofu", "Fish"]) -> {"Beef": 1, "Chicken": 1, "Fish": 2, "Tofu": 2}
 	*/
 	public Map<String, Integer> Q11_mealCount(String[] mealOrders) {
-		return null;
+		Map<String, Integer> cateringOrder = new HashMap<>();
+
+		for (String meal : mealOrders) {
+			cateringOrder.put(meal, cateringOrder.getOrDefault(meal, 0) + 1);
+		}
+
+		return cateringOrder;
 	}
 
 }
