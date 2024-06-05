@@ -7,5 +7,5 @@ SELECT p.person_name, COUNT(ma.movie_id) AS num_of_movies
 	FROM person p
 	LEFT JOIN movie_actor ma ON p.person_id = ma.actor_id
 	WHERE p.person_name LIKE 'George %'
-	GROUP BY p.person_name
+	GROUP BY p.person_id
 	ORDER BY p.person_name;
