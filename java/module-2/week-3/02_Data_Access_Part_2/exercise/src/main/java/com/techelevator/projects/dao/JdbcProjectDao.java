@@ -111,18 +111,16 @@ public class JdbcProjectDao implements ProjectDao {
 
 	@Override
 	public Project updateProject(Project project) {
-		Project updateProject = null;
-
-		String sql = "UPDATE project SET name = ?, from_date = ?, to_date = ?;";
+		String sql = "UPDATE project SET name = ?, from_date = ?, to_date = ? WHERE project_id = ?";
 
 		try {
-			int numberOfRows = jdbcTemplate.update(sql, project.getName(), project.getFromDate(), project.getToDate());
+			int numberOfRows = jdbcTemplate.update(sql, project.getName(), project.getFromDate(), project.getToDate(), project.getId());
 
 			if (numberOfRows == 0) {
 				throw new DaoException("Zero rows affected, expected at least one");
-			} else {
-				updateProject = getProjectById(project.getId());
 			}
+
+			return getProjectById(project.getId());
 		} catch (CannotGetJdbcConnectionException e) {
 			throw new DaoException("Unable to connect to server or database", e);
 		} catch (DataIntegrityViolationException e) {
@@ -130,7 +128,6 @@ public class JdbcProjectDao implements ProjectDao {
 		} catch (Exception e) {
 			throw new DaoException("Error updating project", e);
 		}
-		return updateProject;
 	}
 	@Override
 	public int deleteProjectById(int projectId) {
