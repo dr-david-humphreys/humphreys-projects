@@ -20,7 +20,7 @@ public class JdbcGenreDao implements GenreDao {
     @Override
     public List<Genre> getGenres() {
         List<Genre> genres = new ArrayList<>();
-        String sql = "SELECT * FROM genre;";
+        String sql = "SELECT genre_id, genre_name FROM genre;";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
         while (results.next()) {
             genres.add(mapRowToGenre(results));
@@ -30,7 +30,7 @@ public class JdbcGenreDao implements GenreDao {
 
     @Override
     public Genre getGenreById(int id) {
-        String sql = "SELECT * FROM genre WHERE genre_id = ?";
+        String sql = "SELECT genre_id, genre_name FROM genre WHERE genre_id = ?";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql, id);
 
         if (results.next()) {
@@ -43,7 +43,7 @@ public class JdbcGenreDao implements GenreDao {
     @Override
     public List<Genre> getGenresByName(String name, boolean useWildCard) {
         List<Genre> genres = new ArrayList<>();
-        String sql = "SELECT * FROM genre WHERE LOWER(genre_name) LIKE LOWER(?)";
+        String sql = "SELECT genre_id, genre_name FROM genre WHERE LOWER(genre_name) LIKE LOWER(?)";
 
         if (useWildCard) {
             name = "%" + name + "%";

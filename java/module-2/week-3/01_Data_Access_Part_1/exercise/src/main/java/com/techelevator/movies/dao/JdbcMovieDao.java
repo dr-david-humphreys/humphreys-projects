@@ -2,6 +2,7 @@ package com.techelevator.movies.dao;
 
 import com.techelevator.movies.model.Genre;
 import com.techelevator.movies.model.Movie;
+import com.techelevator.movies.model.Person;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 
@@ -20,7 +21,7 @@ public class JdbcMovieDao implements MovieDao {
     @Override
     public List<Movie> getMovies() {
         List<Movie> movies = new ArrayList<>();
-        String sql = "SELECT * FROM movie;";
+        String sql = "SELECT movie_id, title, director_id FROM movie;";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
         while (results.next()) {
             movies.add(mapRowToMovie(results));
@@ -30,8 +31,7 @@ public class JdbcMovieDao implements MovieDao {
 
     @Override
     public Movie getMovieById(int id) {
-        String sql = "SELECT m.*, p.person_name AS director_name FROM movie m " +
-                "JOIN person p ON m.director_id = p.person_id WHERE m.movie_id = ?";
+        String sql = "SELECT movie_id, title, overview, tagline, poster_path, home_page, release_date, length_minutes, director_id, collection_id FROM movie WHERE movie_id = ?;";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql, id);
 
         if (results.next()) {
@@ -44,7 +44,7 @@ public class JdbcMovieDao implements MovieDao {
     @Override
     public List<Movie> getMoviesByTitle(String title, boolean useWildCard) {
         List<Movie> movies = new ArrayList<>();
-        String sql = "SELECT * FROM movie WHERE LOWER(title) LIKE LOWER(?)";
+        String sql = "SELECT movie_id, title FROM movie WHERE LOWER(title) LIKE LOWER(?);";
 
         if (useWildCard) {
             title = "%" + title + "%";
@@ -62,11 +62,11 @@ public class JdbcMovieDao implements MovieDao {
     public List<Movie> getMoviesByDirectorNameAndBetweenYears(String directorName, int startYear,
                                                               int endYear, boolean useWildCard) {
         List<Movie> movies = new ArrayList<>();
-        String sql = "SELECT m.* FROM movie m " +
+        String sql = "SELECT m.movie_id, m.title, m.director_id, p.person_name AS director_name FROM movie m " +
                 "JOIN person p ON m.director_id = p.person_id " +
                 "Where LOWER (p.person_name) LIKE LOWER(?) " +
                 "AND m.release_date BETWEEN ? AND ? " +
-                "ORDER BY m.release_date ASC";
+                "ORDER BY m.release_date ASC;";
 
         if (useWildCard) {
             directorName = "%" + directorName + "%";

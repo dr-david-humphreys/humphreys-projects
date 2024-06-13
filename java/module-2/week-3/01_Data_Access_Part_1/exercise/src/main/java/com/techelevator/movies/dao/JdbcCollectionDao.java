@@ -19,7 +19,7 @@ public class JdbcCollectionDao implements CollectionDao{
     @Override
     public List<Collection> getCollections() {
         List<Collection> collections = new ArrayList<>();
-        String sql = "SELECT * FROM collection;";
+        String sql = "SELECT collection_id, collection_name FROM collection;";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
         while (results.next()) {
             collections.add(mapRowToCollection(results));
@@ -29,7 +29,7 @@ public class JdbcCollectionDao implements CollectionDao{
 
     @Override
     public Collection getCollectionById(int id) {
-        String sql = "SELECT * FROM collection WHERE collection_id = ?";
+        String sql = "SELECT collection_id, collection_name FROM collection WHERE collection_id = ?";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql, id);
 
         if (results.next()) {
@@ -42,7 +42,7 @@ public class JdbcCollectionDao implements CollectionDao{
     @Override
     public List<Collection> getCollectionsByName(String name, boolean useWildCard) {
         List<Collection> collections = new ArrayList<>();
-        String sql = "SELECT * FROM collection WHERE LOWER(collection_name) LIKE LOWER(?)";
+        String sql = "SELECT collection_id, collection_name FROM collection WHERE LOWER(collection_name) LIKE LOWER(?)";
 
         if (useWildCard) {
             name = "%" + name + "%";
