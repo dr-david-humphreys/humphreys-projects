@@ -30,9 +30,13 @@ public class JdbcEmployeeDao implements EmployeeDao {
 		String sql = EMPLOYEE_SELECT +
 				" WHERE e.employee_id=?";
 
-		SqlRowSet results = jdbcTemplate.queryForRowSet(sql, id);
-		if (results.next()) {
-			employee = mapRowToEmployee(results);
+		try {
+			SqlRowSet results = jdbcTemplate.queryForRowSet(sql, id);
+			if (results.next()) {
+				employee = mapRowToEmployee(results);
+			}
+		} catch (CannotGetJdbcConnectionException e) {
+			throw new DaoException("Unable to connect to server or database", e);
 		}
 
 		return employee;
@@ -43,10 +47,14 @@ public class JdbcEmployeeDao implements EmployeeDao {
 		List<Employee> allEmployees = new ArrayList<>();
 		String sql = EMPLOYEE_SELECT;
 
-		SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
-		while (results.next()) {
-			Employee employeeResult = mapRowToEmployee(results);
-			allEmployees.add(employeeResult);
+		try {
+			SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
+			while (results.next()) {
+				Employee employeeResult = mapRowToEmployee(results);
+				allEmployees.add(employeeResult);
+			}
+		} catch (CannotGetJdbcConnectionException e) {
+			throw new DaoException("Unable to connect to server or database", e);
 		}
 
 		return allEmployees;
@@ -58,10 +66,14 @@ public class JdbcEmployeeDao implements EmployeeDao {
 		String sql = EMPLOYEE_SELECT +
 				" WHERE e.first_name ILIKE ? AND e.last_name ILIKE ?";
 
-		SqlRowSet results = jdbcTemplate.queryForRowSet(sql, "%" + firstName + "%", "%" + lastName + "%");
-		while (results.next()) {
-			Employee employeeResult = mapRowToEmployee(results);
-			allEmployees.add(employeeResult);
+		try {
+			SqlRowSet results = jdbcTemplate.queryForRowSet(sql, "%" + firstName + "%", "%" + lastName + "%");
+			while (results.next()) {
+				Employee employeeResult = mapRowToEmployee(results);
+				allEmployees.add(employeeResult);
+			}
+		} catch (CannotGetJdbcConnectionException e) {
+			throw new DaoException("Unable to connect to server or database", e);
 		}
 
 		return allEmployees;
@@ -74,10 +86,14 @@ public class JdbcEmployeeDao implements EmployeeDao {
 				"JOIN project_employee pe ON e.employee_id = pe.employee_id " +
 				"WHERE pe.project_id = ?";
 
-		SqlRowSet results = jdbcTemplate.queryForRowSet(sql, projectId);
-		while (results.next()) {
-			Employee employeeResult = mapRowToEmployee(results);
-			allEmployees.add(employeeResult);
+		try {
+			SqlRowSet results = jdbcTemplate.queryForRowSet(sql, projectId);
+			while (results.next()) {
+				Employee employeeResult = mapRowToEmployee(results);
+				allEmployees.add(employeeResult);
+			}
+		} catch (CannotGetJdbcConnectionException e) {
+			throw new DaoException("Unable to connect to server or database", e);
 		}
 
 		return allEmployees;
@@ -89,10 +105,14 @@ public class JdbcEmployeeDao implements EmployeeDao {
 		String sql = EMPLOYEE_SELECT +
 				" WHERE e.employee_id NOT IN (SELECT DISTINCT employee_id FROM project_employee)";
 
-		SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
-		while (results.next()) {
-			Employee employeeResult = mapRowToEmployee(results);
-			allEmployees.add(employeeResult);
+		try {
+			SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
+			while (results.next()) {
+				Employee employeeResult = mapRowToEmployee(results);
+				allEmployees.add(employeeResult);
+			}
+		} catch (CannotGetJdbcConnectionException e) {
+			throw new DaoException("Unable to connect to server or database", e);
 		}
 
 		return allEmployees;
