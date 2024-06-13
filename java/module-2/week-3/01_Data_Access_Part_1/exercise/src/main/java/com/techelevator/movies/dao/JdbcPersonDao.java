@@ -67,7 +67,7 @@ public class JdbcPersonDao implements PersonDao {
                 "JOIN movie m ON ma.movie_id = m.movie_id " +
                 "JOIN collection c ON m.collection_id = c.collection_id " +
                 "WHERE LOWER(c.collection_name) LIKE LOWER(?) " +
-                "ORDER BY p.person_name";
+                "ORDER BY p.person_name;";
         if (useWildCard) {
             collectionName = "%" + collectionName + "%";
         }
