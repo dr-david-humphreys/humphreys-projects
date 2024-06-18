@@ -23,10 +23,14 @@ public class JdbcTimesheetDaoTests extends BaseDaoTests {
 
     private JdbcTimesheetDao dao;
 
-
+    //lecture review - Added test timesheet
+    private Timesheet testTimesheet;
     @Before
     public void setup() {
         dao = new JdbcTimesheetDao(dataSource);
+        //lecture review - Initialize test timesheet with test values
+        testTimesheet = new Timesheet(5, 2, 1, LocalDate.now(), 9.9,
+                true, "Test Timesheet");
     }
 
     @Test  //lecture review
@@ -78,7 +82,17 @@ public class JdbcTimesheetDaoTests extends BaseDaoTests {
 
     @Test //lecture review
     public void createTimesheet_creates_timesheet() {
-        Assert.fail();
+        Timesheet createdTimesheet = dao.createTimesheet(testTimesheet);
+
+        Assert.assertNotNull("createTimesheet returned a null timesheet", createdTimesheet);
+        assertTimesheetsMatch("createTimesheet returned an incorrect/incomplete timesheet.", testTimesheet,
+                createdTimesheet);
+
+        // verify value was saved to database, retrieve it and compare values
+        Timesheet retrievedTimesheet = dao.getTimesheetById(createdTimesheet.getTimesheetId());
+        Assert.assertNotNull("createTimesheet does not appear to have correctly persisted the newly created timesheet. It could not be found by id.", retrievedTimesheet);
+        assertTimesheetsMatch("createTimesheet does not appear to have fully persisted the newly created timesheet. The retrieved timesheet is incorrect/incomplete.",
+                createdTimesheet, retrievedTimesheet);
     }
 
     @Test
