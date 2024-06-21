@@ -1,40 +1,41 @@
 Bug 1
 -----
 Test that demonstrates problem:
-
+    getTimesheetsByEmployeeId_with_valid_employee_id_returns_list_of_timesheets_for_employee()
 Expected output:
-
+    Expected 2 timesheets for employee_id 1
 Actual output:
-
+    1 timesheet for employee_id 1
 How did you fix this bug?
-
+    Changed the if (results.next()) statement to a while (results.next()) loop
 
 Bug 2
 -----
 Test that demonstrates problem:
-
+    getTimesheetsByProjectId_with_valid_project_id_returns_list_of_all_timesheets_for_project()
 Expected output:
-
+    Expected 3 timesheets for project_id 1
 Actual output:
-
+    2 timesheets for project_id 1
 How did you fix this bug?
-
+    Where clause was filtering by employee_id instead of project_id, changed employee_id to project_id
 
 Bug 3
 -----
 Test that demonstrates problem:
-
+    createTimesheet_creates_timesheet()
 Expected output:
-
+    A created timesheet
 Actual output:
-
+    No new timesheet was created
 How did you fix this bug?
-
+    No timesheet was being created because there was no code to create a new unique PK timesheet_id
+    Added the line "newTimesheet.setTimesheetId(newId);" after the catches to create a new timesheet_id
 
 Bug 4
 -----
 Test that demonstrates problem:
-
+    I only had 3 tests not passing after creating my tests.
 Expected output:
 
 Actual output:
