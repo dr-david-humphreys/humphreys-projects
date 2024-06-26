@@ -26,8 +26,8 @@ public class Application {
         // TODO: When you implement a new DAO, create an instance of it here, replacing the NULL
         CustomerDao customerDao = new JdbcCustomerDao(dataSource);
         ProductDao productDao = new JdbcProductDao(dataSource);
-        SaleDao saleDao = null;
-        LineItemDao lineItemDao = null;
+        SaleDao saleDao = new JdbcSaleDao(dataSource);
+        LineItemDao lineItemDao = new JdbcLineItemDao(dataSource);
         //*****************************************************************************************
 
         // Create the basic i/o mechanism (the console)
