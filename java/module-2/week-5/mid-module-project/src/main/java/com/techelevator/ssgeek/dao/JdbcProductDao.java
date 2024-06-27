@@ -43,9 +43,11 @@ public class JdbcProductDao implements ProductDao {
     public List<Product> getProductsWithNoSales() {
         List<Product> products = new ArrayList<>();
         String sql = "SELECT p.product_id, p.name, p.description, p.price, p.image_name " +
-                "FROM product p JOIN line_item l ON p.product_id = l.product_id " +
-                "JOIN sale s ON l.sale_id = s.sale_id" +
-                "WHERE l.product_id IS NULL ORDER BY p.product_id";
+                "FROM product p " +
+                "JOIN line_item l ON p.product_id = l.product_id " +
+                "JOIN sale s ON l.sale_id = s.sale_id " +
+                "WHERE l.product_id IS NULL " +
+                "ORDER BY p.product_id";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
         while (results.next()) {
             products.add(mapRowToProduct(results));
@@ -56,7 +58,8 @@ public class JdbcProductDao implements ProductDao {
     @Override
     public Product createProduct(Product newProduct) {
         String sql = "INSERT INTO product (name, description, price, image_name) VALUES (?, ?, ?, ?) RETURNING product_id";
-        int newId = jdbcTemplate.queryForObject(sql, int.class, newProduct.getName(), newProduct.getDescription(), newProduct.getPrice(), newProduct.getImageName(), newProduct.getProductId());
+        int newId = jdbcTemplate.queryForObject(sql, int.class, newProduct.getName(), newProduct.getDescription(), newProduct.getPrice(), newProduct.getImageName());
+        newProduct.setProductId(newId);
         return newProduct;
     }
 
