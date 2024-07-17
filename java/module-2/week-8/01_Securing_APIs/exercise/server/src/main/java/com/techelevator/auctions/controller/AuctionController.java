@@ -6,11 +6,13 @@ import com.techelevator.auctions.exception.DaoException;
 import com.techelevator.auctions.model.Auction;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.annotation.security.PermitAll;
 import javax.validation.Valid;
+import java.security.Principal;
 import java.util.List;
 
 @RestController
@@ -76,8 +78,8 @@ public class AuctionController {
     }
 
     @RequestMapping(path = "/whoami")
-    public String whoAmI() {
-        return "";
+    public String whoAmI(Principal principal) {
+        return principal.getName();
     }
 
 }
