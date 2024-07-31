@@ -6,12 +6,12 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.jdbc.CannotGetJdbcConnectionException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
+@Component
 public class JdbcGoalDao implements GoalDao {
 
     private final JdbcTemplate jdbcTemplate;
@@ -25,7 +25,7 @@ public class JdbcGoalDao implements GoalDao {
         Goal goal = null;
         String sql = "SELECT g.goal_id, g.user_id, g.description, g.target_date, g.achieved, g.notes, u.username " +
                 "FROM goal g " +
-                "JOIN users u ON g.user_id = u.id " +
+                "JOIN users u ON g.user_id = u.user_id " +
                 "WHERE g.goal_id = ?";
 
         try {
@@ -46,7 +46,7 @@ public class JdbcGoalDao implements GoalDao {
         List<Goal> goals = new ArrayList<>();
         String sql = "SELECT g.goal_id, g.user_id, g.description, g.target_date, g.achieved, g.notes, u.username " +
                 "FROM goal g " +
-                "JOIN users u ON g.user_id = u.id " +
+                "JOIN users u ON g.user_id = u.user_id " +
                 "WHERE g.user_id = ? " +
                 "ORDER BY g.goal_id";
 
@@ -69,7 +69,7 @@ public class JdbcGoalDao implements GoalDao {
         List<Goal> goals = new ArrayList<>();
         String sql = "SELECT g.goal_id, g.user_id, g.description, g.target_date, g.achieved, g.notes, u.username " +
                 "FROM goal g " +
-                "JOIN users u ON g.user_id = u.id " +
+                "JOIN users u ON g.user_id = u.user_id " +
                 "WHERE u.username = ? " +
                 "ORDER BY g.goal_id";
 
@@ -148,7 +148,7 @@ public class JdbcGoalDao implements GoalDao {
         goal.setTargetDate(results.getDate("target_date").toLocalDate());
         goal.setAchieved(results.getBoolean("achieved"));
         goal.setNotes(results.getString("notes"));
-        goal.setUsername(results.getString("username"));  // Map new field
+        goal.setUsername(results.getString("username"));
         return goal;
     }
 }

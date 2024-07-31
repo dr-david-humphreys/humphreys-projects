@@ -6,12 +6,12 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.jdbc.CannotGetJdbcConnectionException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
+@Component
 public class JdbcPracticeSessionDao implements PracticeSessionDao {
 
     private final JdbcTemplate jdbcTemplate;
@@ -69,7 +69,7 @@ public class JdbcPracticeSessionDao implements PracticeSessionDao {
         List<PracticeSession> practiceSessions = new ArrayList<>();
         String sql = "SELECT ps.practice_session_id, ps.user_id, ps.date, ps.duration, ps.pieces_practiced, ps.notes, u.username " +
                 "FROM practice_session ps " +
-                "JOIN users u ON ps.user_id = u.id " +
+                "JOIN users u ON ps.user_id = u.user_id " +
                 "WHERE u.username = ? " +
                 "ORDER BY ps.practice_session_id";
 
@@ -90,8 +90,8 @@ public class JdbcPracticeSessionDao implements PracticeSessionDao {
     @Override
     public PracticeSession createPracticeSession(PracticeSession newPracticeSession) {
         int newId;
-        String sql = "INSERT INTO practice_session (practice_session_id, user_id, date, duration, pieces_practiced, notes) " +
-                "VALUES (?, ?, ?, ?, ?, ?) " +
+        String sql = "INSERT INTO practice_session (user_id, date, duration, pieces_practiced, notes) " +
+                "VALUES (?, ?, ?, ?, ?) " +
                 "RETURNING practice_session_id;";
 
         try {

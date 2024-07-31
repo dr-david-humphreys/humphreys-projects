@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/practice_session")
+@RequestMapping("/practice-session")
 public class PracticeSessionController {
 
     @Autowired
