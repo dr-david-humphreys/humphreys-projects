@@ -10,6 +10,7 @@ public class PracticeSession {
     private int duration;
     private String piecesPracticed;
     private String notes;
+    private String username;
 
     public PracticeSession() {}
 
@@ -20,6 +21,7 @@ public class PracticeSession {
         this.duration = duration;
         this.piecesPracticed = piecesPracticed;
         this.notes = notes;
+        this.username = username;
     }
 
     public int getPracticeSessionId() {
@@ -68,5 +70,13 @@ public class PracticeSession {
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

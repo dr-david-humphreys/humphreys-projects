@@ -10,6 +10,7 @@ public class Goal {
     private LocalDate targetDate;
     private boolean achieved;
     private String notes;
+    private String username;
 
     public Goal() {}
 
@@ -20,6 +21,7 @@ public class Goal {
         this.targetDate = targetDate;
         this.achieved = achieved;
         this.notes = notes;
+        this.username = username;
     }
 
     public int getGoalId() {
@@ -68,5 +70,13 @@ public class Goal {
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

@@ -2,15 +2,16 @@ package com.techelevator.dao;
 
 import com.techelevator.exception.DaoException;
 import com.techelevator.model.Goal;
-import com.techelevator.model.PracticeSession;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.jdbc.CannotGetJdbcConnectionException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class JdbcGoalDao implements GoalDao {
 
     private final JdbcTemplate jdbcTemplate;
@@ -22,14 +23,15 @@ public class JdbcGoalDao implements GoalDao {
     @Override
     public Goal getGoalById(int goalId) {
         Goal goal = null;
-        String sql = "SELECT goal_id, user_id, description, target_date, achieved, notes " +
-                "FROM goal " +
-                "WHERE goal_id =?";
+        String sql = "SELECT g.goal_id, g.user_id, g.description, g.target_date, g.achieved, g.notes, u.username " +
+                "FROM goal g " +
+                "JOIN users u ON g.user_id = u.id " +
+                "WHERE g.goal_id = ?";
 
         try {
             SqlRowSet results = jdbcTemplate.queryForRowSet(sql, goalId);
             if (results.next()) {
-                goal = mapRowToPracticeSession(results);
+                goal = mapRowToGoal(results);
             }
         } catch (CannotGetJdbcConnectionException e) {
             throw new DaoException("Unable to connect to server or database", e);
@@ -42,15 +44,39 @@ public class JdbcGoalDao implements GoalDao {
     @Override
     public List<Goal> getGoalsByUserId(int userId) {
         List<Goal> goals = new ArrayList<>();
-        String sql = "SELECT goal_id, user_id, description, target_date, achieved, notes " +
-                "FROM goal " +
-                "WHERE user_id =? " +
-                "ORDER BY goal_id";
+        String sql = "SELECT g.goal_id, g.user_id, g.description, g.target_date, g.achieved, g.notes, u.username " +
+                "FROM goal g " +
+                "JOIN users u ON g.user_id = u.id " +
+                "WHERE g.user_id = ? " +
+                "ORDER BY g.goal_id";
 
         try {
             SqlRowSet results = jdbcTemplate.queryForRowSet(sql, userId);
             while (results.next()) {
-                Goal goal = mapRowToPracticeSession(results);
+                Goal goal = mapRowToGoal(results);
+                goals.add(goal);
+            }
+        } catch (CannotGetJdbcConnectionException e) {
+            throw new DaoException("Unable to connect to server or database", e);
+        } catch (DataIntegrityViolationException e) {
+            throw new DaoException("Data integrity violation", e);
+        }
+        return goals;
+    }
+
+    @Override
+    public List<Goal> getGoalsByUsername(String username) {
+        List<Goal> goals = new ArrayList<>();
+        String sql = "SELECT g.goal_id, g.user_id, g.description, g.target_date, g.achieved, g.notes, u.username " +
+                "FROM goal g " +
+                "JOIN users u ON g.user_id = u.id " +
+                "WHERE u.username = ? " +
+                "ORDER BY g.goal_id";
+
+        try {
+            SqlRowSet results = jdbcTemplate.queryForRowSet(sql, username);
+            while (results.next()) {
+                Goal goal = mapRowToGoal(results);
                 goals.add(goal);
             }
         } catch (CannotGetJdbcConnectionException e) {
@@ -64,16 +90,16 @@ public class JdbcGoalDao implements GoalDao {
     @Override
     public Goal createGoal(Goal newGoal) {
         int newId;
-        String sql = "INSERT INTO goal (goal_id, user_id, description, target_date, achieved, notes) " +
-                "VALUES (?, ?, ?, ?, ?, ?) " +
-                "RETURNING goal_id;";
+        String sql = "INSERT INTO goal (user_id, description, target_date, achieved, notes) " +
+                "VALUES (?, ?, ?, ?, ?) " +
+                "RETURNING goal_id";
 
         try {
-            newId = jdbcTemplate.queryForObject(sql, int.class, newGoal.getGoalId(), newGoal.getUserId(), newGoal.getDescription(), newGoal.getTargetDate(), newGoal.getNotes());
+            newId = jdbcTemplate.queryForObject(sql, int.class, newGoal.getUserId(), newGoal.getDescription(), newGoal.getTargetDate(), newGoal.isAchieved(), newGoal.getNotes());
         } catch (CannotGetJdbcConnectionException e) {
             throw new DaoException("Unable to connect to server or database", e);
         } catch (DataIntegrityViolationException e) {
-            throw new DaoException("Unable to connect to server or database", e);
+            throw new DaoException("Data integrity violation", e);
         }
         newGoal.setGoalId(newId);
         return getGoalById(newId);
@@ -83,23 +109,23 @@ public class JdbcGoalDao implements GoalDao {
     public Goal updateGoal(Goal updatedGoal) {
         Goal updateGoal = null;
         String sql = "UPDATE goal " +
-                "SET goal_id = ?, user_id = ?, description = ?, target_date = ?, achieved = ?, notes = ? " +
+                "SET user_id = ?, description = ?, target_date = ?, achieved = ?, notes = ? " +
                 "WHERE goal_id = ?";
 
         try {
-            int rowsAffected = jdbcTemplate.update(sql, updatedGoal.getGoalId(), updatedGoal.getUserId(), updatedGoal.getDescription(), updatedGoal.getTargetDate(), updatedGoal.getNotes());
+            int rowsAffected = jdbcTemplate.update(sql, updatedGoal.getUserId(), updatedGoal.getDescription(), updatedGoal.getTargetDate(), updatedGoal.isAchieved(), updatedGoal.getNotes(), updatedGoal.getGoalId());
 
             if (rowsAffected == 0) {
                 throw new DaoException("Zero rows affected, expected at least one");
             } else {
-                updatedGoal = getGoalById(updatedGoal.getGoalId());
+                updateGoal = getGoalById(updatedGoal.getGoalId());
             }
         } catch (CannotGetJdbcConnectionException e) {
             throw new DaoException("Unable to connect to server or database", e);
         } catch (DataIntegrityViolationException e) {
             throw new DaoException("Data integrity violation", e);
         }
-        return updatedGoal;
+        return updateGoal;
     }
 
     @Override
@@ -114,7 +140,7 @@ public class JdbcGoalDao implements GoalDao {
         }
     }
 
-    private Goal mapRowToPracticeSession(SqlRowSet results) {
+    private Goal mapRowToGoal(SqlRowSet results) {
         Goal goal = new Goal();
         goal.setGoalId(results.getInt("goal_id"));
         goal.setUserId(results.getInt("user_id"));
@@ -122,6 +148,7 @@ public class JdbcGoalDao implements GoalDao {
         goal.setTargetDate(results.getDate("target_date").toLocalDate());
         goal.setAchieved(results.getBoolean("achieved"));
         goal.setNotes(results.getString("notes"));
+        goal.setUsername(results.getString("username"));  // Map new field
         return goal;
     }
 }

@@ -12,6 +12,9 @@ public interface GoalDao {
     // Get all goals for a single user
     List<Goal> getGoalsByUserId(int userId);
 
+    // Get all goals by a username
+    List<Goal> getGoalsByUsername(String username);
+
     // Add a new goal
     Goal createGoal(Goal newGoal);
 

@@ -6,10 +6,12 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.jdbc.CannotGetJdbcConnectionException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class JdbcPracticeSessionDao implements PracticeSessionDao {
 
     private final JdbcTemplate jdbcTemplate;
@@ -21,9 +23,10 @@ public class JdbcPracticeSessionDao implements PracticeSessionDao {
     @Override
     public PracticeSession getPracticeSessionById(int practiceSessionId) {
         PracticeSession practiceSession = null;
-        String sql = "SELECT practice_session_id, user_id, date, duration, pieces_practiced, notes " +
-                "FROM practice_session " +
-                "WHERE practice_session_id =?";
+        String sql = "SELECT ps.practice_session_id, ps.user_id, ps.date, ps.duration, ps.pieces_practiced, ps.notes, u.username " +
+                "FROM practice_session ps " +
+                "JOIN users u ON ps.user_id = u.user_id " +
+                "WHERE ps.practice_session_id = ?";
 
         try {
             SqlRowSet results = jdbcTemplate.queryForRowSet(sql, practiceSessionId);
@@ -41,13 +44,37 @@ public class JdbcPracticeSessionDao implements PracticeSessionDao {
     @Override
     public List<PracticeSession> getPracticeSessionsByUserId(int userId) {
         List<PracticeSession> practiceSessions = new ArrayList<>();
-        String sql = "SELECT practice_session_id, user_id, date, duration, pieces_practiced, notes " +
-                "FROM practice_session " +
-                "WHERE user_id =? " +
-                "ORDER BY practice_session_id";
+        String sql = "SELECT ps.practice_session_id, ps.user_id, ps.date, ps.duration, ps.pieces_practiced, ps.notes, u.username " +
+                "FROM practice_session ps " +
+                "JOIN users u ON ps.user_id = u.user_id " +
+                "WHERE ps.user_id = ? " +
+                "ORDER BY ps.practice_session_id";
 
         try {
             SqlRowSet results = jdbcTemplate.queryForRowSet(sql, userId);
+            while (results.next()) {
+                PracticeSession practiceSession = mapRowToPracticeSession(results);
+                practiceSessions.add(practiceSession);
+            }
+        } catch (CannotGetJdbcConnectionException e) {
+            throw new DaoException("Unable to connect to server or database", e);
+        } catch (DataIntegrityViolationException e) {
+            throw new DaoException("Data integrity violation", e);
+        }
+        return practiceSessions;
+    }
+
+    @Override
+    public List<PracticeSession> getPracticeSessionsByUsername(String username) {
+        List<PracticeSession> practiceSessions = new ArrayList<>();
+        String sql = "SELECT ps.practice_session_id, ps.user_id, ps.date, ps.duration, ps.pieces_practiced, ps.notes, u.username " +
+                "FROM practice_session ps " +
+                "JOIN users u ON ps.user_id = u.id " +
+                "WHERE u.username = ? " +
+                "ORDER BY ps.practice_session_id";
+
+        try {
+            SqlRowSet results = jdbcTemplate.queryForRowSet(sql, username);
             while (results.next()) {
                 PracticeSession practiceSession = mapRowToPracticeSession(results);
                 practiceSessions.add(practiceSession);
@@ -121,6 +148,7 @@ public class JdbcPracticeSessionDao implements PracticeSessionDao {
         practiceSession.setDuration(results.getInt("duration"));
         practiceSession.setPiecesPracticed(results.getString("pieces_practiced"));
         practiceSession.setNotes(results.getString("notes"));
+        practiceSession.setUsername(results.getString("username"));
         return practiceSession;
     }
 }

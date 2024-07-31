@@ -12,6 +12,9 @@ public interface PracticeSessionDao {
     // Get all practice sessions for a single user
     List<PracticeSession> getPracticeSessionsByUserId(int userId);
 
+    // Get all practice sessions for a single username
+    List<PracticeSession> getPracticeSessionsByUsername(String username);
+
     // Add a new practice session
     PracticeSession createPracticeSession(PracticeSession newPracticeSession);
 
