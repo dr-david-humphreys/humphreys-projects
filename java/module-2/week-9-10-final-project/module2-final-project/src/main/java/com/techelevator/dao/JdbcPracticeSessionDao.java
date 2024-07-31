@@ -79,19 +79,19 @@ public class JdbcPracticeSessionDao implements PracticeSessionDao {
     }
 
     @Override
-    public PracticeSession updatePracticeSession(PracticeSession practiceSession) {
+    public PracticeSession updatePracticeSession(PracticeSession updatedPracticeSession) {
         PracticeSession updatePracticeSession = null;
         String sql = "UPDATE practice_session " +
                 "SET practice_session_id = ?, user_id = ?, date = ?, duration = ?, pieces_practiced = ?, notes = ? " +
                 "WHERE practice_session_id = ?";
 
         try {
-            int rowsAffected = jdbcTemplate.update(sql, practiceSession.getPracticeSessionId(), practiceSession.getUserId(), practiceSession.getDate(), practiceSession.getDuration(), practiceSession.getPiecesPracticed(), practiceSession.getNotes());
+            int rowsAffected = jdbcTemplate.update(sql, updatedPracticeSession.getPracticeSessionId(), updatedPracticeSession.getUserId(), updatedPracticeSession.getDate(), updatedPracticeSession.getDuration(), updatedPracticeSession.getPiecesPracticed(), updatedPracticeSession.getNotes());
 
             if (rowsAffected == 0) {
                 throw new DaoException("Zero rows affected, expected at least one");
             } else {
-                updatePracticeSession = getPracticeSessionById(practiceSession.getPracticeSessionId());
+                updatePracticeSession = getPracticeSessionById(updatedPracticeSession.getPracticeSessionId());
             }
         } catch (CannotGetJdbcConnectionException e) {
             throw new DaoException("Unable to connect to server or database", e);
