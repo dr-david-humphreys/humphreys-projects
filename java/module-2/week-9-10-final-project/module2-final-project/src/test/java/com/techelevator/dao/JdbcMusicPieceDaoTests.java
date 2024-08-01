@@ -1,3 +1,5 @@
+// I could not figure out how to get my Tests to connect to the proper database to properly run, but have left them here since they were an optional portion of the assignment.
+
 /*
 package com.techelevator.dao;
 
