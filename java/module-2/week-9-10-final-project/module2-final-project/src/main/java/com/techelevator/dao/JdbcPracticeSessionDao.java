@@ -95,7 +95,7 @@ public class JdbcPracticeSessionDao implements PracticeSessionDao {
                 "RETURNING practice_session_id;";
 
         try {
-            newId = jdbcTemplate.queryForObject(sql, int.class, newPracticeSession.getPracticeSessionId(), newPracticeSession.getUserId(), newPracticeSession.getDate(), newPracticeSession.getDuration(), newPracticeSession.getPiecesPracticed(), newPracticeSession.getNotes());
+            newId = jdbcTemplate.queryForObject(sql, int.class, newPracticeSession.getUserId(), newPracticeSession.getDate(), newPracticeSession.getDuration(), newPracticeSession.getPiecesPracticed(), newPracticeSession.getNotes());
         } catch (CannotGetJdbcConnectionException e) {
             throw new DaoException("Unable to connect to server or database", e);
         } catch (DataIntegrityViolationException e) {
@@ -109,11 +109,11 @@ public class JdbcPracticeSessionDao implements PracticeSessionDao {
     public PracticeSession updatePracticeSession(PracticeSession updatedPracticeSession) {
         PracticeSession updatePracticeSession = null;
         String sql = "UPDATE practice_session " +
-                "SET practice_session_id = ?, user_id = ?, date = ?, duration = ?, pieces_practiced = ?, notes = ? " +
+                "SET user_id = ?, date = ?, duration = ?, pieces_practiced = ?, notes = ? " +
                 "WHERE practice_session_id = ?";
 
         try {
-            int rowsAffected = jdbcTemplate.update(sql, updatedPracticeSession.getPracticeSessionId(), updatedPracticeSession.getUserId(), updatedPracticeSession.getDate(), updatedPracticeSession.getDuration(), updatedPracticeSession.getPiecesPracticed(), updatedPracticeSession.getNotes());
+            int rowsAffected = jdbcTemplate.update(sql, updatedPracticeSession.getUserId(), updatedPracticeSession.getDate(), updatedPracticeSession.getDuration(), updatedPracticeSession.getPiecesPracticed(), updatedPracticeSession.getNotes(), updatedPracticeSession.getPracticeSessionId());
 
             if (rowsAffected == 0) {
                 throw new DaoException("Zero rows affected, expected at least one");

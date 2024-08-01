@@ -1,5 +1,6 @@
 package com.techelevator.controller;
 
+import com.techelevator.dao.JdbcUserDao;
 import com.techelevator.dao.PracticeSessionDao;
 import com.techelevator.model.PracticeSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,13 +18,17 @@ public class PracticeSessionController {
 
     @Autowired
     private PracticeSessionDao practiceSessionDao;
+    @Autowired
+    private JdbcUserDao jdbcUserDao;
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public PracticeSession logPracticeSession(@RequestBody PracticeSession practiceSession, Authentication authentication) {
         try {
             String username = authentication.getName();
+            int userId = jdbcUserDao.getUserByUsername(username).getId();
             practiceSession.setUsername(username);
+            practiceSession.setUserId(userId);
             return practiceSessionDao.createPracticeSession(practiceSession);
         } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Error logging practice session - " + e.getMessage());
@@ -44,8 +49,10 @@ public class PracticeSessionController {
     public PracticeSession updatePracticeSession(@PathVariable int id, @RequestBody PracticeSession practiceSession, Authentication authentication) {
         try {
             String username = authentication.getName();
+            int userId = jdbcUserDao.getUserByUsername(username).getId();
             practiceSession.setUsername(username);
             practiceSession.setPracticeSessionId(id);
+            practiceSession.setUserId(userId);
             return practiceSessionDao.updatePracticeSession(practiceSession);
         } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Error updating practice session - " + e.getMessage());
