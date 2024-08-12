@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Space Travel Exploration - Learn about space while mastering HTML and CSS.">
+    <title>Space Travel Exploration</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Space Travel Exploration</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Space Travel</a></li>
+                <li><a href="#planets">Planets</a></li>
+                <li><a href="#signup">Join the Mission</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <main>
+        
+        <section id="about">
+            <h2>About Space Travel</h2>
+            <p>Space travel is the next frontier for humanity. Learn about the vastness of space and the planets we might one day explore.</p>
+        </section>
+
+        <section id="planets">
+            <h2>Planets in Our Solar System</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Planet</th>
+                        <th>Distance from Sun (million km)</th>
+                        <th>Diameter (km)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mercury</td>
+                        <td>57.9</td>
+                        <td>4,880</td>
+                    </tr>
+                    <tr>
+                        <td>Venus</td>
+                        <td>108.2</td>
+                        <td>12,104</td>
+                    </tr>
+                    <tr>
+                        <td>Earth</td>
+                        <td>149.6</td>
+                        <td>12,742</td>
+                    </tr>
+                    <tr>
+                        <td>Mars</td>
+                        <td>227.9</td>
+                        <td>6,779</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="signup">
+            <h2>Join the Mission</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="planet">Favorite Planet:</label>
+                <select id="planet" name="planet">
+                    <option value="mercury">Mercury</option>
+                    <option value="venus">Venus</option>
+                    <option value="earth">Earth</option>
+                    <option value="mars">Mars</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <!-- Cite: The cite attribute does not render as anything special in any of the major browsers, but it can be used by search engines to get more information about the quotation.
+             An absolute URL - points to another web site (like cite="http://www.example.com/page.htm") 
+             A relative URL - points to a file within a web site (like cite="page.htm")
+            -- https://www.w3schools.com/tags/att_blockquote_cite.asp
+        -->
+        <section id="quotes-section">
+            <h2>Quotes</h2>            
+            <blockquote cite="https://www.brainyquote.com/authors/albert-einstein-quotes">We can't solve problems by using the same kind of thinking we used when we created them. - Albert Einstein
+            </blockquote>
+            <blockquote cite="https://www.brainyquote.com/authors/albert-einstein-quotes">Only two things are infinite, the universe and human stupidity, and I'm not sure about the former. - Albert Einstein
+            </blockquote>
+            <blockquote cite="https://www.brainyquote.com/authors/albert-einstein-quotes">Everyone should be respected as an individual, but no one idolized. - Albert Einstein
+            </blockquote>
+            <blockquote cite="https://www.brainyquote.com/authors/albert-einstein-quotes">The world is a dangerous place to live; not because of the people who are evil, but because of the people who don't do anything about it. - Albert Einstein
+            </blockquote>
+            <blockquote cite="https://www.brainyquote.com/authors/albert-einstein-quotes">I know not with what weapons World War III will be fought, but World War IV will be fought with sticks and stones. - Albert Einstein
+            </blockquote>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>© 2024 Space Travel Exploration. All rights reserved.</p>
+    </footer>
+</body>
+</html>
