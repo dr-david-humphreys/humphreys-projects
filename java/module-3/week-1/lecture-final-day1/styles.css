@@ -1,0 +1,148 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a2e;
+    color: #eaeaea;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #16213e;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ffcc00;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+
+/* Main Content Styles */
+
+main {
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #eaeaea;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #16213e;
+    color: #ffcc00;
+}
+
+
+/* Form Styles */
+form {
+    display: block;
+    margin-top: 20px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    border: none;
+    color: #1a1a2e;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #eaeaea;
+    color: #1a1a2e;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #16213e;
+    padding: 10px;
+    text-align: center;
+    color: #eaeaea;
+}
+
+/* Additional ADA Compliance */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 3px solid #ffcc00;
+}
+
+/* Box Model Example */
+#signup {
+    padding: 20px;
+    border: 2px solid #eaeaea;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* .main-content{
+    color:red;
+} */
