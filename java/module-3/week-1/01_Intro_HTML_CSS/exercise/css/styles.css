@@ -1,9 +1,35 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0f0f0;
+    color: #FDBB30;
+    background-color: #007AC1;
+    font-size: 20px;
 }
 
 h1 {
-    color: steelblue;
+    color: #EF3B24;
+    text-align: center;
 }
 
+main > section > img {
+    max-width: 400px;
+}
+
+#facts-section > h2 {
+    text-decoration: underline;
+}
+
+#quotes-section > h2 {
+    text-decoration: underline;
+}
+
+#quotes-section > blockquote {
+    font-style: italic;
+}
+
+#links-section > h2 {
+    text-decoration: underline;
+}
+
+form {
+    background-color: #EF3B24;
+}
