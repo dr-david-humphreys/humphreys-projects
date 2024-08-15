@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: rgba(192, 192, 192, 0.1);
+}
+
+img {
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  border-right: 1px solid rgba(0, 173, 238, 0.4);
+}
+
+aside > img {
+  width: 120px;
+  height: auto;
+  margin: 0 auto;
+}
+
+main {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+nav ul li {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 173, 238, 0.4);
+}
