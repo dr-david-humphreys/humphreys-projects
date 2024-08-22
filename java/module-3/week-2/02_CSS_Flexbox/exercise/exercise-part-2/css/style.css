@@ -4,21 +4,53 @@ body {
   min-height: 100vh;
   /* Photo by Andre Furtado on Unsplash */
   background: url(../img/andre-furtado-JtV6zyOZSrA-unsplash.jpg) left / cover no-repeat;
+  display: flex;
+  min-height: 100vh;
 }
 
 #left-panel {
   background-color: #F7F7F7;
+  flex: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#left-panel footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
 }
 
 ul.social-icons {
   list-style-type: none;
   margin: 20px 20px;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav {}
+ul.social-icons li {
+  flex: 1;
+  text-align: center;
+}
 
-#right-panel {}
+nav {
+  flex-grow: 1;
+}
+
+#right-panel {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  height: 100vh;
+}
 
 /* YOU WON'T NEED TO CHANGE ANY STYLES BELOW THIS LINE */
 
