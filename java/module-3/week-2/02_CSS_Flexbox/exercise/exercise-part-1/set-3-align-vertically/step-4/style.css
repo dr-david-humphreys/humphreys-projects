@@ -16,3 +16,9 @@ body {
   border: solid 1px #777;
 }
 
+.container {
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
