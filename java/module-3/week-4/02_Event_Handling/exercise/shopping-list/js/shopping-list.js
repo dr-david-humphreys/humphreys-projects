@@ -35,4 +35,31 @@ function displayGroceries() {
     li.appendChild(checkCircle);
     ul.appendChild(li);
   });
+
+  li.addEventListener('click', function() {
+    markItemComplete(li, checkCircle);
+  });
+
+  li.addEventListener('dblclick', function() {
+    markItemIncomplete(li, checkCircle);
+  });
 }
+
+function markItemComplete(listItem, icon) {
+  if (!listItem.classList.contains('completed')) {
+    listItem.classList.add('completed');
+    icon.classList.add('completed');
+  }
+}
+
+function markItemIncomplete(listItem, icon) {
+  if (listItem.classList.contains('completed')) {
+    listItem.classList.remove('completed');
+    icon.classList.remove('completed');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  setPageTitle();
+  displayGroceries();
+});
