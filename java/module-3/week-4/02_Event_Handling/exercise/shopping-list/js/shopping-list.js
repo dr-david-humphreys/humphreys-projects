@@ -33,15 +33,16 @@ function displayGroceries() {
     const checkCircle = document.createElement('i');
     checkCircle.setAttribute('class', 'far fa-check-circle');
     li.appendChild(checkCircle);
+
+    li.addEventListener('click', function() {
+      markItemComplete(li, checkCircle);
+    });
+
+    li.addEventListener('dblclick', function() {
+      markItemIncomplete(li, checkCircle);
+    });
+
     ul.appendChild(li);
-  });
-
-  li.addEventListener('click', function() {
-    markItemComplete(li, checkCircle);
-  });
-
-  li.addEventListener('dblclick', function() {
-    markItemIncomplete(li, checkCircle);
   });
 }
 
@@ -59,7 +60,31 @@ function markItemIncomplete(listItem, icon) {
   }
 }
 
+function toggleAllItems() {
+  const listItems = document.querySelectorAll('li');
+  const checkCircles = document.querySelectorAll('i');
+
+  if (allItemsIncomplete) {
+    listItems.forEach((listItem, index) => {
+      listItem.classList.add('completed');
+      checkCircles[index].classList.add('completed');
+    });
+    document.getElementById('toggleAll').innerText = 'Mark All Incomplete';
+  } else {
+    listItems.forEach((listItem, index) => {
+      listItem.classList.remove('completed');
+      checkCircles[index].classList.remove('completed');
+    });
+    document.getElementById('toggleAll').innerText = 'Mark All Complete';
+  }
+
+  allItemsIncomplete = !allItemsIncomplete;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   setPageTitle();
   displayGroceries();
+
+  const toggleButton = document.getElementById('toggleAll');
+  toggleButton.addEventListener('click', toggleAllItems);
 });
