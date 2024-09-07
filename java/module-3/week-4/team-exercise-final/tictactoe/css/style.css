@@ -1,0 +1,196 @@
+body {
+
+    background-image: url('../resource/darker-galaxy.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#game-header{
+    font-size: 5.5vh;
+    color: #FFE81F;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* TODO 10: center header */
+#header-container{
+  display: flex;
+  justify-items:center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/* TODO 11: center board */
+#main-container{
+  display: flex;
+  justify-items:center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#game-board {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    /* TODO 8: Define your areas */
+    grid-template-areas:
+    "cell1 cell2 cell3"
+    "cell4 cell5 cell6"
+    "cell7 cell8 cell9";
+
+    height: 600px;
+    width: 600px;   
+
+    border: 4px #000 groove;
+    border-radius: 10px;
+   
+    background-image: url('../resource/space-wall-texture.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+ /* TODO 9: Select the element associated with each area */
+ /* NOTE: When your element id is a number you can use #1, #2... etc., however VS Code will highlight it to indicate a warning 
+ as older versions of HTML and CSS do not support the # with only a number.  Using the attribute selector - [id="1"]
+ avoids the older browser compatibility issue.  This is not an issue with HTML5 modern browsers; When possible, prefer not to use numbers only for element id values.*/
+ [id="1"] {
+  grid-area : cell1;
+}
+
+[id="2"] {
+  grid-area : cell2;
+}
+
+[id="3"] {
+  grid-area : cell3;
+}
+
+[id="4"] {
+  grid-area : cell4;
+}
+
+[id="5"] {
+  grid-area : cell5;
+}
+
+[id="6"] {
+  grid-area : cell6;
+}
+
+[id="7"] {
+  grid-area : cell7;
+}
+
+[id="8"] {
+  grid-area : cell8;
+}
+
+[id="9"] {
+  grid-area : cell9;
+}
+
+.circle {
+
+    /*display: inline-block;*/
+
+    height: 150px;
+    width: 150px;
+
+    border: 2px #000 inset;
+
+    margin: auto;
+
+    border-radius: 90px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: 180px;
+}
+
+.p1 { background-image: url('../resource/yoda-lightsaber.png');}
+
+.p2 { background-image: url('../resource/darth-vader-lightsaber.png');}
+
+
+
+.thumbnail{ 
+    height: 20px; 
+    width: 20px;
+}
+
+
+#game-summary > section{
+    padding-right: 20px;
+    display: inline-block;
+   
+}
+
+#game-summary > section > p{    
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#btnClearBoard{
+    background-color: #555555; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    /* margin-left: 250px; */
+    border-radius: 5px;
+}
+
+/* snackbar code: ref W3 schools - See W3 Schools for info on snackbar */
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 60px;
+    font-size: 24px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 60px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 60px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 60px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 60px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
