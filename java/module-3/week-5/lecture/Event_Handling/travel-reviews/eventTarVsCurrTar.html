@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Target vs CurrentTarget</title>
+    <style>
+        #outer {
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #inner {
+            width: 150px;
+            height: 150px;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="outer">
+        Outer Div
+        <div id="inner">Inner Div</div>
+    </div>
+
+    <script>
+        // Attach event listener to outer div
+        const outerDiv = document.getElementById('outer');
+        outerDiv.addEventListener('click', function(event) {           
+            alert("Outer Div Clicked!");
+            console.log("event.target:", event.target); // Element that was clicked
+            console.log("event.currentTarget:", event.currentTarget); // Element that has the event listener
+        });
+
+        // Attach event listener to inner div - can stop propagation if needed;
+        const innerDiv = document.getElementById('inner');
+        innerDiv.addEventListener('click', function(event) {            
+            alert("Inner Div Clicked!");            
+            console.log("event.target:", event.target); // Element that was clicked
+            console.log("event.currentTarget:", event.currentTarget); // Element that has the event listener
+            
+        });
+    </script>
+
+</body>
+</html>
