@@ -4,10 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const resources = resourceService.getResources();
     const container = document.getElementById('resource-container');
 
-    resources.forEach(resource => {
+    const displayResource = (resource) => {
         const div = document.createElement('div');
-        div.innerHTML = `<h3>${resource.title}</h3><p>${resource.description}</p>`;
+        div.innerHTML = `<h3>Practice Session: ${resource.practiceSessionNumber}</h3><p>Goal: ${resource.goal}</p>`;
         container.appendChild(div);
+    };
+
+    resources.forEach(resource => {
+        displayResource(resource);
     });
 
     document.getElementById('myButton').addEventListener('click', () => {
@@ -37,6 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         resources.push(newResource);
         displayResource(newResource);
-        addItemForm.reset();
+        addPracticeSessionForm.reset();
     });
 });
