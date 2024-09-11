@@ -1,7 +1,7 @@
 import { resourceService } from "./resourceService.js";
 
 document.addEventListener('DOMContentLoaded', () => {
-    const resources = getResources();
+    const resources = resourceService.getResources();
     const container = document.getElementById('resource-container');
 
     resources.forEach(resource => {
@@ -24,5 +24,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (container.lastChild) {
             container.removeChild(container.lastChild);
         }
+    });
+
+    const addPracticeSessionForm = document.getElementById('addPracticeSessionForm');
+    addPracticeSessionForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const practiceSessionNumber = document.getElementById('practiceSessionNumber').value;
+        const goal = document.getElementById('goal').value;
+
+        const newResource = { id: resources.length + 1, practiceSessionNumber, goal };
+
+        resources.push(newResource);
+        displayResource(newResource);
+        addItemForm.reset();
     });
 });
