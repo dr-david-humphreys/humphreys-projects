@@ -27,6 +27,12 @@ header {
     text-align: center;
 }
 
+.music-image {
+    width: 700px;
+    height: 200px;
+    object-fit: cover;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
