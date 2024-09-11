@@ -11,6 +11,13 @@ body {
     grid-gap: 20px;
     margin: 0;
     padding: 0;
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
 }
 
 header {
