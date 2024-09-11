@@ -16,7 +16,7 @@ body {
 }
 
 .dark-mode {
-    background-color: black;
+    background-color: #333;
     color: white;
 }
 
@@ -33,7 +33,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 10px;
 }
 
@@ -57,7 +57,9 @@ footer {
 /* Responsive design */
 @media (min-width: 1024px) {
     body {
+        display: grid;
         grid-template-columns: 1fr 3fr;
+        grid-gap: 20px;
     }
 
     header, footer {
@@ -68,6 +70,14 @@ footer {
 @media (max-width: 425px) {
     body {
         grid-template-columns: 1fr;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
     
     nav ul li {
