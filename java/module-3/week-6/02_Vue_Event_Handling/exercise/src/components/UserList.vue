@@ -249,15 +249,6 @@ export default {
       checkboxes.forEach((checkbox) => {
         checkbox.checked = false;
       });
-    },
-
-    toggleSelectAll(event) {
-      const isChecked = event.target.checked;
-      if (isChecked) {
-        this.selectedUserIds = this.filteredList.map((user) => user.id);
-      } else {
-        this.selectedUserIds = [];
-      }
     }
   },
 
