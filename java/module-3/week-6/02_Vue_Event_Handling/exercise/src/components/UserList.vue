@@ -4,7 +4,7 @@
       <thead>
         <tr>
           <th>
-            <input type="checkbox" id="selectAll" @change="toggleSelectAll" />
+            <input type="checkbox" id="selectAll" v-model="selectAllChecked" @change="toggleSelectAll" />
           </th>
           <th>First Name</th>
           <th>Last Name</th>
@@ -38,11 +38,12 @@
           <td>
             <input
               type="checkbox"
+              :id="user.id"
               :value="user.id"
               v-model="selectedUserIds"
             />
           </td>
-          <td>{{ user.firstName }}</td>
+          <td :id="user.id">{{ user.firstName }}</td>
           <td>{{ user.lastName }}</td>
           <td>{{ user.username }}</td>
           <td>{{ user.emailAddress }}</td>
@@ -64,7 +65,7 @@
 
     <button @click="toggleForm">Add New User</button>
 
-    <form id="frmAddNewUser" v-if="showForm" @submit.prevent="addNewUser">
+    <form id="frmAddNewUser" v-show="showForm" @submit.prevent="addNewUser">
       <div class="field">
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" v-model="newUser.firstName" />
@@ -100,6 +101,7 @@ export default {
       selectedUserIds: [],
       nextUserId: 7,
       showForm: false,
+      selectAllChecked: false,
       newUser: {
         id: null,
         firstName: "",
@@ -178,6 +180,7 @@ export default {
       } else {
         this.selectedUserIds = [];
       }
+      this.updateSelectAll();
     },
 
     updateSelectAll() {
