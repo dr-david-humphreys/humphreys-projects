@@ -1,12 +1,44 @@
 <template>
-  <div class="card">
+  <div class="card" :class="{ read: book.read }">
+    <h2 class="book-title">{{ book.title }}</h2>
+    <h3 class="book-author">{{ book.author }}</h3>
+    <img 
+      class="book-image"
+      v-bind:src="'http://covers.openlibrary.org/b/isbn/' + book.isbn + '-M.jpg'"
+      alt="Book cover"
+    />
+
+    <button
+      v-if="book.read"
+      class="mark-unread"
+      @click="triggerToggleReadStatus"
+    >
+      Mark as Unread
+    </button>
+    <button
+      v-else
+      class="mark-read"
+      @click="triggerToggleReadStatus"
+    >
+      Mark as Read
+    </button>
 
   </div>
 </template>
 
 <script>
-export default {
+import { mapActions } from "vuex";
 
+export default {
+  props: {
+    book: Object
+  },
+  methods: {
+    ...mapActions(['toggleReadStatus']),
+    triggerToggleReadStatus() {
+      this.toggleReadStatus(this.book.isbn);
+    }
+  }
 }
 </script>
 
