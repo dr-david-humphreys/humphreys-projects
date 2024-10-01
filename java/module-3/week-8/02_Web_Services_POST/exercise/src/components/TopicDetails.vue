@@ -47,6 +47,15 @@ export default {
         
         // TODO - Do a delete, then navigate Home on success
         // For errors, call handleErrorResponse
+        topicService.delete(this.topic.id)
+          .then(response => {
+            if (response.status === 200) {
+              this.$router.push({ name: 'HomeView' });
+            }
+          })
+          .catch(error => {
+            this.handleErrorResponse(error, "deleting");
+          });
         
       }
     },
