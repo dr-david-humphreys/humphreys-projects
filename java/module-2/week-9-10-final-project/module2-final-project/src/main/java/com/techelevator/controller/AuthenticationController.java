@@ -21,8 +21,8 @@ import org.springframework.web.server.ResponseStatusException;
  * It depends on an instance of a UserDao for retrieving and storing user data. This is provided
  * through dependency injection.
  */
-@RestController
 @CrossOrigin
+@RestController
 public class AuthenticationController {
 
     private final TokenProvider tokenProvider;
