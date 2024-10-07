@@ -2,9 +2,5 @@
   "name": "module3-final-project",
   "lockfileVersion": 2,
   "requires": true,
-  "packages": {
-    "": {
-      "name": "module3-final-project"
-    }
-  }
+  "packages": {}
 }
