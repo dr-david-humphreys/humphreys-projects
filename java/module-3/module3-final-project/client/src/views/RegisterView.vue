@@ -146,4 +146,80 @@ export default {
 </script>
 
 <style scoped>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #afdde5;
+  color: #003135;
+}
+
+#register {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #024950;
+  text-align: center;
+}
+
+#fields {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #003135;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #024950;
+  color: #afdde5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #046369;
+}
+
+router-link {
+  text-decoration: none;
+  color: #024950;
+}
+
+router-link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+  #register {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 425px) {
+  #register {
+    padding: 10px;
+  }
+}
+
 </style>
