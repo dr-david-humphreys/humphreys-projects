@@ -9,6 +9,8 @@ import io.swagger.v3.oas.models.security.SecurityScheme;
 import io.swagger.v3.oas.models.servers.Server;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.List;
 
@@ -27,7 +29,7 @@ public class ApiDocConfig {
 
     @Bean
     public OpenAPI MyApi() {
-        final String apiTitle = "Solar System Geek REST API";
+        final String apiTitle = "Music Practice Tracker REST API";
         final String securitySchemeName = "bearerAuth";
 
         // https://swagger.io/docs/specification/authentication/bearer-authentication/
@@ -40,10 +42,19 @@ public class ApiDocConfig {
         return new OpenAPI()
                 .servers(List.of(new Server().url("/")))
                 .info(new Info().title(apiTitle)
-                        .description("REST API for the Solar System Geek Corporation™")
+                        .description("REST API for the Music Practice Tracker™")
                         .version("v0.0.1")
                         .license(new License().name("Apache 2.0").url("http://springdoc.org")))
                 .components( new Components().addSecuritySchemes(securitySchemeName, securityScheme))
                 .addSecurityItem(new SecurityRequirement().addList(securitySchemeName));
     }
+}
+
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+        @Override
+        public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**").allowedOrigins("http://localhost:9000")
+                        .allowedMethods("GET", "POST", "PUT", "DELETE");
+        }
 }

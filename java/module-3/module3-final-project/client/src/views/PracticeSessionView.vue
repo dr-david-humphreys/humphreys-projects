@@ -39,6 +39,7 @@
   
   <script>
   import { resourceService } from "../services/ResourceService";
+  import { fetchPracticeSessions, addPracticeSession } from "../services/api";
   
   export default {
     data() {
@@ -50,6 +51,7 @@
     },
     created() {
       this.resources = resourceService.getResources();
+      this.loadPracticeSessions();
     },
     methods: {
       buttonClicked() {
@@ -63,15 +65,28 @@
           this.resources.pop();
         }
       },
-      addPracticeSession() {
+      async loadPracticeSessions() {
+        try {
+          const response = await fetchPracticeSessions();
+          this.resources = response.data;
+        } catch (error) {
+          console.error("Error fetching practice sessions:", error);
+        }
+      },
+      async addPracticeSession() {
         const newResource = {
           id: this.resources.length + 1,
           practiceSessionNumber: this.newPracticeSessionNumber,
           goal: this.newGoal,
         };
-        this.resources.push(newResource);
-        this.newPracticeSessionNumber = "";
-        this.newGoal = "";
+        try {
+          const response = await addPracticeSession(newResource);
+          this.resources.push(response.data);
+          this.newPracticeSessionNumber = "";
+          this.newGoal = "";
+        } catch (error) {
+          console.error("Error adding practice session:", error);
+        }
       },
     },
   };
