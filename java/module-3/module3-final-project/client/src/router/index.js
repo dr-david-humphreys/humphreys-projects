@@ -6,6 +6,7 @@ import HomeView from '../views/HomeView.vue'
 import LoginView from '../views/LoginView.vue'
 import LogoutView from '../views/LogoutView.vue'
 import RegisterView from '../views/RegisterView.vue'
+import PracticeSessionView from '../views/PracticeSessionView.vue'
 
 
 /**
@@ -47,6 +48,14 @@ const routes = [
       component: RegisterView,
       meta: {
         requiresAuth: false
+      }
+    },
+    {
+      path: "/practice-session",
+      name: "practice-session",
+      component: PracticeSessionView,
+      meta: {
+        requiresAuth: true
       }
     }
   ];
