@@ -74,6 +74,7 @@
         }
       },
       async addPracticeSession() {
+        console.log('Add button clicked!')
         const newResource = {
           id: this.resources.length + 1,
           practiceSessionNumber: this.newPracticeSessionNumber,
