@@ -7,9 +7,9 @@ const api = axios.create({
 });
 
 export const fetchPracticeSessions = () => {
-    return api.get('/practice-sessions');
+    return api.get('/practice-session');
 };
 
 export const addPracticeSession = (sessionData) => {
-    return api.post('/practice-sessions', sessionData);
+    return api.post('/practice-session', sessionData);
 };
