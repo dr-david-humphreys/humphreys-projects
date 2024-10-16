@@ -118,8 +118,8 @@
   }
   
   .music-image {
-    width: 700px;
-    height: 200px;
+    /*width: 700px;
+    height: 200px;*/
     object-fit: cover;
   }
   
