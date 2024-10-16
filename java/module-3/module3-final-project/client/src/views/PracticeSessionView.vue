@@ -184,5 +184,9 @@
   body {
     overflow-x: hidden;
   }
+
+  a:hover {
+    text-decoration: underline;
+  }
   </style>
   
