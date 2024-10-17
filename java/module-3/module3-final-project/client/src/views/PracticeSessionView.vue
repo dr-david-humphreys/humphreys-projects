@@ -5,8 +5,8 @@
         <img src="img/Generic-Music-Notes.jpg" alt="Generic Music Picture" class="music-image" />
         <nav>
           <ul>
-            <li><router-link to="/practice-session">Home</router-link></li>
-            <li><router-link to="/goal">Goal</router-link></li>
+            <li><router-link to="/practice-session">Practice Sessions</router-link></li>
+            <li><router-link to="/goal">Goals</router-link></li>
             <li><router-link to="/about">About</router-link></li>
             <li><router-link to="/contact">Contact</router-link></li>
           </ul>
@@ -27,10 +27,14 @@
         </form>
 
         <ul>
-          <li v-for="session in practiceSessions" :key="session.id">
-            <p>{{ session.date }}: {{ session.piecesPracticed }} ({{ session.duration }} min)</p>
-            <p>Notes: {{ session.notes }}</p>
-          </li>
+          <li v-for="session in practiceSessions" :key="session.practiceSessionId">
+        <p>Date: {{ session.date }}</p>
+        <p>Duration: {{ session.duration }} minutes</p>
+        <p>Pieces Practiced: {{ session.piecesPracticed }}</p>
+        <p>Notes: {{ session.notes }}</p>
+        <button @click="updatePracticeSession(session.practiceSessionId)">Update</button>
+        <button @click="deletePracticeSession(session.practiceSessionId)">Delete</button>
+      </li>
         </ul>
       </section>
   
@@ -74,7 +78,7 @@
       },
 
       loadPracticeSessions() {
-        ApiService.getPracticeSessions(this.userId)
+        ApiService.getPracticeSessions()
           .then(response => {
             this.practiceSessions = response.data;
           })
@@ -88,10 +92,52 @@
           .then(response => {
             console.log('Practice session added:', response.data);
             this.loadPracticeSessions();
+            this.resetNewSession();
           })
           .catch(error => {
             console.error('Error adding practice session:', error);
           });
+      },
+
+      updatePracticeSession(id) {
+        const updatedSessionData = {
+          ...this.practiceSessions.find(session => session.practiceSessionId === id),
+          duration: prompt("Enter new duration:", ""),
+          piecesPracticed: prompt("Enter new pieces practiced:", ""),
+          notes: prompt("Enter new nots:", ""),
+        };
+
+        ApiService.updatePracticeSession(id, updatedSessionData)
+          .then(response => {
+            console.log('Practice session updated:', response.data);
+            this.loadPracticeSessions();
+          })
+          .catch(error => {
+            console.error('Error updating practice session:', error);
+          });
+      },
+
+      deletePracticeSession(id) {
+        if (confirm("Are you sure you want to delete this practice session?")) {
+          ApiService.deletePracticeSession(id)
+            .then(() => {
+              console.log('Practice session deleted');
+              this.loadPracticeSessions();
+            })
+            .catch(error => {
+              console.error('Error deleting practice session:', error);
+            });
+        }
+      },
+
+      resetNewSession() {
+        this.newSession = {
+          userId: this.userId,
+          date: '',
+          duration: '',
+          piecesPracticed: '',
+          notes: '',
+        };
       }
     },
   };

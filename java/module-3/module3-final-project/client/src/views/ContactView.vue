@@ -5,8 +5,8 @@
       <img src="img/Generic-Music-Notes.jpg" alt="Generic Music Picture" class="music-image" />
       <nav>
         <ul>
-          <li><router-link to="/practice-session">Home</router-link></li>
-          <li><router-link to="/goal">Goal</router-link></li>
+          <li><router-link to="/practice-session">Practice Sessions</router-link></li>
+          <li><router-link to="/goal">Goals</router-link></li>
           <li><router-link to="/about">About</router-link></li>
           <li><router-link to="/contact">Contact</router-link></li>
         </ul>
