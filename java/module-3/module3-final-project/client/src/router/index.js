@@ -7,6 +7,7 @@ import LoginView from '../views/LoginView.vue'
 import LogoutView from '../views/LogoutView.vue'
 import RegisterView from '../views/RegisterView.vue'
 import PracticeSessionView from '../views/PracticeSessionView.vue'
+import GoalView from '../views/GoalView.vue'
 import AboutView from '../views/AboutView.vue'
 import ContactView from '../views/ContactView.vue'
 
@@ -56,6 +57,14 @@ const routes = [
       path: "/practice-session",
       name: "practice-session",
       component: PracticeSessionView,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
+      path: "/goal",
+      name: "goal",
+      component: GoalView,
       meta: {
         requiresAuth: true
       }
