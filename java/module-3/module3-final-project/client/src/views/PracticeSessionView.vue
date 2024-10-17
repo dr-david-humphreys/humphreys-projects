@@ -40,34 +40,24 @@
   </template>
   
   <script>
-  //import { resourceService } from "../services/ResourceService";
-  //import { fetchPracticeSessions, addPracticeSession } from "../services/api";
   import ApiService from '../services/ApiService';
-  import { mapState } from 'vuex';
   
   export default {
     data() {
       return {
         practiceSessions: [],
-        //resources: [],
         newSession: {
           userId: this.userId,
           date: '',
-          duration: 0,
+          duration: '',
           piecesPracticed: '',
           notes: '',
         },
       };
     },
 
-    computed: {
-      ...mapState(['user']),
-    },
-
     created() {
-      //this.resources = resourceService.getResources();
       this.loadPracticeSessions();
-      //this.loadResources();
     },
     methods: {
       buttonClicked() {
@@ -102,36 +92,6 @@
             console.error('Error adding practice session:', error);
           });
       }
-      /*async loadPracticeSessions() {
-        try {
-          const response = await fetchPracticeSessions();
-          this.resources = response.data;
-        } catch (error) {
-          console.error("Error fetching practice sessions:", error);
-        }
-      },
-      async addPracticeSession() {
-        console.log('Add button clicked!')
-        const newPracticeSession = {
-          userId: this.newUserId,
-          date: this.newDate,
-          duration: this.newDuration,
-          piecesPracticed: this.newPiecesPracticed,
-          notes: this.newNotes,
-        };
-        try {
-          const response = await addPracticeSession(newPracticeSession);
-          this.resources.push(response.data);
-
-          this.newUserId = "";
-          this.newDate = "";
-          this.newDuration = "";
-          this.newPiecesPracticed = "";
-          this.newNotes = "";
-        } catch (error) {
-          console.error("Error adding practice session:", error);
-        }
-      },*/
     },
   };
   </script>

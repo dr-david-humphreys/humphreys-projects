@@ -9,7 +9,7 @@ export default {
         return http.post('/practice-session', sessionData);
     },
 
-    getPracticeSessions(userId) {
-        return http.get(`/practice-session/user/${userId}`);
+    getPracticeSessions(id) {
+        return http.get(`/practice-session/`);
     }
 };
