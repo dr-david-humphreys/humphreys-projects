@@ -17,17 +17,22 @@
   
       <main id="resource-container">
         <div v-for="resource in resources" :key="resource.id">
-          <h3>Practice Session: {{ resource.practiceSessionNumber }}</h3>
-          <p>Goal: {{ resource.goal }}</p>
+          <h3>Practice Session Date: {{ resource.date }}</h3>
+          <p>Duration: {{ resource.duration }} minutes</p>
+          <p>Pieces Practiced: {{ resource.piecesPracticed }}</p>
+          <p>Notes: {{ resource.notes }}</p>
         </div>
       </main>
   
       <section>
         <h2>Add New Practice Session!</h2>
         <form @submit.prevent="addPracticeSession">
-          <input type="text" v-model="newPracticeSessionNumber" placeholder="Enter Practice Session Number" required />
-          <input type="text" v-model="newGoal" placeholder="Enter Goal" required />
-          <button type="submit">Add Item</button>
+          <input type="number" v-model="newUserId" placeholder="Enter User ID" required />
+          <input type="date" v-model="newDate" placeholder="Enter Practice Date" required />
+          <input type="number" v-model="newDuration" placeholder="Enter Duration in Minutes" required />
+          <input type="text" v-model="newPiecesPracticed" placeholder="Enter Pieces Practiced" required />
+          <input type="text" v-model="newNotes" placeholder="Enter Notes" required />
+          <button type="submit">Add Practice Session</button>
         </form>
       </section>
   
@@ -38,19 +43,22 @@
   </template>
   
   <script>
-  import { resourceService } from "../services/ResourceService";
+  //import { resourceService } from "../services/ResourceService";
   import { fetchPracticeSessions, addPracticeSession } from "../services/api";
   
   export default {
     data() {
       return {
         resources: [],
-        newPracticeSessionNumber: "",
-        newGoal: "",
+        newUserId: "",
+        newDate: "",
+        newDuration: "",
+        newPiecesPracticed: "",
+        newNotes: "",
       };
     },
-    created() {
-      this.resources = resourceService.getResources();
+    async created() {
+      //this.resources = resourceService.getResources();
       this.loadPracticeSessions();
     },
     methods: {
@@ -75,16 +83,22 @@
       },
       async addPracticeSession() {
         console.log('Add button clicked!')
-        const newResource = {
-          id: this.resources.length + 1,
-          practiceSessionNumber: this.newPracticeSessionNumber,
-          goal: this.newGoal,
+        const newPracticeSession = {
+          userId: this.newUserId,
+          date: this.newDate,
+          duration: this.newDuration,
+          piecesPracticed: this.newPiecesPracticed,
+          notes: this.newNotes,
         };
         try {
-          const response = await addPracticeSession(newResource);
+          const response = await addPracticeSession(newPracticeSession);
           this.resources.push(response.data);
-          this.newPracticeSessionNumber = "";
-          this.newGoal = "";
+
+          this.newUserId = "";
+          this.newDate = "";
+          this.newDuration = "";
+          this.newPiecesPracticed = "";
+          this.newNotes = "";
         } catch (error) {
           console.error("Error adding practice session:", error);
         }
