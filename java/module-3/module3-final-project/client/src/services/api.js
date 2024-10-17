@@ -7,9 +7,11 @@ const api = axios.create({
 });
 
 export const fetchPracticeSessions = () => {
-    return api.get('/practice-session');
+    alert(localStorage.getItem('token'));
+    return axios.get('/practice-session');
 };
 
 export const addPracticeSession = (sessionData) => {
-    return api.post('/practice-session', sessionData);
+    alert(sessionData.practiceSessionNumber);
+    return axios.post('/practice-session', sessionData);
 };
