@@ -15,25 +15,22 @@
         <button @click="removeLastItem">Remove Last Item</button>
       </header>
   
-      <main id="resource-container">
-        <div v-for="resource in resources" :key="resource.id">
-          <h3>Practice Session Date: {{ resource.date }}</h3>
-          <p>Duration: {{ resource.duration }} minutes</p>
-          <p>Pieces Practiced: {{ resource.piecesPracticed }}</p>
-          <p>Notes: {{ resource.notes }}</p>
-        </div>
-      </main>
-  
       <section>
         <h2>Add New Practice Session!</h2>
         <form @submit.prevent="addPracticeSession">
-          <input type="number" v-model="newUserId" placeholder="Enter User ID" required />
-          <input type="date" v-model="newDate" placeholder="Enter Practice Date" required />
-          <input type="number" v-model="newDuration" placeholder="Enter Duration in Minutes" required />
-          <input type="text" v-model="newPiecesPracticed" placeholder="Enter Pieces Practiced" required />
-          <input type="text" v-model="newNotes" placeholder="Enter Notes" required />
+          <input v-model="newSession.date" type="date" required />
+          <input v-model.number="newSession.duration" type="number" placeholder="Duration (min)" required />
+          <input v-model="newSession.piecesPracticed" type="text" placeholder="Pieces Practiced" required />
+          <textarea v-model="newSession.notes" placeholder="Notes"></textarea>
           <button type="submit">Add Practice Session</button>
         </form>
+
+        <ul>
+          <li v-for="session in practiceSessions" :key="session.id">
+            <p>{{ session.date }}: {{ session.piecesPracticed }} ({{ session.duration }} min)</p>
+            <p>Notes: {{ session.notes }}</p>
+          </li>
+        </ul>
       </section>
   
       <footer>
@@ -44,22 +41,33 @@
   
   <script>
   //import { resourceService } from "../services/ResourceService";
-  import { fetchPracticeSessions, addPracticeSession } from "../services/api";
+  //import { fetchPracticeSessions, addPracticeSession } from "../services/api";
+  import ApiService from '../services/ApiService';
+  import { mapState } from 'vuex';
   
   export default {
     data() {
       return {
-        resources: [],
-        newUserId: "",
-        newDate: "",
-        newDuration: "",
-        newPiecesPracticed: "",
-        newNotes: "",
+        practiceSessions: [],
+        //resources: [],
+        newSession: {
+          userId: this.userId,
+          date: '',
+          duration: 0,
+          piecesPracticed: '',
+          notes: '',
+        },
       };
     },
-    async created() {
+
+    computed: {
+      ...mapState(['user']),
+    },
+
+    created() {
       //this.resources = resourceService.getResources();
       this.loadPracticeSessions();
+      //this.loadResources();
     },
     methods: {
       buttonClicked() {
@@ -73,7 +81,28 @@
           this.resources.pop();
         }
       },
-      async loadPracticeSessions() {
+
+      loadPracticeSessions() {
+        ApiService.getPracticeSessions(this.userId)
+          .then(response => {
+            this.practiceSessions = response.data;
+          })
+          .catch(error => {
+            console.error('Error loading practice sessions:', error);
+          });
+      },
+
+      addPracticeSession() {
+        ApiService.addPracticeSession(this.newSession)
+          .then(response => {
+            console.log('Practice session added:', response.data);
+            this.loadPracticeSessions();
+          })
+          .catch(error => {
+            console.error('Error adding practice session:', error);
+          });
+      }
+      /*async loadPracticeSessions() {
         try {
           const response = await fetchPracticeSessions();
           this.resources = response.data;
@@ -102,7 +131,7 @@
         } catch (error) {
           console.error("Error adding practice session:", error);
         }
-      },
+      },*/
     },
   };
   </script>
@@ -203,4 +232,4 @@
     text-decoration: underline;
   }
   </style>
-  
+  ../services/ApiService
