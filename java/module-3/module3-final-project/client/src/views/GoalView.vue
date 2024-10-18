@@ -77,7 +77,7 @@
       },
 
       loadGoals() {
-            ApiService.getGoals(this.userId)
+            ApiService.getGoals()
                 .then(response => {
                     this.goals = response.data;
                 })

@@ -72,8 +72,8 @@
         document.body.classList.toggle("dark-mode");
       },
       removeLastItem() {
-        if (this.resources.length) {
-          this.resources.pop();
+        if (this.practiceSessions.length) {
+          this.practiceSessions.pop();
         }
       },
 
