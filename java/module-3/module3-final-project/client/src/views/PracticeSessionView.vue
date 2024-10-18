@@ -104,7 +104,7 @@
           ...this.practiceSessions.find(session => session.practiceSessionId === id),
           duration: prompt("Enter new duration:", ""),
           piecesPracticed: prompt("Enter new pieces practiced:", ""),
-          notes: prompt("Enter new nots:", ""),
+          notes: prompt("Enter new notes:", ""),
         };
 
         ApiService.updatePracticeSession(id, updatedSessionData)
