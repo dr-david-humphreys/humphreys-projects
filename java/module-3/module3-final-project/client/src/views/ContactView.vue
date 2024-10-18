@@ -35,7 +35,6 @@
   
   <style scoped>
   p {
-    font-size: 1.2rem;
     margin-top: 20px;
   }
   
