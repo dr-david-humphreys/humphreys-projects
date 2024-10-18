@@ -102,9 +102,9 @@
       updatePracticeSession(id) {
         const updatedSessionData = {
           ...this.practiceSessions.find(session => session.practiceSessionId === id),
-          duration: prompt("Enter new duration:", ""),
-          piecesPracticed: prompt("Enter new pieces practiced:", ""),
-          notes: prompt("Enter new notes:", ""),
+          duration: prompt("Enter new duration:", this.practiceSessions.find(session => session.practiceSessionId === id).duration),
+          piecesPracticed: prompt("Enter new pieces practiced:", this.practiceSessions.find(session => session.practiceSessionId === id).piecesPracticed),
+          notes: prompt("Enter new notes:", this.practiceSessions.find(session => session.practiceSessionId === id).notes),
         };
 
         ApiService.updatePracticeSession(id, updatedSessionData)

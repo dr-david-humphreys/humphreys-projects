@@ -26,13 +26,13 @@
         </form>
 
         <ul>
-          <li v-for="goal in goals" :key="goal.id">
+          <li v-for="goal in goals" :key="goal.goalId">
             <p>Description: {{ goal.description }}</p>
             <p>Target Date: {{ goal.targetDate }}</p>
             <p>Achieved: {{ goal.achieved ? 'Yes' : 'No' }}</p>
             <p>Notes: {{ goal.notes }}</p>
-            <button @click="updateGoal(goal.id)">Update</button>
-            <button @click="deleteGoal(goal.id)">Delete</button>
+            <button @click="updateGoal(goal.goalId)">Update</button>
+            <button @click="deleteGoal(goal.goalId)">Delete</button>
           </li>
         </ul>
       </section>
@@ -100,10 +100,10 @@
 
         updateGoal(id) {
             const updatedGoalData = {
-                ...this.goals.find(goal => goal.id === id),
-                description: prompt("Enter new description:", ""),
-                targetDate: prompt("Enter new target date:", ""),
-                notes: prompt("Enter new notes:", ""),
+                ...this.goals.find(goal => goal.goalId === id),
+                description: prompt("Enter new description:", this.goals.find(goal => goal.goalId === id).description),
+                targetDate: prompt("Enter new target date:", this.goals.find(goal => goal.goalId === id).targetDate),
+                notes: prompt("Enter new notes:", this.goals.find(goal => goal.goalId === id).notes),
             };
 
             ApiService.updateGoal(id, updatedGoalData)
