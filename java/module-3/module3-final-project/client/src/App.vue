@@ -1,6 +1,8 @@
 <template>
   <div id="cart-app">
-    <header></header>
+    <header>
+      <!-- Insert header component -->
+    </header>
     <nav>
         <router-link v-bind:to="{ name: 'logout' }" v-if="$store.state.token">
           Logout
@@ -10,7 +12,9 @@
     <main>
       <router-view />
     </main>
-    <footer></footer>
+    <footer>
+      <!-- Insert footer component -->
+    </footer>
   </div>
 </template>
 
