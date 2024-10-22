@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <!-- <header>
-      <h1></h1>
+    <header>
+      <h1>Welcome To The Humphreys Music Practice Tracker!!!</h1>
       <img src="img/Generic-Music-Notes.jpg" alt="Generic Music Picture" class="music-image" />
       <nav>
         <ul>
@@ -11,35 +10,29 @@
           <li><router-link to="/contact">Contact</router-link></li>
         </ul>
       </nav>
-    </header> -->
-
-    <section>
-      <h2>Contact</h2>
-      <p>
-        You can reach me at 
-        <a href="mailto:david.k.humphreys1@gmail.com">david.k.humphreys1@gmail.com</a>.
-      </p>
-    </section>
-
-    <!-- <footer>
-      <p>&copy; 2024 Humphreys Music Practice Tracker. All Rights Reserved.</p>
-    </footer> -->
-  </div>
-</template>
+    </header>
+  </template>
   
   <script>
   export default {
-    name: "ContactView",
+    name: "HeaderComponent",
   };
   </script>
   
   <style scoped>
-  p {
-    margin-top: 20px;
-  }
   
-  a:hover {
-    text-decoration: underline;
+  header {
+    background-color: #024950;
+    color: #afdde5;
+    padding: 20px;
+    text-align: center;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  nav li {
+    display: inline;
+    margin-right: 15px;
   }
   </style>
-  

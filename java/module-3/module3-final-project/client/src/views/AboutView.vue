@@ -1,7 +1,7 @@
 <template>
     <div>
-      <header>
-        <h1>Music Practice Tracker!</h1>
+      <!-- <header>
+        <h1></h1>
         <img src="img/Generic-Music-Notes.jpg" alt="Generic Music Picture" class="music-image" />
         <nav>
           <ul>
@@ -11,7 +11,7 @@
             <li><router-link to="/contact">Contact</router-link></li>
           </ul>
         </nav>
-      </header>
+      </header> -->
   
       <section>
         <h2>About</h2>
@@ -20,9 +20,9 @@
           <p>To learn more, click <a href="https://experts.okstate.edu/david.humphreys" target="_blank">here!</a></p>
       </section>
   
-      <footer>
+      <!-- <footer>
         <p>&copy; 2024 Humphreys Music Practice Tracker. All Rights Reserved.</p>
-      </footer>
+      </footer> -->
     </div>
   </template>
   

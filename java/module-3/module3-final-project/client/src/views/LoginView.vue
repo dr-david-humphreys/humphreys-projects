@@ -1,4 +1,9 @@
 <template>
+  <div class="description-text">
+    <p>The Music Practice Tracker app is designed to help musicians organize and optimize their practice routines by logging practice sessions, setting goals, and tracking progress over time.</p>
+    <p>With features that allow users to record the duration, pieces practiced, and notes for each session, as well as set specific musical goals, this app enables users to stay consistent, focused, and motivated in their practice.</p>
+    <p>Whether you're a beginner or a professional, this app helps you stay on top of your practice schedule and see measurable improvement, making it an essential tool for achieving musical growth!</p>
+  </div>
   <div id="login">
     <form v-on:submit.prevent="login">
       <h1>Please Sign In</h1>
@@ -71,6 +76,15 @@ body {
   font-family: Arial, sans-serif;
   background-color: #afdde5;
   color: #003135;
+}
+
+.description-text {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #024950;
 }
 
 #login {
